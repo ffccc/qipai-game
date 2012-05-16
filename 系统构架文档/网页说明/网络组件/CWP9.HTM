@@ -1,0 +1,369 @@
+<!-- saved from url=(0007)http:// -->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>CClientSocket</TITLE>
+<LINK REL=STYLESHEET HREF="../CommentReport.css" TYPE="text/css">
+</HEAD>
+<BODY topmargin=0 rightmargin=0 leftmargin=0 style="background-image: url(../titletile.jpg); background-repeat:repeat-x; background-position: 0 0;" >
+<DIV CLASS="PageHeading">CClientSocket 类</DIV>
+<DIV CLASS="Description">
+////////////////////////////////////////////////////////////////////////
+网络连接类<P>
+
+</DIV>
+<IMG src="../GradLeft.jpg" width=7 height=378 alt="" border="0" style="position:absolute; left:10; top:18;z-Index:2">
+<IMG src="../GradTop.jpg" width=352 height=7 alt="" border="0" align="top" style="position:absolute; left:10; top:18; z-index:1">
+<DIV CLASS="Remarks">
+<SPAN CLASS="RemarkHdrX">访问:  </SPAN>默认</DIV>
+<DIV CLASS="Remarks">
+<SPAN CLASS="RemarkHdrX">基类:  </SPAN>CWnd, IClientSocket</DIV>
+<DIV CLASS="Remarks">
+<SPAN CLASS="RemarkHdrX">实现的接口:  </SPAN>IClientSocket</DIV>
+<TABLE CLASS="InfoTable" cellpadding=0 cellspacing=0>
+<TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD valign=top align=left width=9 bgcolor="#cccc66"><IMG SRC="../graycorner.jpg" align=top></TD>
+<TD CLASS="TableLightLabel" WIDTH=206>成员</TD>
+<TD CLASS="TableLightLabel" >说明</TD>
+<TD width=20>&nbsp;</TD>
+</TR>
+<TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP10.HTM" TARGET="CNTFRAME">m_bCloseByServer</A></TD>
+<TD CLASS="TableLightDesc">关闭方式<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP11.HTM" TARGET="CNTFRAME">m_ProxyInfo</A></TD>
+<TD CLASS="TableLightDesc">代理信息<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP13.HTM" TARGET="CNTFRAME">m_SocketState</A></TD>
+<TD CLASS="TableLightDesc">连接状态<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP14.HTM" TARGET="CNTFRAME">m_pIClientSocketSink</A></TD>
+<TD CLASS="TableLightDesc">回调接口<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP15.HTM" TARGET="CNTFRAME">m_hSocket</A></TD>
+<TD CLASS="TableLightDesc">连接句柄<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP16.HTM" TARGET="CNTFRAME">m_wRecvSize</A></TD>
+<TD CLASS="TableLightDesc">接收长度<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP17.HTM" TARGET="CNTFRAME">m_cbRecvBuf</A></TD>
+<TD CLASS="TableLightDesc">接收缓冲<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP18.HTM" TARGET="CNTFRAME">m_dwSendTickCount</A></TD>
+<TD CLASS="TableLightDesc">发送时间<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP19.HTM" TARGET="CNTFRAME">m_dwRecvTickCount</A></TD>
+<TD CLASS="TableLightDesc">接收时间<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP20.HTM" TARGET="CNTFRAME">m_dwSendPacketCount</A></TD>
+<TD CLASS="TableLightDesc">发送计数<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP21.HTM" TARGET="CNTFRAME">m_dwRecvPacketCount</A></TD>
+<TD CLASS="TableLightDesc">接受计数<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP22.HTM" TARGET="CNTFRAME">m_cbSendRound</A></TD>
+<TD CLASS="TableLightDesc">字节映射<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP23.HTM" TARGET="CNTFRAME">m_cbRecvRound</A></TD>
+<TD CLASS="TableLightDesc">字节映射<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP24.HTM" TARGET="CNTFRAME">m_dwSendXorKey</A></TD>
+<TD CLASS="TableLightDesc">发送密钥<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP25.HTM" TARGET="CNTFRAME">m_dwRecvXorKey</A></TD>
+<TD CLASS="TableLightDesc">接收密钥<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP26.HTM" TARGET="CNTFRAME">m_SendByteMap</A></TD>
+<TD CLASS="TableLightDesc">字节映射表<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP27.HTM" TARGET="CNTFRAME">m_RecvByteMap</A></TD>
+<TD CLASS="TableLightDesc">字节映射表<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP28.HTM" TARGET="CNTFRAME">CClientSocket</A></TD>
+<TD CLASS="TableLightDesc">构造函数<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP29.HTM" TARGET="CNTFRAME">~CClientSocket</A></TD>
+<TD CLASS="TableLightDesc">析构函数<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP30.HTM" TARGET="CNTFRAME">Release</A></TD>
+<TD CLASS="TableLightDesc">释放对象<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP31.HTM" TARGET="CNTFRAME">IsValid</A></TD>
+<TD CLASS="TableLightDesc">是否有效<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP32.HTM" TARGET="CNTFRAME">QueryInterface</A></TD>
+<TD CLASS="TableLightDesc">接口查询<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP33.HTM" TARGET="CNTFRAME">CancelProxyServer</A></TD>
+<TD CLASS="TableLightDesc">取消代理<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP34.HTM" TARGET="CNTFRAME">SetProxyServer</A></TD>
+<TD CLASS="TableLightDesc">代理服务器<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP35.HTM" TARGET="CNTFRAME">SetSocketSink</A></TD>
+<TD CLASS="TableLightDesc">设置接口<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP36.HTM" TARGET="CNTFRAME">GetSocketSink</A></TD>
+<TD CLASS="TableLightDesc">获取接口<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP37.HTM" TARGET="CNTFRAME">GetLastSendTick</A></TD>
+<TD CLASS="TableLightDesc">获取发送间隔<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP38.HTM" TARGET="CNTFRAME">GetLastRecvTick</A></TD>
+<TD CLASS="TableLightDesc">获取接收间隔<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP39.HTM" TARGET="CNTFRAME">GetSendPacketCount</A></TD>
+<TD CLASS="TableLightDesc">获取发送数目<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP40.HTM" TARGET="CNTFRAME">GetRecvPacketCount</A></TD>
+<TD CLASS="TableLightDesc">获取接收数目<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP41.HTM" TARGET="CNTFRAME">GetConnectState</A></TD>
+<TD CLASS="TableLightDesc">获取状态<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP42.HTM" TARGET="CNTFRAME">Connect</A></TD>
+<TD CLASS="TableLightDesc">连接服务器<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP43.HTM" TARGET="CNTFRAME">Connect</A></TD>
+<TD CLASS="TableLightDesc">连接服务器<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP44.HTM" TARGET="CNTFRAME">SendData</A></TD>
+<TD CLASS="TableLightDesc">发送函数<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP45.HTM" TARGET="CNTFRAME">SendData</A></TD>
+<TD CLASS="TableLightDesc">发送函数<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP46.HTM" TARGET="CNTFRAME">CloseSocket</A></TD>
+<TD CLASS="TableLightDesc">关闭连接<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP47.HTM" TARGET="CNTFRAME">TranslateAddr</A></TD>
+<TD CLASS="TableLightDesc">解释地址<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP48.HTM" TARGET="CNTFRAME">GetConnectError</A></TD>
+<TD CLASS="TableLightDesc">连接错误<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP49.HTM" TARGET="CNTFRAME">SendBuffer</A></TD>
+<TD CLASS="TableLightDesc">发送数据<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP50.HTM" TARGET="CNTFRAME">EncryptBuffer</A></TD>
+<TD CLASS="TableLightDesc">加密数据<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP51.HTM" TARGET="CNTFRAME">CrevasseBuffer</A></TD>
+<TD CLASS="TableLightDesc">解密数据<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP52.HTM" TARGET="CNTFRAME">OnSocketNotifyConnect</A></TD>
+<TD CLASS="TableLightDesc">网络连接<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP53.HTM" TARGET="CNTFRAME">OnSocketNotifyRead</A></TD>
+<TD CLASS="TableLightDesc">网络读取<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP54.HTM" TARGET="CNTFRAME">OnSocketNotifyClose</A></TD>
+<TD CLASS="TableLightDesc">网络关闭<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP55.HTM" TARGET="CNTFRAME">SeedRandMap</A></TD>
+<TD CLASS="TableLightDesc">随机映射<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP56.HTM" TARGET="CNTFRAME">MapSendByte</A></TD>
+<TD CLASS="TableLightDesc">映射发送数据<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP57.HTM" TARGET="CNTFRAME">MapRecvByte</A></TD>
+<TD CLASS="TableLightDesc">映射接收数据<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP58.HTM" TARGET="CNTFRAME">OnSocketNotify</A></TD>
+<TD CLASS="TableLightDesc">SOCKET 消息处理程序<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR></TABLE>
+</BODY>
+</HTML>
