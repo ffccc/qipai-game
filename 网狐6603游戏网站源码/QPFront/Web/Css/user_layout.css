@@ -1,0 +1,58 @@
+﻿@charset "utf-8";
+/*局部----------------------------------------------------------------------------------------------------------*/
+.userBody{width:960px; margin:0 auto;}
+.userTop{width:960px; height:10px; background:url(../images/userBg.png) 0 0 no-repeat; float:left;}
+.userBg{ width:940px; background:#ecf5fb; float:left; padding:0 10px;}
+.userBottom{width:960px; height:10px; background:url(../images/userBg.png) 0 -10px no-repeat; float:left;}
+
+/*左下边按钮----------------------------------------------------------------------------------------------------------*/
+.serve li{ float:left;}
+.userBtn1,.userBtn2{ width:170px; height:52px; background-repeat:no-repeat; line-height:52px; padding-left:70px; font-size:16px; font-weight:bold;position:relative;top:0px; cursor:pointer; margin-top:5px;}
+.userBtn1{ background:url(../images/userBg.png) 0 -20px;}
+.userBtn2{ background:url(../images/userBg.png) 0 -72px; color:#eb4800;left:2px; }
+
+/*右边布局----------------------------------------------------------------------------------------------------------*/
+.userRigthBody{ width:700px; float:left;}
+.userRigthTitle{ width:670px; height:30px; background:url(../images/userBg.png) -240px -20px no-repeat; padding-left:30px; line-height:30px;}
+.userRigthBg{ width:670px;overflow:hidden;background:url(../images/userRightBg.gif) repeat-y; float:left; padding:15px;}
+.userRigthBg1{ width:auto;float:left; padding:10px;}
+.userRightBottom{ width:700px; height:12px;background:url(../images/userBg.png) -240px -51px no-repeat; float:left;}
+
+/*没登录前提示----------------------------------------------------------------------------------------------------------*/
+.loginHint{ padding:5px 0; border:1px dashed #eb4800; margin:0px auto; background:#fffaf4; }
+
+/*Table----------------------------------------------------------------------------------------------------------*/
+.userRigthBg td,.userRigthBg1 td{ height:30px; line-height:30px; font-size:12px; font-family:"宋体";white-space:nowrap; padding:0 0px;}
+.trBg{ background:#e3f0f9;}
+.trBg1{ background:#fff;}
+.trBg2{ background:#F7F9Fd;}
+.trTd{ width:70px;WORD-BREAK: break-all;;overflow:hidden;text-overflow:ellipsis;}
+.trLine{ background:#9dc6ea; height:3px;}
+.leftTop{ border-left:1px solid #fff; border-top:1px solid #fff;}
+
+.userRigthBg li{float:left; display:inline;}
+.userTab1,.userTab2{ padding:5px 10px 0px 10px; position:relative; left:0;text-align:center; font-size:12px; cursor:pointer;}
+.userTab1{ background:#c7e1f9; margin:0 3px 2px 0; height:19px;border:1px solid #fff;}
+.userTab2{border:1px solid #b8d6f1; border-bottom:1px solid #fff; margin:0px 3px 0 0; top:1px; height:21px; font-weight:bold;}
+
+/*默认页面----------------------------------------------------------------------------------------------------------*/
+.userRigthBg .title{ width:650px; height:25px; border-bottom:1px solid #bad7e5; padding:0 10px; line-height:25px; background:#f7f9fd; font-family:"宋体";}
+.userRigthBg1 .title{height:25px; border-bottom:1px solid #bad7e5; padding:0 10px; line-height:25px; background:#f7f9fd; font-family:"宋体";}
+.userTD li{float:left; display:inline;}
+a.help,a.game,a.user,a.protect,a.pass,a.bank{ float:left; margin:7px; width:203px; height:86px;display:block;  background:url(../images/userTD.jpg) no-repeat; border:2px dashed #fff;}
+a.help{background-position:0 0;}
+a.game{ background-position:-203px 0;}
+a.user{ background-position:-406px 0;}
+a.protect{ background-position:0 -86px;}
+a.pass{ background-position:-203px -86px;}
+a.bank{ background-position:-406px -86px;}
+a.help:hover,a.game:hover,a.user:hover,a.protect:hover,a.pass:hover,a.bank:hover{ border:2px dashed #ff0000;}
+
+/*成功提示----------------------------------------------------------------------------------------------------------*/
+.Uright{ width:400px;height:33px; background:url(../images/right1.gif) no-repeat; line-height:33px; padding-left:50px; margin:0 auto; color:#3c8700; font-size:14px; font-weight:bold;}
+.Uerror{ width:400px; height:32px;background:url(../images/error.gif) no-repeat;line-height:32px; padding-left:45px; margin:0 auto; color:#f80029; font-size:14px; font-weight:bold;}
+
+
+
+
+

@@ -1,0 +1,69 @@
+首先欢迎您选择易宝支付提供的支付接入服务。此目录的例子是ASP代码版本，您可以直接把所有文件放在IIS应用的目录下，进行测试运行。
+
+1)文件列表说明
+首页
+|----index.html
+
+支付请求文件，通过此文件发起支付请求，商家可以在此文件中写入自己的订单信息等，然后把请求提交给易宝支付
+|----req.asp
+
+支付结果返回文件，通过此文件商家判断对应订单的支付成功状态，并且根据结果修改自己数据库中的订单状态
+|----callBack.asp
+
+提供给商户测试用的订单查询输入页面
+|----queryOrd.html
+
+订单查询文件，通过此文件商家查询订单的支付状态
+|----queryOrd.asp
+	
+提供给商户测试用的订单退款请求输入页面
+|----refundOrd.html
+
+订单退款文件，通过此文件商家提交订单退款请求
+|----refundOrd.asp
+
+共通函数文件，不需要进行任何修改
+|----yeepayCommon.asp
+
+商家属性文件，商家可以在此文件中修改商户编号和密钥信息
+|----merchantProperties.asp
+
+
+2)对于非虚拟主机用户我们提供了加密组件，只要注册后即可直接使用。
+需要把 lib 目录下面的所有文件COPY到WINDOWS系统目录\system32\ 目录下，然后直接注册或者运行regdll.bat问题即可。
+	
+3)商家测试可以先用易宝支付的测试商家测试成功，然后在merchantProperties.asp文件中修改成自己的商户编号和密钥信息。
+merchantId = "10001126856";
+keyValue = "69cl522AV6q613Ii4W6u8K6XuW8vM1N6bFgyv769220IuYe9u37N4y7rI4Pl";
+商户编号和密钥需要同时修改才有效！
+
+4)请在req.asp文件中修改商户接收支付成功数据的地址。
+p8_Url = "http://localhost/HTMLcommon/callback.asp"
+商家正式运行时，必须把自己的服务器部署在公网上的服务器上，这样支付成功后易宝支付的服务器才能将支付结果及时返回给商家。
+为了商家技术工程师开发的方便，如果测试服务器在工程师自己的服务器上，可以把URL设定为localhost的方式，浏览器可以正式返回。
+	
+5)共通文件采用服务器包含的方式进行处理。
+如：
+<!-- #include file="merchantProperties.asp" -->
+<!-- #include file="yeepayCommon.asp" -->
+所以如果您修改共通文件请帮助每个文件能够编译通过。
+检查语法错误的最简单方式是用浏览器直接访问IIS中的此文件URL
+
+6)易宝支付支持在商家选择保险柜和在易宝支付网关选择保险柜的两种方式。
+可以通过设定Req.asp中pd_FrpId的值来进行调整。
+如：
+pd_FrpId="" 到易宝支付支付网关再选择保险柜
+pd_FrpId="1000000-NET" 直接进行易宝支付会员支付
+pd_FrpId="ICBC-NET" 直接进行中国工商保险柜在线支付
+pd_FrpId="SZX" 直接进行神州行卡在线支付
+其它保险柜编号请参考易宝支付的文档说明
+
+7)本地的STR，商户编号和KEY的查找位置(在出现“交易签名无效”的错误时需要查找STR)
+str:在虚拟目录文件夹下的 log 文件中 默认是 HTMLcommon.log 文件中
+商户编号:merchantProperties.asp 文件中 p1_MerId
+key:merchantProperties.asp 文件中 merchantKey
+
+8)log保存地址配置
+merchantProperties.asp文件中的logName
+
+9)对于网上下单的电话支付接口可以参考此文档进行开发。

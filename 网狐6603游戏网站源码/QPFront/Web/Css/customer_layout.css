@@ -1,0 +1,51 @@
+﻿@charset "utf-8";
+
+/*页面主体样式---------------------------------------------------------------------------------------------*/
+.customerBody{ width:940px; margin:0 auto;}
+.customerTitle,.customerBottom{ width:940px; height:24px; float:left; background:url(../images/customerBg.jpg) no-repeat;}
+.customerTitle{ background-position:0 0;}
+.customerBottom{background-position:0 -24px;}
+.customerBg{ width:940px; float:left; background:url(../images/customerBg.gif) repeat-y;}
+
+/*左边---------------------------------------------------------------------------------------------*/
+.cLeft{ width:230px; float:left;}
+.cLeftTop{ width:230px; height:43px; background:url(../images/customerBg.jpg) -230px -208px no-repeat;}
+.cLeftBottom{ width:230px; height:108px; background:url(../images/customerBg.jpg) 0px -208px no-repeat;}
+
+a.xsbz,a.xsbz:hover,a.xsbz:active,.xsbz{display:block; width:230px; height:80px; background:url(../images/customerBg.jpg) no-repeat;}
+a.xsbz{ background-position:0 -48px;}
+a.xsbz:hover,a.xsbz:active,.xsbz{ background-position:0 -128px;}
+
+a.cjwt,a.cjwt:hover,a.cjwt:active,.cjwt{display:block; width:230px; height:80px; background:url(../images/customerBg.jpg) no-repeat;}
+a.cjwt{ background-position:-230px -48px;}
+a.cjwt:hover,a.cjwt:active,.cjwt{ background-position:-230px -128px;}
+
+a.wtfk,a.wtfk:hover,a.wtfk:active,.wtfk{display:block; width:230px; height:80px; background:url(../images/customerBg.jpg) no-repeat;}
+a.wtfk{ background-position:-460px -48px;}
+a.wtfk:hover,a.wtfk:active,.wtfk{ background-position:-460px -128px;}
+
+a.kfdh,a.kfdh:hover,a.kfdh:active,.kfdh{display:block; width:230px; height:80px; background:url(../images/customerBg.jpg) no-repeat;}
+a.kfdh{ background-position:-690px -48px;}
+a.kfdh:hover,a.kfdh:active,.kfdh{ background-position:-690px -128px;}
+
+/*右边---------------------------------------------------------------------------------------------*/
+.cRight{ width:660px; float:right; padding:0px 30px 0 20px;}
+.cRight li{line-height:28px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; border-bottom:dashed 1px #ccc;}
+.cRight span{ float:right; font-weight:normal; padding-right:10px; color:#666;}
+.cRight label{ width:4px; height:6px; background:url(../images/QpIndex.png) -241px -390px no-repeat; float:left; margin:10px 7px 0 0;}
+
+.cRight td{ height:30px;  color:#333; line-height:30px;}
+.cRight .tdBg{ background:#f7f9fd;}
+.cRight .line{border-bottom:1px solid #bad7e5; font-size:14px; font-weight:bold; color:#333; background:#eef2f9;}
+.cRight .height{ height:60px;}
+
+
+
+
+
+
+
+
+
+
+

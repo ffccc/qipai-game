@@ -1,0 +1,268 @@
+﻿@charset "utf-8";
+/*充值通道------------------------------------------------------------------------------------------------*/
+ul{ list-style-type:none; padding:0; margin:0;}
+.recharge{ width:717px; height:auto; float:left;}
+.recharge1{ 
+			width:694px; 
+			height:26px;
+			line-height:26px;
+			padding-left:23px;							
+			background-image:url(../images/CzPic.png);
+			background-repeat:no-repeat;
+			background-position:0px -127px;
+			}
+.rechargeBg{width:717px;
+			height:auto; 
+			padding:13px 0 0 0;
+			background-image:url(../images/CzBg.gif); 
+			background-repeat:repeat-y;}
+.rechargeBg1{ width:400px;height:auto;}
+.rechargeBg li{float:left; padding:0 40px;}
+.rechargeBg1 li{float:left; padding:0 0 0 30px;}
+.rechargeBg li span,.rechargeBg1 li span{ padding:0 0 0 8px;}
+
+.rechargeBg .sk,.rechargeBg1 .sk{ background-image:url(../images/CzPic.png); background-repeat:no-repeat; background-position:0 0; width:158px; height:127px;}
+.rechargeBg .kq,.rechargeBg1 .kq{ background-image:url(../images/CzPic.png); background-repeat:no-repeat; background-position:-158px 0; width:158px; height:127px;}
+.rechargeBg .yb{ background-image:url(../images/CzPic.png); background-repeat:no-repeat; background-position:-316px 0; width:158px; height:127px;}
+.recharge2{ width:717px;
+			height:12px; 
+			background-image:url(../images/CzPic.png);
+			background-repeat:no-repeat;
+			background-position:0 -153px;}
+
+/*会员特权------------------------------------------------------------------------------------------------*/
+.tequan{width:652px; 
+		height:103px;
+		margin:10px 25px;
+		background-image:url(../images/CzPic.png);
+		background-repeat:no-repeat;
+		background-position:0 -166px;}
+
+/*会员优势------------------------------------------------------------------------------------------------*/
+.youshi{ margin:auto 20px ;}
+a.tx{display:block;
+	 background-image:url(../images/CzPic.png);
+	 background-repeat:no-repeat;
+	 background-position:0 -269px;
+	 width:173px;
+	 height:59px;
+	 *width:175px;
+	 *height:61px;
+	 border:2px dashed #fff;
+	 float:left;
+	 margin:0 60px 0 10px;
+	 }
+a.pb{display:block;
+	 background-image:url(../images/CzPic.png);
+	 background-repeat:no-repeat;
+	 background-position:-175px -269px;
+	 width:140px;
+	 height:59px;
+	 *width:142px;
+	 *height:61px;
+	 float:left;
+	 margin-right:60px;
+	 border:2px dashed #fff;
+}
+a.tr{display:block;
+	 background-image:url(../images/CzPic.png);
+	 background-repeat:no-repeat;
+	 background-position:-317px -269px;
+	 width:161px;
+	 height:61px;
+	 *width:163px;
+	
+	 float:left;
+	 border:2px dashed #fff;
+}
+a.mf{display:block;
+	 background-image:url(../images/CzPic.png);
+	 background-repeat:no-repeat;
+	 background-position:-480px -269px;
+	 width:186px;
+	 height:61px;
+	 float:left;
+	 margin:20px 50px 0 10px;
+	 border:2px dashed #fff;
+}
+a.jb{display:block;
+	 background-image:url(../images/CzPic.png);
+	 background-repeat:no-repeat;
+	 background-position:0px -330px;
+	 width:152px;
+	 height:61px;
+	 float:left;
+	 margin:20px 50px 0 0;
+	 border:2px dashed #fff;
+}
+a.hy{display:block;
+	 background-image:url(../images/CzPic.png);
+	 background-repeat:no-repeat;
+	 background-position:-152px -330px;
+	 width:163px;
+	 height:61px;
+	 float:left;
+	 margin:20px 0 0 0;
+	 border:2px dashed #fff;
+	 }
+a.tx:hover,a.pb:hover,a.tr:hover,a.mf:hover,a.jb:hover,a.hy:hover{ border:2px dashed #ff0000;}
+
+/*实卡充值------------------------------------------------------------------------------------------------*/
+.skczBg{width:677px;
+		display: block;
+		height:auto; 
+		padding:13px 20px 0 ;
+		background-image:url(../images/CzBg.gif); 
+		background-repeat:repeat-y;}
+.content {
+	float: left;
+	padding:0 0 20px 60px;
+	margin: 0px;
+}
+.content p {
+	height: 40px;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	width: 600px;
+}
+.content span{ line-height:30px; float:left;}
+
+
+/*充值卡------------------------------------------------------------------------------------------------*/
+.content1 {
+	float: left;
+	margin: 0px;
+	width:637px;
+	padding:20px 0;
+}
+.content1 li{ float:left; width:180px; height:auto; padding:0 0 0 20px; border-right:1px dashed #ccc; margin-right:8px;}
+.content1 span{ display:block; width:120px; line-height:22px; padding-left:10px;}
+.content2{
+	float: left;
+	margin: 0px;
+	padding:20px 0;
+}
+.content2 li{ float:left;height:auto; padding:0 3px; border-right:1px dashed #ccc;}
+.content2 span{ display:block;line-height:22px; padding-left:10px;}
+.card1{ background-image:url(../images/CzPic.png);
+	    background-repeat:no-repeat;
+		background-position:0 -391px;
+		height:95px;
+		width:107px;}
+.card2{ background-image:url(../images/CzPic.png);
+		background-repeat:no-repeat;
+		background-position:-137px -391px;
+		height:94px;
+		width:112px;}
+.card3{ background-image:url(../images/CzPic.png);
+		background-repeat:no-repeat;
+		background-position:-279px -391px;
+		height:94px;
+		width:114px;}
+.card4{ background-image:url(../images/CzPic.png);
+		background-repeat:no-repeat;
+		background-position:-423px -391px;
+		height:93px;
+		width:111px;}
+/*网银充值------------------------------------------------------------------------------------------------*/
+.step1{ width:531px;
+	   height:57px;
+	   background-image:url(../images/CzPic.png);
+	   background-repeat:no-repeat;
+	   background-position:0 -486px;}
+.step2{ width:531px;
+	   height:57px;
+	   background-image:url(../images/CzPic.png);
+	   background-repeat:no-repeat;
+	   background-position:0 -543px;}
+.step3{ width:531px;
+	   height:57px;
+	   background-image:url(../images/CzPic.png);
+	   background-repeat:no-repeat;
+	   background-position:0 -600px;}
+.err{background: url(../images/Czpic.png);
+	 background-repeat: no-repeat;
+	 background-position: -474px -87px;
+	 padding-left:15px;
+	 line-height:25px;
+	 font-weight:bold;
+	 border-bottom:1px dashed #ccc;}
+.bntBuy,.bntBuy1{ 
+		 height:31px;
+		 padding-left:8px;
+		 line-height:31px;
+		 border:none;
+		 cursor:pointer;
+		 margin-top:10px;
+		 text-align:center;}
+.bntBuy{ background-image:url(../images/CzPic.png);
+		 background-repeat:no-repeat;
+		 background-position:-474px -25px;
+		 width:116px;
+		 }
+.bntBuy1{ background-image:url(../images/CzPic.png);
+		 background-repeat:no-repeat;
+		 background-position:-474px -56px;
+		 width:219px;
+		 }
+		 
+.card{}
+.card li{ float:left;}
+.crad .tab1,.crad .tab2{width:120px;
+			 			 
+						text-align:center;
+			 			 
+						position:relative;
+						left:0px;
+						float:left;
+						cursor:pointer;
+						font-size:14px;
+						margin:0px 4px 0px 0;}
+.crad .tab1{background:#c7e1f9;height:35px;line-height:35px;}
+.crad .tab2{ border:1px solid #c7e1f9;
+			 border-bottom:1px solid #fff;
+			 top:1px;
+			 font-weight:bold;
+			 height:37px;
+			 line-height:37px;
+			}
+.card11{border:1px solid #c7e1f9; padding:0 15px 15px 15px;}
+.card11 li{ float:left; margin-right:30px;}
+.card11 span{ display:block; text-align:center;}
+
+.userBox{ width:250px;}
+.userBox1{ width:380px;}
+.userBox p{
+	height: 35px;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	width:250px;
+	}
+.userBox span{ line-height:30px; float:left;}
+.cardBox1 span{ float:left;}
+.cardBox1 label{ float:left; margin-left:10px; width:205px; line-height:20px;}
+/*网银充值订单------------------------------------------------------------------------------------------------*/
+.tipsSu{
+		background:url(../images/right.gif);
+		background-repeat:no-repeat;
+		padding-left:60px;
+		line-height:42px;
+		padding-top:5px;
+		margin:0 auto;
+		width:200px;}
+.tipsInfo1 {
+	float: left;
+	margin: 0px;
+	width:637px;
+	padding:20px 0;
+}
+.tipsInfo{ width:240px;
+		   padding:20px 80px;
+		   background:#eff7fc;
+		   margin:0 auto;
+		   margin-top:30px;}
+.tipsInfo li{ float:left; width:240px; line-height:25px;}

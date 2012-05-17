@@ -1,0 +1,55 @@
+﻿@charset "utf-8";
+
+/*新闻列表---------------------------------------------------------------------------------------------*/
+p{BORDER-BOTTOM-STYLE: none; PADDING-BOTTOM: 0px; BORDER-RIGHT-STYLE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; PADDING-TOP: 0px; }
+.newsBody{width:717px; height:auto; float:left;}
+.newsTitle{ width:692px;
+			height:20px;
+			padding-top:10px;
+			padding-left:25px;
+			background:url(../images/gameBb.png) 0 0 no-repeat;
+			}
+.newsBg1,.newsBg2{   padding:7px 15px;
+			width:687px;
+			float:left;			
+			background-image:url(../images/CzBg.gif); 
+		    background-repeat:repeat-y;}
+.newsBg2{	height:679px;
+			}
+.newsBg1,.newsBg2 li{line-height:28px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; border-bottom:dashed 1px #ccc;}
+.newsBg1,.newsBg2 span{ float:right; font-weight:normal; padding-right:10px; color:#666;}
+.newsBg1,.newsBg2 label{ width:4px; height:6px; background:url(../images/QpIndex.png) -241px -390px no-repeat; float:left; margin:10px 7px 0 0;}
+.newsBottom{width:717px;
+			height:12px; 
+			background-image:url(../images/CzPic.png);
+			background-repeat:no-repeat;
+			background-position:0 -153px;}
+
+/*新闻查看---------------------------------------------------------------------------------------------*/
+.viewBody{ width:918px; border:1px solid #c7e1f9; padding:5px 20px;float:left;}
+.viewTitle{ height:30px; text-align:center; line-height:30px;}
+.ViewContent{ line-height:26px;float:left;}
+.viewTop{float:left; padding-top:15px;}
+
+/*推广员---------------------------------------------------------------------------------------------*/
+.tgTitle{ width:717px;
+			height:41px;
+			background:url(../images/tgyxt.gif) no-repeat;
+			}
+
+.tgTitle1{ width:657px;height:25px; border-bottom:1px solid #bad7e5; padding:0 10px; line-height:25px; background:#f7f9fd; font-family:"宋体";}
+.tgBg{padding:15px 20px;width:677px;float:left;background-image:url(../images/CzBg.gif); background-repeat:repeat-y;}
+.tgBg .content{ padding:8px 10px 12px; line-height:28px;}
+
+/*比赛中心---------------------------------------------------------------------------------------------*/
+.matchTitle{ width:717px;
+			height:41px;
+			background:url(../images/match.gif) no-repeat;
+			}
+
+/*网站地图---------------------------------------------------------------------------------------------*/
+.mapTitle{width:717px;
+			height:41px;
+			background:url(../images/map.gif) no-repeat;}
+
+.tgBg .content li{float:left; display:inline; line-height:30px; width:110px;}
