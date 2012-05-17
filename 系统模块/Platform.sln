@@ -103,6 +103,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "内核引擎", "服务器组件\内核
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "网络服务", "客户端组件\网络服务\NetworkService.vcproj", "{40C0CCCB-BB89-4198-A607-2410FA125EDC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "港式五张Svr", "..\游戏组件\7.港式五张\游戏服务器\GameServer.vcproj", "{CA071FF5-97BF-42C3-99AF-FE8F8A0F0AF2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "港式五张", "..\游戏组件\7.港式五张\游戏客户端\GameClient.vcproj", "{F2D70F30-23FC-4973-A798-AED329359B33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Admin_Release|Win32 = Admin_Release|Win32
@@ -230,6 +234,18 @@ Global
 		{40C0CCCB-BB89-4198-A607-2410FA125EDC}.Debug|Win32.Build.0 = Debug|Win32
 		{40C0CCCB-BB89-4198-A607-2410FA125EDC}.Release|Win32.ActiveCfg = Release|Win32
 		{40C0CCCB-BB89-4198-A607-2410FA125EDC}.Release|Win32.Build.0 = Release|Win32
+		{CA071FF5-97BF-42C3-99AF-FE8F8A0F0AF2}.Admin_Release|Win32.ActiveCfg = Release|Win32
+		{CA071FF5-97BF-42C3-99AF-FE8F8A0F0AF2}.Admin_Release|Win32.Build.0 = Release|Win32
+		{CA071FF5-97BF-42C3-99AF-FE8F8A0F0AF2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CA071FF5-97BF-42C3-99AF-FE8F8A0F0AF2}.Debug|Win32.Build.0 = Debug|Win32
+		{CA071FF5-97BF-42C3-99AF-FE8F8A0F0AF2}.Release|Win32.ActiveCfg = Release|Win32
+		{CA071FF5-97BF-42C3-99AF-FE8F8A0F0AF2}.Release|Win32.Build.0 = Release|Win32
+		{F2D70F30-23FC-4973-A798-AED329359B33}.Admin_Release|Win32.ActiveCfg = Release|Win32
+		{F2D70F30-23FC-4973-A798-AED329359B33}.Admin_Release|Win32.Build.0 = Release|Win32
+		{F2D70F30-23FC-4973-A798-AED329359B33}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F2D70F30-23FC-4973-A798-AED329359B33}.Debug|Win32.Build.0 = Debug|Win32
+		{F2D70F30-23FC-4973-A798-AED329359B33}.Release|Win32.ActiveCfg = Release|Win32
+		{F2D70F30-23FC-4973-A798-AED329359B33}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
