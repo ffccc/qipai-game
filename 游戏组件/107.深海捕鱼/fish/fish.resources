@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="GB2312" ?> 
+<ResourceManifest>
+    <Resources Name="Load">						
+	<Imageset Name="bg_load" Path="fish\bg_load.imageset" />
+        <Imageset Name="ui_load" Path="fish\ui_load.imageset" />
+
+    </Resources>
+    <Resources Name="Game">
+
+        <Sound Name="4" Path="fish\sound\WaveEnter.ogg" />
+        <Sound Name="5" Path="fish\sound\shot_1.ogg" />
+        <Sound Name="6" Path="fish\sound\shot_8.ogg" />
+        <Sound Name="7" Path="fish\sound\net_1.ogg" />
+        <Sound Name="8" Path="fish\sound\net_8.ogg" />
+        <Sound Name="9" Path="fish\sound\goldShow.ogg" />      
+        <Sound Name="10" Path="fish\sound\dead_7.ogg" />
+        <Sound Name="11" Path="fish\sound\dead_8.ogg" />
+        <Sound Name="12" Path="fish\sound\dead_9.ogg" />
+        <Sound Name="13" Path="fish\sound\dead_10.ogg" />
+        <Sound Name="14" Path="fish\sound\dead_11.ogg" />
+        <Sound Name="15" Path="fish\sound\addGold.ogg" />
+        <Sound Name="16" Path="fish\sound\popDlg.ogg" />
+	<Sound Name="17" Path="fish\sound\changGun.ogg" />
+        <Sound Name="18" Path="fish\sound\getTask.ogg" />
+        <Sound Name="19" Path="fish\sound\reelShow.ogg" />
+        <Sound Name="20" Path="fish\sound\click.ogg" />
+        <Sound Name="21" Path="fish\sound\bomb.ogg" />
+        <Sound Name="22" Path="fish\sound\laserShot.ogg" />
+        <Sound Name="23" Path="fish\sound\reached.ogg" />
+        <Sound Name="24" Path="fish\sound\laserConver.ogg" />
+
+        <Music Name="0" Path="fish\sound\0.ogg" />
+        <Music Name="1" Path="fish\sound\1.ogg" />
+        <Music Name="2" Path="fish\sound\2.ogg" />
+        <Music Name="3" Path="fish\sound\3.ogg" />
+
+				
+	<Imageset Name="bg_game_0" Path="fish\bg_game_0.imageset" />
+	<Imageset Name="bg_game_1" Path="fish\bg_game_1.imageset" />
+	<Imageset Name="bg_game_2" Path="fish\bg_game_2.imageset" />
+	<Imageset Name="bg_game_3" Path="fish\bg_game_3.imageset" />
+        <Imageset Name="role" Path="fish\role.imageset" />
+
+        <Imageset Name="fish_0" Path="fish\fish_0.imageset" />
+        <Imageset Name="fish_1" Path="fish\fish_1.imageset" />
+        <Imageset Name="fish_2" Path="fish\fish_2.imageset" />
+        <Imageset Name="fish_3" Path="fish\fish_3.imageset" />
+        <Imageset Name="fish_4" Path="fish\fish_4.imageset" />
+        <Imageset Name="fish_5" Path="fish\fish_5.imageset" />  
+        <Imageset Name="fish_6" Path="fish\fish_6.imageset" />
+        <Imageset Name="fish_7" Path="fish\fish_7.imageset" />
+        <Imageset Name="fish_8" Path="fish\fish_8.imageset" />
+        <Imageset Name="fish_9" Path="fish\fish_9.imageset" />
+        <Imageset Name="fish_10" Path="fish\fish_10.imageset" />
+        <Imageset Name="fish_11" Path="fish\fish_11.imageset" />
+        <Imageset Name="fish_12" Path="fish\fish_12.imageset" />  
+
+        <Imageset Name="gun0" Path="fish\gun0.imageset" />  
+        <Imageset Name="gun1" Path="fish\gun1.imageset" />  
+        <Imageset Name="gun2" Path="fish\gun2.imageset" />  
+        <Imageset Name="gun3" Path="fish\gun3.imageset" />  
+        <Imageset Name="gun4" Path="fish\gun4.imageset" />  
+        <Imageset Name="gun5" Path="fish\gun5.imageset" />  
+        <Imageset Name="gun6" Path="fish\gun6.imageset" />  
+        <Imageset Name="gun7" Path="fish\gun7.imageset" />  
+
+        <Imageset Name="shot_0_0" Path="fish\shot_0_0.imageset" />  
+        <Imageset Name="shot_0_1" Path="fish\shot_0_1.imageset" />  
+        <Imageset Name="shot_0_2" Path="fish\shot_0_2.imageset" />  
+        <Imageset Name="shot_0_3" Path="fish\shot_0_3.imageset" />  
+        <Imageset Name="shot_1_0" Path="fish\shot_1_0.imageset" />  
+        <Imageset Name="shot_1_1" Path="fish\shot_1_1.imageset" />  
+        <Imageset Name="shot_1_2" Path="fish\shot_1_2.imageset" />  
+        <Imageset Name="shot_1_3" Path="fish\shot_1_3.imageset" />  
+
+        <Imageset Name="net_0_0" Path="fish\net_0_0.imageset" />  
+        <Imageset Name="net_0_1" Path="fish\net_0_1.imageset" />  
+        <Imageset Name="net_0_2" Path="fish\net_0_2.imageset" />  
+        <Imageset Name="net_0_3" Path="fish\net_0_3.imageset" />  
+        <Imageset Name="net_1_0" Path="fish\net_1_0.imageset" />  
+        <Imageset Name="net_1_1" Path="fish\net_1_1.imageset" />  
+        <Imageset Name="net_1_2" Path="fish\net_1_2.imageset" />  
+        <Imageset Name="net_1_3" Path="fish\net_1_3.imageset" /> 
+
+        <Imageset Name="task" Path="fish\task.imageset" /> 
+        <Imageset Name="bar_enough" Path="fish\bar_enough.imageset" /> 
+
+
+        <Animation Name="gun0" Path="fish\gun0.animation" />
+        <Animation Name="gun1" Path="fish\gun1.animation" />
+        <Animation Name="gun2" Path="fish\gun2.animation" />
+        <Animation Name="gun3" Path="fish\gun3.animation" />
+        <Animation Name="gun4" Path="fish\gun4.animation" />
+        <Animation Name="gun5" Path="fish\gun5.animation" />
+        <Animation Name="gun6" Path="fish\gun6.animation" />     
+        <Animation Name="gun7" Path="fish\gun7.animation" />   
+
+        <Animation Name="gun_light_0" Path="fish\gun_light_0.animation" />   
+        <Animation Name="gun_light_1" Path="fish\gun_light_1.animation" />   
+        <Animation Name="gun_light_2" Path="fish\gun_light_2.animation" />   
+        <Animation Name="gun_light_3" Path="fish\gun_light_3.animation" />   
+
+        <Animation Name="shot_0_0" Path="fish\shot_0_0.animation" />   
+        <Animation Name="shot_0_1" Path="fish\shot_0_1.animation" />   
+        <Animation Name="shot_0_2" Path="fish\shot_0_2.animation" />   
+        <Animation Name="shot_0_3" Path="fish\shot_0_3.animation" />   
+        <Animation Name="shot_1_0" Path="fish\shot_1_0.animation" />   
+        <Animation Name="shot_1_1" Path="fish\shot_1_1.animation" />   
+        <Animation Name="shot_1_2" Path="fish\shot_1_2.animation" />   
+        <Animation Name="shot_1_3" Path="fish\shot_1_3.animation" /> 
+
+
+        <Animation Name="net_0_0" Path="fish\net_0_0.animation" />   
+        <Animation Name="net_0_1" Path="fish\net_0_1.animation" />   
+        <Animation Name="net_0_2" Path="fish\net_0_2.animation" />   
+        <Animation Name="net_0_3" Path="fish\net_0_3.animation" />   
+        <Animation Name="net_1_0" Path="fish\net_1_0.animation" />   
+        <Animation Name="net_1_1" Path="fish\net_1_1.animation" />   
+        <Animation Name="net_1_2" Path="fish\net_1_2.animation" />  
+        <Animation Name="net_1_3" Path="fish\net_1_3.animation" /> 
+
+        <Animation Name="fish_0_move" Path="fish\fish_0_move.animation" /> 
+        <Animation Name="fish_0_capture" Path="fish\fish_0_capture.animation" />   
+        <Animation Name="fish_1_move" Path="fish\fish_1_move.animation" /> 
+        <Animation Name="fish_1_capture" Path="fish\fish_1_capture.animation" /> 
+        <Animation Name="fish_2_move" Path="fish\fish_2_move.animation" /> 
+        <Animation Name="fish_2_capture" Path="fish\fish_2_capture.animation" /> 
+        <Animation Name="fish_3_move" Path="fish\fish_3_move.animation" /> 
+        <Animation Name="fish_3_capture" Path="fish\fish_3_capture.animation" /> 
+        <Animation Name="fish_4_move" Path="fish\fish_4_move.animation" /> 
+        <Animation Name="fish_4_capture" Path="fish\fish_4_capture.animation" /> 
+        <Animation Name="fish_5_move" Path="fish\fish_5_move.animation" /> 
+        <Animation Name="fish_5_capture" Path="fish\fish_5_capture.animation" /> 
+        <Animation Name="fish_6_move" Path="fish\fish_6_move.animation" /> 
+        <Animation Name="fish_6_capture" Path="fish\fish_6_capture.animation" /> 
+        <Animation Name="fish_7_move" Path="fish\fish_7_move.animation" /> 
+        <Animation Name="fish_7_capture" Path="fish\fish_7_capture.animation" /> 
+        <Animation Name="fish_8_move" Path="fish\fish_8_move.animation" /> 
+        <Animation Name="fish_8_capture" Path="fish\fish_8_capture.animation" /> 
+        <Animation Name="fish_9_move" Path="fish\fish_9_move.animation" /> 
+        <Animation Name="fish_9_capture" Path="fish\fish_9_capture.animation" /> 
+        <Animation Name="fish_10_move" Path="fish\fish_10_move.animation" /> 
+        <Animation Name="fish_10_capture" Path="fish\fish_10_capture.animation" /> 
+        <Animation Name="fish_11_move" Path="fish\fish_11_move.animation" /> 
+        <Animation Name="fish_11_capture" Path="fish\fish_11_capture.animation" /> 
+        <Animation Name="fish_12_move" Path="fish\fish_12_move.animation" /> 
+        <Animation Name="fish_12_capture" Path="fish\fish_12_capture.animation" />    
+        <Animation Name="bar_enough" Path="fish\bar_enough.animation" />  
+
+        <Animation Name="shot_gold" Path="fish\shot_gold.animation" />
+        
+
+        <Imageset Name="ui_game" Path="fish\ui_game.imageset" /> 
+        <Imageset Name="account" Path="fish\account.imageset" /> 
+
+
+        <Animation Name="coin_gold" Path="fish\coin_gold.animation" /> 
+        <Animation Name="coin_silver" Path="fish\coin_silver.animation" /> 
+  
+        <Animation Name="show_bar" Path="fish\show_bar.animation" />  
+
+        <Imageset Name="real_fly" Path="fish\real_fly.imageset" /> 
+        <Animation Name="real_fly" Path="fish\real_fly.animation" />  
+
+        <Imageset Name="change_eff" Path="fish\change_eff.imageset" /> 
+        <Animation Name="change_eff" Path="fish\change_eff.animation" />  
+
+        <Imageset Name="bomb" Path="fish\bomb.imageset" /> 
+        <Animation Name="bomb" Path="fish\bomb.animation" />  
+
+
+        <Imageset Name="laserBean" Path="fish\laserBean.imageset" /> 
+        <Animation Name="laserBean" Path="fish\laserBean.animation" />  
+
+        <Imageset Name="bomb_task" Path="fish\bomb_task.imageset" /> 
+       <Animation Name="bomb_task" Path="fish\bomb_task.animation" /> 
+       
+
+        <Imageset Name="bomb_fuse" Path="fish\bomb_fuse.imageset" /> 
+        <Animation Name="bomb_fuse" Path="fish\bomb_fuse.animation" />  
+
+        <Imageset Name="explorer" Path="fish\explorer.imageset" /> 
+        <Animation Name="explorer" Path="fish\explorer.animation" />  
+
+        <Imageset Name="get_reward" Path="fish\get_reward.imageset" /> 
+        <Animation Name="get_reward" Path="fish\get_reward.animation" /> 
+
+        <Animation Name="reel_eff" Path="fish\reel_eff.animation" /> 
+
+        <Imageset Name="cook" Path="fish\cook.imageset" /> 
+         <Animation Name="cook_normal" Path="fish\cook_normal.animation" />
+         <Animation Name="cook_win" Path="fish\cook_win.animation" />
+         <Animation Name="cook_lost" Path="fish\cook_lost.animation" />
+
+       <Imageset Name="setting" Path="fish\setting.imageset" /> 
+        
+    </Resources>
+
+</ResourceManifest>

@@ -1,0 +1,326 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\GameClient.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GameClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,39,0,0
+ PRODUCTVERSION 3,39,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "网络棋牌游戏"
+            VALUE "CompanyName", "网络棋牌游戏"
+            VALUE "FileDescription", "骰宝游戏客户端"
+            VALUE "FileVersion", "3, 39, 0, 0"
+            VALUE "InternalName", "Sicbo.exe"
+            VALUE "LegalCopyright", "网络棋牌游戏保留所有权利。"
+            VALUE "OriginalFilename", "Sicbo.exe"
+            VALUE "ProductName", "骰宝游戏客户端"
+            VALUE "ProductVersion", "3, 39, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+GAME_LOGO               BITMAP                  "res\\GAME_LOGO.bmp"
+IDB_VIEW_BACK           BITMAP                  "res\\VIEW_BACK.bmp"
+IDB_VIEW_FILL           BITMAP                  "res\\VIEW_FILL.bmp"
+IDB_JETTOM_VIEW         BITMAP                  "res\\JETTOM_VIEW.bmp"
+IDB_SCORE_NUMBER        BITMAP                  "res\\SCORE_NUMBER.bmp"
+IDB_BT_JETTON_100       BITMAP                  "res\\BT_JETTON_100.bmp"
+IDB_BT_JETTON_1000      BITMAP                  "res\\BT_JETTON_1000.bmp"
+IDB_BT_JETTON_10000     BITMAP                  "res\\BT_JETTON_10000.bmp"
+IDB_BT_JETTON_100000    BITMAP                  "res\\BT_JETTON_100000.bmp"
+IDB_WIN_FLAGS           BITMAP                  "res\\WIN_FLAGS.bmp"
+IDB_BT_APPLY_BANKER     BITMAP                  "res\\BT_APPLY_BANKER.bmp"
+IDB_BT_CANCEL_BANKER    BITMAP                  "res\\BT_CANCEL_BANKER.bmp"
+IDB_BT_SCORE_MOVE_L     BITMAP                  "res\\BT_SCORE_MOVE_L.bmp"
+IDB_BT_SCORE_MOVE_R     BITMAP                  "res\\BT_SCORE_MOVE_R.bmp"
+IDB_CHANGE_BANKER       BITMAP                  "res\\CHANGE_BANKER.bmp"
+IDB_ME_BANKER           BITMAP                  "res\\ME_BANKER.bmp"
+IDB_NO_BANKER           BITMAP                  "res\\NO_BANKER.bmp"
+IDB_BT_CANCEL_APPLY     BITMAP                  "res\\BT_CANCEL_APPLY.BMP"
+IDB_TIME_FLAG           BITMAP                  "res\\TIME_FLAG.bmp"
+IDB_ME_SCORE_NUMBER     BITMAP                  "res\\ME_SCORE_NUMBER.bmp"
+IDB_BT_JETTON_1000000   BITMAP                  "res\\BT_JETTON_1000000.BMP"
+IDB_BT_JETTON_5000000   BITMAP                  "res\\BT_JETTON_5000000.BMP"
+IDB_BT_JETTON_500000    BITMAP                  "Res\\BT_JETTON_500000.BMP"
+IDB_CARD_TYPE           BITMAP                  "Res\\CARD_TYPE.bmp"
+IDB_SICBO_IN_THE_AIR    BITMAP                  "Res\\SICBO_IN_THE_AIR.bmp"
+IDB_BT_SICBO_DESKTOP    BITMAP                  "Res\\BT_SICBO_DESKTOP.bmp"
+IDB_BT_SICBO_INMIDAIR   BITMAP                  "Res\\BT_SICBO_INMIDAIR.bmp"
+IDB_BT_SICBO_INTHEAIR   BITMAP                  "Res\\BT_SICBO_INTHEAIR.bmp"
+IDB_SICBO_DESKTOP       BITMAP                  "Res\\SICBO_DESKTOP.bmp"
+IDB_SICBO_IN_MIDAIR     BITMAP                  "Res\\SICBO_IN_MIDAIR.bmp"
+IDB_SICBO_POINT         BITMAP                  "Res\\SICBO_POINT.bmp"
+IDB_BT_DOWN             BITMAP                  "Res\\BT_DOWN.bmp"
+IDB_BT_UP               BITMAP                  "Res\\BT_UP.bmp"
+IDB_OPEN_BANK           BITMAP                  "Res\\OPEN_BANK.bmp"
+IDB_SICBO_NUMBER_DOT    BITMAP                  "Res\\SICBO_NUMBER_DOT.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_SCORE_100000        CURSOR                  "res\\SCORE_100000.cur"
+IDC_SCORE_5000000       CURSOR                  "res\\SCORE_5000000.cur"
+IDC_SCORE_10000         CURSOR                  "res\\SCORE_10000.cur"
+IDC_SCORE_1000          CURSOR                  "res\\SCORE_1000.cur"
+IDC_SCORE_100           CURSOR                  "res\\SCORE_100.cur"
+IDC_SCORE_1000000       CURSOR                  "res\\SCORE_1000000.cur"
+IDC_SCORE_500000        CURSOR                  "Res\\SCORE_500000.cur"
+IDC_NORMAL              CURSOR                  "Res\\NORMAL.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+ADD_GOLD                WAVE                    "res\\sound\\ADD_GOLD.wav"
+ADD_GOLD_EX             WAVE                    "res\\sound\\ADD_GOLD_EX.wav"
+BACK_GROUND             WAVE                    "res\\sound\\BACK_GROUND.wav"
+END_WIN                 WAVE                    "res\\sound\\END_WIN.wav"
+END_LOST                WAVE                    "res\\sound\\END_LOST.wav"
+END_DRAW                WAVE                    "res\\sound\\END_DRAW.wav"
+TIME_WARIMG             WAVE                    "res\\sound\\TIME_WARIMG.wav"
+GAME_START              WAVE                    "res\\sound\\GAME_START.wav"
+CHEER1                  WAVE                    "res\\sound\\CHEER1.wav"
+CHEER2                  WAVE                    "res\\sound\\CHEER2.wav"
+CHEER3                  WAVE                    "res\\sound\\CHEER3.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VIEW_CHART DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "",IDOK,129,7,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_VIEW_CHART, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+FIRE_EFFECT             PNG                     "res\\FIRE_EFFECT.png"
+SICBO_EFFECT_INMIDAIR   PNG                     "Res\\SICBO_EFFECT_INMIDAIR.png"
+SICBO_EFFECT_DESKTOP    PNG                     "Res\\SICBO_EFFECT_DESKTOP.png"
+SICBO_EFFECT_BACK       PNG                     "Res\\SICBO_EFFECT_BACK.png"
+SICBO_EFFECT_NORMAL     PNG                     "Res\\SICBO_EFFECT_NORMAL.png"
+SICBO_EFFECT_RESULT     PNG                     "Res\\SICBO_EFFECT_RESULT.png"
+SICBO_PLAN              PNG                     "Res\\SICBO_PLAN.png"
+SICBO_EPLAN             PNG                     "Res\\SICBO_EPLAN.png"
+SICBO_NUM               PNG                     "Res\\SICBO_NUM.png"
+GIFT_INTHEAIR           PNG                     "Res\\GIFT_INTHEAIR.png"
+SICBO_AREA_51           PNG                     "Res\\鼠标经过\\骰宝_51.png"
+SICBO_AREA_00           PNG                     "Res\\鼠标经过\\骰宝_00.png"
+SICBO_AREA_01           PNG                     "Res\\鼠标经过\\骰宝_01.png"
+SICBO_AREA_02           PNG                     "Res\\鼠标经过\\骰宝_02.png"
+SICBO_AREA_03           PNG                     "Res\\鼠标经过\\骰宝_03.png"
+SICBO_AREA_04           PNG                     "Res\\鼠标经过\\骰宝_04.png"
+SICBO_AREA_05           PNG                     "Res\\鼠标经过\\骰宝_05.png"
+SICBO_AREA_06           PNG                     "Res\\鼠标经过\\骰宝_06.png"
+SICBO_AREA_07           PNG                     "Res\\鼠标经过\\骰宝_07.png"
+SICBO_AREA_08           PNG                     "Res\\鼠标经过\\骰宝_08.png"
+SICBO_AREA_09           PNG                     "Res\\鼠标经过\\骰宝_09.png"
+SICBO_AREA_10           PNG                     "Res\\鼠标经过\\骰宝_10.png"
+SICBO_AREA_11           PNG                     "Res\\鼠标经过\\骰宝_11.png"
+SICBO_AREA_12           PNG                     "Res\\鼠标经过\\骰宝_12.png"
+SICBO_AREA_13           PNG                     "Res\\鼠标经过\\骰宝_13.png"
+SICBO_AREA_14           PNG                     "Res\\鼠标经过\\骰宝_14.png"
+SICBO_AREA_15           PNG                     "Res\\鼠标经过\\骰宝_15.png"
+SICBO_AREA_16           PNG                     "Res\\鼠标经过\\骰宝_16.png"
+SICBO_AREA_17           PNG                     "Res\\鼠标经过\\骰宝_17.png"
+SICBO_AREA_18           PNG                     "Res\\鼠标经过\\骰宝_18.png"
+SICBO_AREA_19           PNG                     "Res\\鼠标经过\\骰宝_19.png"
+SICBO_AREA_20           PNG                     "Res\\鼠标经过\\骰宝_20.png"
+SICBO_AREA_21           PNG                     "Res\\鼠标经过\\骰宝_21.png"
+SICBO_AREA_22           PNG                     "Res\\鼠标经过\\骰宝_22.png"
+SICBO_AREA_23           PNG                     "Res\\鼠标经过\\骰宝_23.png"
+SICBO_AREA_24           PNG                     "Res\\鼠标经过\\骰宝_24.png"
+SICBO_AREA_25           PNG                     "Res\\鼠标经过\\骰宝_25.png"
+SICBO_AREA_26           PNG                     "Res\\鼠标经过\\骰宝_26.png"
+SICBO_AREA_27           PNG                     "Res\\鼠标经过\\骰宝_27.png"
+SICBO_AREA_28           PNG                     "Res\\鼠标经过\\骰宝_28.png"
+SICBO_AREA_29           PNG                     "Res\\鼠标经过\\骰宝_29.png"
+SICBO_AREA_30           PNG                     "Res\\鼠标经过\\骰宝_30.png"
+SICBO_AREA_31           PNG                     "Res\\鼠标经过\\骰宝_31.png"
+SICBO_AREA_32           PNG                     "Res\\鼠标经过\\骰宝_32.png"
+SICBO_AREA_33           PNG                     "Res\\鼠标经过\\骰宝_33.png"
+SICBO_AREA_34           PNG                     "Res\\鼠标经过\\骰宝_34.png"
+SICBO_AREA_35           PNG                     "Res\\鼠标经过\\骰宝_35.png"
+SICBO_AREA_36           PNG                     "Res\\鼠标经过\\骰宝_36.png"
+SICBO_AREA_37           PNG                     "Res\\鼠标经过\\骰宝_37.png"
+SICBO_AREA_38           PNG                     "Res\\鼠标经过\\骰宝_38.png"
+SICBO_AREA_39           PNG                     "Res\\鼠标经过\\骰宝_39.png"
+SICBO_AREA_40           PNG                     "Res\\鼠标经过\\骰宝_40.png"
+SICBO_AREA_41           PNG                     "Res\\鼠标经过\\骰宝_41.png"
+SICBO_AREA_42           PNG                     "Res\\鼠标经过\\骰宝_42.png"
+SICBO_AREA_43           PNG                     "Res\\鼠标经过\\骰宝_43.png"
+SICBO_AREA_44           PNG                     "Res\\鼠标经过\\骰宝_44.png"
+SICBO_AREA_45           PNG                     "Res\\鼠标经过\\骰宝_45.png"
+SICBO_AREA_46           PNG                     "Res\\鼠标经过\\骰宝_46.png"
+SICBO_AREA_47           PNG                     "Res\\鼠标经过\\骰宝_47.png"
+SICBO_AREA_48           PNG                     "Res\\鼠标经过\\骰宝_48.png"
+SICBO_AREA_49           PNG                     "Res\\鼠标经过\\骰宝_49.png"
+SICBO_AREA_50           PNG                     "Res\\鼠标经过\\骰宝_50.png"
+GAME_END                PNG                     "Res\\GAME_END.png"
+JETTON_VIEW             PNG                     "Res\\JETTOM_VIEW.png"
+FRAME_WIN               PNG                     "Res\\FRAME_WIN.png"
+USER_PROMPT             PNG                     "Res\\USER_PROMPT.png"
+ANIM_SICBO_01           PNG                     "Res\\Anim\\1.png"
+ANIM_SICBO_02           PNG                     "Res\\Anim\\2.png"
+ANIM_SICBO_03           PNG                     "Res\\Anim\\3.png"
+ANIM_SICBO_04           PNG                     "Res\\Anim\\4.png"
+ANIM_SICBO_05           PNG                     "Res\\Anim\\5.png"
+ANIM_SICBO_06           PNG                     "Res\\Anim\\6.png"
+ANIM_SICBO_07           PNG                     "Res\\Anim\\7.png"
+ANIM_SICBO_08           PNG                     "Res\\Anim\\8.png"
+ANIM_SICBO_09           PNG                     "Res\\Anim\\9.png"
+ANIM_SICBO_10           PNG                     "Res\\Anim\\10.png"
+ANIM_SICBO_11           PNG                     "Res\\Anim\\11.png"
+ANIM_SICBO_12           PNG                     "Res\\Anim\\12.png"
+ANIM_SICBO_13           PNG                     "Res\\Anim\\13.png"
+ANIM_SICBO_14           PNG                     "Res\\Anim\\14.png"
+ANIM_SICBO_15           PNG                     "Res\\Anim\\15.png"
+ANIM_SICBO_18           PNG                     "Res\\Anim\\18.png"
+ANIM_SICBO_16           PNG                     "Res\\Anim\\16.png"
+ANIM_SICBO_17           PNG                     "Res\\Anim\\17.png"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\GameClient.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,26 @@
+#ifndef __FISH_TEST_SCENE_H__
+#define __FISH_TEST_SCENE_H__
+
+//////////////////////////////////////////////////////////////////
+#include "xlbe.h"
+
+#include "TestLayer.h"
+
+/////////////////////////////////////////////////////////////////
+class CTestScene : public Scene
+{
+public:
+    CTestScene();
+    virtual ~CTestScene();
+
+    virtual void update(float dt);
+
+public:
+    CTestLayer *m_layTest;
+
+
+
+};
+
+//////////////////////////////////////////////////////////////////////////
+#endif
