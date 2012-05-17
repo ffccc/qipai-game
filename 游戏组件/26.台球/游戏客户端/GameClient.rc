@@ -59,13 +59,6 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// RT_MANIFEST
-//
-
-IDR_MANIFEST            RT_MANIFEST             "res\\GameClient.manifest"
-
-/////////////////////////////////////////////////////////////////////////////
-//
 // Icon
 //
 
@@ -79,8 +72,8 @@ IDR_MAINFRAME           ICON                    "res\\GameClient.ico"
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 6,5,1,0
- PRODUCTVERSION 6,5,1,0
+ FILEVERSION 6,6,1,0
+ PRODUCTVERSION 6,6,1,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -98,12 +91,12 @@ BEGIN
             VALUE "Comments", "天涯网络科技"
             VALUE "CompanyName", "天涯网络科技"
             VALUE "FileDescription", "台球游戏客户端"
-            VALUE "FileVersion", "6, 5, 1, 0"
+            VALUE "FileVersion", "6, 6, 1, 0"
             VALUE "InternalName", "Billiards.exe"
             VALUE "LegalCopyright", "天涯网络科技"
             VALUE "OriginalFilename", "Billiards.exe"
             VALUE "ProductName", "Billiards"
-            VALUE "ProductVersion", "6, 5, 1, 0"
+            VALUE "ProductVersion", "6, 6, 1, 0"
         END
     END
     BLOCK "VarFileInfo"
@@ -168,8 +161,7 @@ GAME_WARN               WAVE                    "res\\GAME_WARN.WAV"
 //
 
 IDD_INFO DIALOGEX 0, 0, 98, 65
-STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
-    WS_SYSMENU
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "游戏规则设置："
 FONT 9, "宋体", 400, 0, 0x0
 BEGIN
@@ -194,8 +186,7 @@ BEGIN
     DEFPUSHBUTTON   "确定",IDOK,13,83,47,14
     PUSHBUTTON      "取消",IDCANCEL,102,84,47,14
     ICON            IDR_MAINFRAME,IDC_STATIC,117,40,21,21
-    CONTROL         "允许声音效果",IDC_ENABLE_SOUND,"Button",BS_AUTOCHECKBOX | 
-                    BS_FLAT | WS_TABSTOP,31,48,64,10
+    CONTROL         "允许声音效果",IDC_ENABLE_SOUND,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,31,48,64,10
     GROUPBOX        "常规配置：",IDC_STATIC,8,26,160,46
 END
 
