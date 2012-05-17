@@ -1,0 +1,39 @@
+文件说明：
+Conn.asp  游戏数据库（MS SQL）
+CommonFun.asp 游戏公共方法类
+
+【配置说明】
+1. 在 Conn.asp 里面修改游戏数据库IP,端口、用户名和密码。
+2. 在 CommonFun.asp里面修改全局变量
+	ManagerDomain：管理后台域名
+	WebTitle:网站标题			
+
+
+2.down 游戏安装包目录
+
+
+【快钱支付说明】
+1.PayKQ 快钱支付文件夹
+2.send.asp 发送页面
+a.merchantAcctId ：更改为商家注册ID
+b.key：更改为商家密钥
+c.bgUrl：更改为接受页面绝对地址
+d.<form name="kqPay" method="post" action="http://sandbox.99bill.com/gateway/recvMerchantInfoAction.htm">
+action地址改成https://www.99bill.com/gateway/recvMerchantInfoAction.htm
+
+3.receive.asp接受页面
+a.key: 更改为商家密钥
+
+【易宝支付说明】
+
+
+/*----------------------------------------------------------------------
+-- 版权所有：2010,深圳市网狐科技有限公司
+-- 时间：2010-06-30
+-- 作者：huangqi@foxuc.cn
+--
+-- 用途：棋牌平台后台管理
+-- 返回值:
+----------------------------------------------------------------------*/
+	
+		

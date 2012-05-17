@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "сно╥©Р╪э", "GameFrame.vcproj", "{EF2F0AF7-DC00-454B-9EC7-CC7887AA0137}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Debug_Unicode = Debug_Unicode
+		Release = Release
+		Release_Unicode = Release_Unicode
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{EF2F0AF7-DC00-454B-9EC7-CC7887AA0137}.Debug.ActiveCfg = Debug|Win32
+		{EF2F0AF7-DC00-454B-9EC7-CC7887AA0137}.Debug.Build.0 = Debug|Win32
+		{EF2F0AF7-DC00-454B-9EC7-CC7887AA0137}.Debug_Unicode.ActiveCfg = Debug_Unicode|Win32
+		{EF2F0AF7-DC00-454B-9EC7-CC7887AA0137}.Debug_Unicode.Build.0 = Debug_Unicode|Win32
+		{EF2F0AF7-DC00-454B-9EC7-CC7887AA0137}.Release.ActiveCfg = Release|Win32
+		{EF2F0AF7-DC00-454B-9EC7-CC7887AA0137}.Release.Build.0 = Release|Win32
+		{EF2F0AF7-DC00-454B-9EC7-CC7887AA0137}.Release_Unicode.ActiveCfg = Release_Unicode|Win32
+		{EF2F0AF7-DC00-454B-9EC7-CC7887AA0137}.Release_Unicode.Build.0 = Release_Unicode|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

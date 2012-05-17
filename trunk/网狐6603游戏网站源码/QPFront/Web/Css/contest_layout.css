@@ -1,0 +1,34 @@
+﻿@charset "utf-8";
+
+/*首页头部样式---------------------------------------------------------------------------------------------*/
+.contTop{ width:960px; height:36px; padding-top:95px; background:url(../images/contestBanner.jpg) no-repeat;}
+.contTop .nav{ width:520px; height:36px; margin-right:19px; float:right; background:url(../images/contestBg.png) 0 -121px repeat-x; display:inline;}
+.contTop .nav .left{ width:14px; height:36px; background:url(../images/contestBg.png) 0 -85px  no-repeat; float:left;}
+.contTop .nav .right{ width:9px; height:36px; background:url(../images/contestBg.png) -14px -85px  no-repeat; float:right;}
+.contTop .nav .center{ width:497px; height:36px; float:left;}
+.contTop .nav .center li{ width:95px; height:36px; float:left; line-height:36px; font-size:14px; color:#fff; font-weight:bold; margin-right:28px; display:inline;}
+.contTop .nav .center li a{display:block;font-size:14px;color:#ffffff;text-decoration:none;text-align:center;}
+.contTop .nav .center li a:hover{ background:url(../images/contestBg.png) -23px -85px no-repeat;text-align:center;color:#fff;}
+.center .current a:link,.center .current a:hover,.center .current a:active,.center .current a:visited{ background:url(../images/contestBg.png) -23px -85px no-repeat;text-align:center;color:#fff;}
+.contMain{ width:920px; background:url(../images/contestBg.gif) repeat-x; margin-top:1px; padding:20px 20px 0 20px ;}
+.contMain .top{ width:920px; height:55px; background:url(../images/contestBg.png) 0 0 repeat-x;}
+.contMain .top1{ width:920px; height:55px; background:url(../images/contestBg.png) 0 -157px repeat-x;}
+.contMain .top2{ width:920px; height:55px; background:url(../images/contestBg.png) 0 -212px repeat-x;}
+.contMain .top3{ width:920px; height:55px; background:url(../images/contestBg.png) 0 -267px repeat-x;}
+.contMain .mainBox{ width:920px; background:url(../images/contestBg2.gif) repeat-y;}
+.contMain .mainBox1{ width:859px; background:url(../images/contestBg1.jpg) no-repeat; padding:15px 30px; margin-left:1px;}
+.contMain .bottom{ width:920px; height:30px; background:url(../images/contestBg.png) 0 -55px no-repeat;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

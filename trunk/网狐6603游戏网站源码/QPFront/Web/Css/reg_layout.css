@@ -1,0 +1,18 @@
+﻿@charset "utf-8";
+
+/*主体样式---------------------------------------------------------------------------------------------*/
+.regBody{ width:800px; margin:0 auto;}
+.regTitle{ width:800px; height:52px; background:url(../images/regBg.png) 0 0 no-repeat; float:left;}
+.regBg{ width:700px; background:url(../images/regBg.gif) repeat-y; float:left; padding:30px 50px 0;}
+.regBg .title{ width:680px; height:25px; border-bottom:1px solid #bad7e5; padding:0 10px; line-height:25px; background:#f7f9fd; font-family:"宋体";}
+.regBg td{ height:40px;}
+.regBg .content{ width:700px; float:left;}
+.regBg .content p{}
+.regBottom{ width:800px; height:25px; background:url(../images/regBg.png) 0 -52px no-repeat; float:left;}
+
+/*安全等级---------------------------------------------------------------------------------------------*/
+.safe0,.safe1,.safe2,.safe3 {height: 21px;width: 206px;float: left;}
+.safe0 {background: url(../images/safe.gif) 0px 0px no-repeat;}
+.safe1 {background: url(../images/safe.gif) 0px -21px no-repeat;}
+.safe2 {background: url(../images/safe.gif) 0px -42px no-repeat;}
+.safe3 {background: url(../images/safe.gif) 0px -63px no-repeat;}
