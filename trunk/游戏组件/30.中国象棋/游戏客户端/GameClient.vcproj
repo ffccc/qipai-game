@@ -1,130 +1,189 @@
 <?xml version="1.0" encoding="gb2312"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="7.10"
+	Version="9.00"
 	Name="中国象棋"
 	ProjectGUID="{F2D70F30-23FC-4973-A798-AED329359B33}"
-	Keyword="MFCProj">
+	Keyword="MFCProj"
+	TargetFrameworkVersion="131072"
+	>
 	<Platforms>
 		<Platform
-			Name="Win32"/>
+			Name="Win32"
+		/>
 	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="Debug"
 			IntermediateDirectory="Debug"
 			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			UseOfMFC="2"
-			CharacterSet="2">
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="_DEBUG"
+				MkTypLibCompatible="false"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG"
-				MinimalRebuild="TRUE"
+				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
-				TreatWChar_tAsBuiltInType="TRUE"
-				UsePrecompiledHeader="3"
+				TreatWChar_tAsBuiltInType="true"
+				UsePrecompiledHeader="2"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
-				DebugInformationFormat="4"/>
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="4"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
-			<Tool
-				Name="VCLinkerTool"
-				AdditionalDependencies="../../开发库/Lib/GameFrameD.lib ../../开发库/Lib/SkinControlsD.lib"
-				OutputFile="../../运行/Debug/ChinaChess.exe"
-				LinkIncremental="2"
-				GenerateDebugInformation="TRUE"
-				SubSystem="2"
-				TargetMachine="1"/>
-			<Tool
-				Name="VCMIDLTool"
-				PreprocessorDefinitions="_DEBUG"
-				MkTypLibCompatible="FALSE"/>
-			<Tool
-				Name="VCPostBuildEventTool"
-				CommandLine="mkdir ..\..\发布组件\客户端组件\Debug
-copy /y ..\..\运行\Debug\$(TargetFileName) ..\..\发布组件\客户端组件\Debug\$(TargetFileName)
-"/>
-			<Tool
-				Name="VCPreBuildEventTool"/>
-			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG"
 				Culture="2052"
-				AdditionalIncludeDirectories="$(IntDir)"/>
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
+				Name="VCLinkerTool"
+				AdditionalDependencies="../../../开发库/Lib/GameFrameD.lib ../../../开发库/Lib/SkinControlsD.lib"
+				OutputFile="../../运行/Debug/ChinaChess.exe"
+				LinkIncremental="2"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCWebDeploymentTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
+				Name="VCManifestTool"
+			/>
 			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="mkdir ..\..\发布组件\客户端组件\Debug&#x0D;&#x0A;copy /y ..\..\运行\Debug\$(TargetFileName) ..\..\发布组件\客户端组件\Debug\$(TargetFileName)&#x0D;&#x0A;copy /y ..\..\运行\Debug\$(TargetFileName) ..\..\..\系统模块\发布组件\客户端组件\Debug\$(TargetFileName)&#x0D;&#x0A;"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="Release"
 			IntermediateDirectory="Release"
 			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			UseOfMFC="2"
-			CharacterSet="2">
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				MkTypLibCompatible="false"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG"
-				MinimalRebuild="FALSE"
+				MinimalRebuild="false"
 				RuntimeLibrary="2"
-				TreatWChar_tAsBuiltInType="TRUE"
-				UsePrecompiledHeader="3"
+				TreatWChar_tAsBuiltInType="true"
+				UsePrecompiledHeader="2"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
-				DebugInformationFormat="3"/>
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="3"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"
+				Culture="2052"
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="../../../开发库/Lib/GameFrame.lib ../../../开发库/Lib/SkinControls.lib"
 				OutputFile="../../运行/Release/CHNChess.exe"
 				LinkIncremental="1"
-				GenerateDebugInformation="TRUE"
+				GenerateDebugInformation="true"
 				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
-				TargetMachine="1"/>
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCMIDLTool"
-				PreprocessorDefinitions="NDEBUG"
-				MkTypLibCompatible="FALSE"/>
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="mkdir ..\..\发布组件\客户端组件\Release
-copy /y ..\..\运行\Release\$(TargetFileName) ..\..\发布组件\客户端组件\Release\$(TargetFileName)
-"/>
-			<Tool
-				Name="VCPreBuildEventTool"/>
-			<Tool
-				Name="VCPreLinkEventTool"/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="NDEBUG"
-				Culture="2052"
-				AdditionalIncludeDirectories="$(IntDir)"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCWebDeploymentTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				CommandLine="mkdir ..\..\发布组件\客户端组件\Release&#x0D;&#x0A;copy /y ..\..\运行\Release\$(TargetFileName) ..\..\发布组件\客户端组件\Release\$(TargetFileName)&#x0D;&#x0A;copy /y ..\..\运行\Release\$(TargetFileName) ..\..\..\系统模块\发布组件\客户端组件\Release\$(TargetFileName)"
+			/>
 		</Configuration>
 	</Configurations>
 	<References>
@@ -133,265 +192,350 @@ copy /y ..\..\运行\Release\$(TargetFileName) ..\..\发布组件\客户端组件\Release\$
 		<Filter
 			Name="源文件"
 			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
-			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
 			<File
-				RelativePath=".\ChessBorad.cpp">
+				RelativePath=".\ChessBorad.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\ChessManual.cpp">
+				RelativePath=".\ChessManual.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\DlgUserRequest.cpp">
+				RelativePath=".\DlgUserRequest.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\GameClient.cpp">
+				RelativePath=".\GameClient.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\GameClientDlg.cpp">
+				RelativePath=".\GameClientDlg.cpp"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						DisableSpecificWarnings="4244"/>
+						DisableSpecificWarnings="4244"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath=".\GameClientView.cpp">
+				RelativePath=".\GameClientView.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\GameLogic.cpp">
+				RelativePath=".\GameLogic.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\GameOption.cpp">
+				RelativePath=".\GameOption.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\GameRule.cpp">
+				RelativePath=".\GameRule.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\GameScoreWnd.cpp">
+				RelativePath=".\GameScoreWnd.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Stdafx.cpp">
+				RelativePath=".\Stdafx.cpp"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
+						UsePrecompiledHeader="1"
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
+						UsePrecompiledHeader="1"
+					/>
 				</FileConfiguration>
 			</File>
 		</Filter>
 		<Filter
 			Name="头文件"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
-			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
 			<File
-				RelativePath=".\ChessBorad.h">
+				RelativePath=".\ChessBorad.h"
+				>
 			</File>
 			<File
-				RelativePath=".\ChessManual.h">
+				RelativePath=".\ChessManual.h"
+				>
 			</File>
 			<File
-				RelativePath="..\消息定义\CMD_CChess.h">
+				RelativePath="..\消息定义\CMD_CChess.h"
+				>
 			</File>
 			<File
-				RelativePath=".\DlgUserRequest.h">
+				RelativePath=".\DlgUserRequest.h"
+				>
 			</File>
 			<File
-				RelativePath=".\GameClient.h">
+				RelativePath=".\GameClient.h"
+				>
 			</File>
 			<File
-				RelativePath=".\GameClientDlg.h">
+				RelativePath=".\GameClientDlg.h"
+				>
 			</File>
 			<File
-				RelativePath=".\GameClientView.h">
+				RelativePath=".\GameClientView.h"
+				>
 			</File>
 			<File
-				RelativePath=".\GameLogic.h">
+				RelativePath=".\GameLogic.h"
+				>
 			</File>
 			<File
-				RelativePath=".\GameOption.h">
+				RelativePath=".\GameOption.h"
+				>
 			</File>
 			<File
-				RelativePath=".\GameRule.h">
+				RelativePath=".\GameRule.h"
+				>
 			</File>
 			<File
-				RelativePath=".\GameScoreWnd.h">
+				RelativePath=".\GameScoreWnd.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Resource.h">
+				RelativePath=".\Resource.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Stdafx.h">
+				RelativePath=".\Stdafx.h"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="资源文件"
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
-			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}">
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
 			<File
-				RelativePath=".\Res\BT_CLOSE.bmp">
+				RelativePath=".\Res\BT_CLOSE.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\BUTTON_BACK.bmp">
+				RelativePath=".\Res\BUTTON_BACK.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\CHESS.bmp">
+				RelativePath=".\Res\CHESS.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\CHESS_BORAD.bmp">
+				RelativePath=".\Res\CHESS_BORAD.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\CHESS_FLAG.bmp">
+				RelativePath=".\Res\CHESS_FLAG.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\CHESS_FRAME.bmp">
+				RelativePath=".\Res\CHESS_FRAME.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\CLOCK.bmp">
+				RelativePath=".\Res\CLOCK.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\DECORATE.bmp">
+				RelativePath=".\Res\DECORATE.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\GAME_LOGO.bmp">
+				RelativePath=".\Res\GAME_LOGO.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\GAME_OPTION.bmp">
+				RelativePath=".\Res\GAME_OPTION.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\GAME_RULE.bmp">
+				RelativePath=".\Res\GAME_RULE.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\GAME_SCORE.bmp">
+				RelativePath=".\Res\GAME_SCORE.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\GAME_TABLE_NORMAL.bmp">
+				RelativePath=".\Res\GAME_TABLE_NORMAL.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\GAME_TABLE_PLAY.bmp">
+				RelativePath=".\Res\GAME_TABLE_PLAY.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\GameClient.ico">
+				RelativePath=".\Res\GameClient.ico"
+				>
 			</File>
 			<File
-				RelativePath=".\GameClient.rc">
+				RelativePath=".\GameClient.rc"
+				>
 			</File>
 			<File
-				RelativePath=".\res\GameClient.rc2">
+				RelativePath=".\res\GameClient.rc2"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\GIVEUP.bmp">
+				RelativePath=".\Res\GIVEUP.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\MANUAL_BACK.bmp">
+				RelativePath=".\Res\MANUAL_BACK.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\MANUAL_BT_BEFORE.bmp">
+				RelativePath=".\Res\MANUAL_BT_BEFORE.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\MANUAL_BT_CLOSE.bmp">
+				RelativePath=".\Res\MANUAL_BT_CLOSE.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\MANUAL_BT_FIRST.bmp">
+				RelativePath=".\Res\MANUAL_BT_FIRST.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\MANUAL_BT_LAST.bmp">
+				RelativePath=".\Res\MANUAL_BT_LAST.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\MANUAL_BT_NEXT.bmp">
+				RelativePath=".\Res\MANUAL_BT_NEXT.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\MANUAL_BT_OPEN.bmp">
+				RelativePath=".\Res\MANUAL_BT_OPEN.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\MANUAL_BT_RELOAD.bmp">
+				RelativePath=".\Res\MANUAL_BT_RELOAD.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\OPTION_BT_CANCEL.bmp">
+				RelativePath=".\Res\OPTION_BT_CANCEL.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\OPTION_BT_OK.bmp">
+				RelativePath=".\Res\OPTION_BT_OK.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\PEACE.bmp">
+				RelativePath=".\Res\PEACE.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\PRESERVE.bmp">
+				RelativePath=".\Res\PRESERVE.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\REGRET.bmp">
+				RelativePath=".\Res\REGRET.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\RULE_AGREE.bmp">
+				RelativePath=".\Res\RULE_AGREE.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\RULE_QUIT.bmp">
+				RelativePath=".\Res\RULE_QUIT.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\START.bmp">
+				RelativePath=".\Res\START.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\STUDY.bmp">
+				RelativePath=".\Res\STUDY.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\USER_INFO.bmp">
+				RelativePath=".\Res\USER_INFO.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\USER_INFO_BLACK.bmp">
+				RelativePath=".\Res\USER_INFO_BLACK.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\USER_INFO_WHITE.bmp">
+				RelativePath=".\Res\USER_INFO_WHITE.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\Res\VIEW_BACK.bmp">
+				RelativePath=".\Res\VIEW_BACK.bmp"
+				>
 			</File>
 		</Filter>
 		<File
-			RelativePath=".\Res\CHESS_DEAD.wav">
+			RelativePath=".\Res\CHESS_DEAD.wav"
+			>
 		</File>
 		<File
-			RelativePath=".\Res\CHESS_EAT.wav">
+			RelativePath=".\Res\CHESS_EAT.wav"
+			>
 		</File>
 		<File
-			RelativePath=".\Res\Chess_move.wav">
+			RelativePath=".\Res\Chess_move.wav"
+			>
 		</File>
 		<File
-			RelativePath=".\Res\Chess_select.wav">
+			RelativePath=".\Res\Chess_select.wav"
+			>
 		</File>
 		<File
-			RelativePath=".\Res\Game_end.wav">
+			RelativePath=".\Res\Game_end.wav"
+			>
 		</File>
 		<File
-			RelativePath=".\Res\GAME_LOST.wav">
+			RelativePath=".\Res\GAME_LOST.wav"
+			>
 		</File>
 		<File
-			RelativePath=".\Res\Game_start.wav">
+			RelativePath=".\Res\Game_start.wav"
+			>
 		</File>
 		<File
-			RelativePath=".\Res\GAME_WARN.wav">
+			RelativePath=".\Res\GAME_WARN.wav"
+			>
 		</File>
 		<File
-			RelativePath=".\Res\Game_win.wav">
+			RelativePath=".\Res\Game_win.wav"
+			>
 		</File>
 		<File
-			RelativePath=".\Res\GENERAL.wav">
+			RelativePath=".\Res\GENERAL.wav"
+			>
 		</File>
 		<File
-			RelativePath=".\Res\Location_info.dat">
+			RelativePath=".\Res\Location_info.dat"
+			>
 		</File>
 		<File
-			RelativePath=".\Res\TIME_OUT.wav">
+			RelativePath=".\Res\TIME_OUT.wav"
+			>
 		</File>
 	</Files>
 	<Globals>
 		<Global
 			Name="RESOURCE_FILE"
-			Value="GameClient.rc"/>
+			Value="GameClient.rc"
+		/>
 	</Globals>
 </VisualStudioProject>
