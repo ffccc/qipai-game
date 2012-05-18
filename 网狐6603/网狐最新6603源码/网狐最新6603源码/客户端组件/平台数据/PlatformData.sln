@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "平台数据", "PlatformData.vcproj", "{CC596332-197E-407B-95F3-CB817470ED84}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Debug_Unicode = Debug_Unicode
+		Release = Release
+		Release_Unicode = Release_Unicode
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{CC596332-197E-407B-95F3-CB817470ED84}.Debug.ActiveCfg = Debug|Win32
+		{CC596332-197E-407B-95F3-CB817470ED84}.Debug.Build.0 = Debug|Win32
+		{CC596332-197E-407B-95F3-CB817470ED84}.Debug_Unicode.ActiveCfg = Debug_Unicode|Win32
+		{CC596332-197E-407B-95F3-CB817470ED84}.Debug_Unicode.Build.0 = Debug_Unicode|Win32
+		{CC596332-197E-407B-95F3-CB817470ED84}.Release.ActiveCfg = Release|Win32
+		{CC596332-197E-407B-95F3-CB817470ED84}.Release.Build.0 = Release|Win32
+		{CC596332-197E-407B-95F3-CB817470ED84}.Release_Unicode.ActiveCfg = Release_Unicode|Win32
+		{CC596332-197E-407B-95F3-CB817470ED84}.Release_Unicode.Build.0 = Release_Unicode|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

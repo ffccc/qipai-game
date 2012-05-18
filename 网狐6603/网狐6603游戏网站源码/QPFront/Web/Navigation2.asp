@@ -1,0 +1,3 @@
+<%
+Response.Redirect "PayIndex.asp"
+%>

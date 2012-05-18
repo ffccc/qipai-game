@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "http://localhost:6061/", "http://localhost:6061", "{93108950-C8B5-4781-889D-BA0F7D429A37}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/localhost:6061"
+		Debug.AspNetCompiler.PhysicalPath = "E:\网狐站点\网狐棋牌平台\6603\程序源码\QPFront\Web\"
+		Debug.AspNetCompiler.TargetPath = "C:\Documents and Settings\Administrator\My Documents\Visual Studio 2005\Projects\localhost\PrecompiledWeb\localhost:6061\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost:6061"
+		Release.AspNetCompiler.PhysicalPath = "E:\网狐站点\网狐棋牌平台\6603\程序源码\QPFront\Web\"
+		Release.AspNetCompiler.TargetPath = "C:\Documents and Settings\Administrator\My Documents\Visual Studio 2005\Projects\localhost\PrecompiledWeb\localhost:6061\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "E:\网狐站点\网狐棋牌平台\6603\程序源码\QPFront\Web\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93108950-C8B5-4781-889D-BA0F7D429A37}.Debug|.NET.ActiveCfg = Debug|.NET
+		{93108950-C8B5-4781-889D-BA0F7D429A37}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
