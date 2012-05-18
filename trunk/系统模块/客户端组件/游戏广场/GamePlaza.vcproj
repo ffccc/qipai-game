@@ -68,7 +68,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="../../链接库/ComServiceD.lib ../../链接库/ClientShareD.lib ../../链接库/SkinControlsD.lib ../../链接库/ChannelModuleD.lib ../../链接库/PropertyModuleD.lib Winmm.lib Zipd.lib"
+				AdditionalDependencies="Winmm.lib Zipd.lib"
 				OutputFile="../../运行/Debug/GamePlaza.exe"
 				LinkIncremental="2"
 				GenerateDebugInformation="true"
@@ -151,7 +151,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="../../链接库/ComService.lib ../../链接库/ClientShare.lib ../../链接库/SkinControls.lib ../../链接库/ChannelModule.lib ../../链接库/PropertyModule.lib Zip.lib Winmm.lib"
+				AdditionalDependencies="Zip.lib Winmm.lib"
 				OutputFile="../../运行/Release/GamePlaza.exe"
 				LinkIncremental="1"
 				GenerateDebugInformation="true"
