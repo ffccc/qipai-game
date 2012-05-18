@@ -1,0 +1,180 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\SkinControl.rc2""  // 不是由 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,6,0,3
+ PRODUCTVERSION 6,6,0,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "深圳市网狐科技有限公司"
+            VALUE "CompanyName", "深圳市网狐科技有限公司"
+            VALUE "FileDescription", "界面控件"
+            VALUE "FileVersion", "6, 6, 0, 3"
+            VALUE "InternalName", "SkinControl.dll"
+            VALUE "LegalCopyright", "深圳市网狐科技有限公司保留所有权利。"
+            VALUE "OriginalFilename", "SkinControl.dll"
+            VALUE "ProductName", "界面控件"
+            VALUE "ProductVersion", "6, 6, 0, 3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_SKIN_CURSOR         CURSOR                  "Res\\SKIN_CURSOR.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+SKIN_WND_TL             PNG                     "res\\SKIN_WND_TL.png"
+SKIN_WND_TM             PNG                     "res\\SKIN_WND_TM.png"
+SKIN_WND_TR             PNG                     "res\\SKIN_WND_TR.png"
+SKIN_WND_ML             PNG                     "res\\SKIN_WND_ML.png"
+SKIN_WND_MR             PNG                     "res\\SKIN_WND_MR.png"
+SKIN_WND_BL             PNG                     "res\\SKIN_WND_BL.png"
+SKIN_WND_BM             PNG                     "res\\SKIN_WND_BM.png"
+SKIN_WND_BR             PNG                     "res\\SKIN_WND_BR.png"
+SKIN_WND_LOGO           PNG                     "res\\SKIN_WND_LOGO.PNG"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SKIN_ICON           ICON                    "res\\SKIN_ICON.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ENCIRCLE_TR         BITMAP                  "res\\ENCIRCLE_TR.bmp"
+IDB_ENCIRCLE_BL         BITMAP                  "res\\ENCIRCLE_BL.bmp"
+IDB_ENCIRCLE_BM         BITMAP                  "res\\ENCIRCLE_BM.bmp"
+IDB_ENCIRCLE_BR         BITMAP                  "res\\ENCIRCLE_BR.bmp"
+IDB_ENCIRCLE_ML         BITMAP                  "res\\ENCIRCLE_ML.bmp"
+IDB_ENCIRCLE_MR         BITMAP                  "res\\ENCIRCLE_MR.bmp"
+IDB_ENCIRCLE_TL         BITMAP                  "res\\ENCIRCLE_TL.bmp"
+IDB_ENCIRCLE_TM         BITMAP                  "res\\ENCIRCLE_TM.bmp"
+IDB_SKIN_BUTTON         BITMAP                  "res\\SKIN_BUTTON.bmp"
+IDB_SKIN_WND_MAX        BITMAP                  "res\\SKIN_WND_MAX.bmp"
+IDB_SKIN_WND_MIN        BITMAP                  "res\\SKIN_WND_MIN.bmp"
+IDB_SKIN_WND_RESTORE    BITMAP                  "res\\SKIN_WND_RESTORE.bmp"
+IDB_SKIN_COMBOBOX_BUTTON BITMAP                  "res\\SKIN_COMBOBOX_BUTTON.bmp"
+IDB_SKIN_MENU_FLAGS     BITMAP                  "res\\SKIN_MENU_FLAGS.bmp"
+IDB_SKIN_HEADER_R       BITMAP                  "res\\SKIN_HEADER_R.bmp"
+IDB_SKIN_HEADER_L       BITMAP                  "res\\SKIN_HEADER_L.bmp"
+IDB_SKIN_HEADER_M       BITMAP                  "res\\SKIN_HEADER_M.bmp"
+IDB_SKIN_WND_CLOSE      BITMAP                  "res\\SKIN_WND_CLOSE.bmp"
+IDB_SKIN_SCROLL         BITMAP                  "res\\SKIN_SCROLL.bmp"
+IDB_SKIN_WND_BUTTON     BITMAP                  "res\\SKIN_WND_BUTTON.bmp"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\SkinControl.rc2"  // 不是由 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
