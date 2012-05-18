@@ -4,7 +4,7 @@
 #include "LogonServer.h"
 
 //声明变量
-extern CLogonServerApp theApp;
+extern CLogonServerApp theApp; 
 //////////////////////////////////////////////////////////////////////////
 
 //宏定义
