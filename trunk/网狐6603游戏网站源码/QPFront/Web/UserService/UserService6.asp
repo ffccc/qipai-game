@@ -1,3 +1,0 @@
-<%
-Response.Redirect "MemberGame.asp"
-%>
