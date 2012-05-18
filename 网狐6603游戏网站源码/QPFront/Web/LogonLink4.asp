@@ -1,3 +1,0 @@
-<%
-Response.Redirect "MemberReLogonPass.asp"
-%>
