@@ -1,0 +1,85 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=gb2312">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: 深海捕鱼, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "d:\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏服务器\Debug\RSP000001.rsp" with contents
+[
+/Od /D "WIN32" /D "_WINDOWS" /D "_DEBUG" /D "_AFXEXT" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /Gm /EHsc /RTC1 /MDd /Zc:wchar_t /YX"stdafx.h" /Fp"Debug/FishServer.pch" /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /Wp64 /ZI /TP
+".\GameServerManager.cpp"
+".\GameServer.cpp"
+".\GameLogic.cpp"
+]
+Creating command line "cl.exe @"d:\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏服务器\Debug\RSP000001.rsp" /nologo"
+Creating temporary file "d:\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏服务器\Debug\RSP000002.rsp" with contents
+[
+/Od /D "WIN32" /D "_WINDOWS" /D "_DEBUG" /D "_AFXEXT" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /Gm /EHsc /RTC1 /MDd /Zc:wchar_t /YX"stdafx.h" /Fp"Debug/FishServer.pch" /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /Wp64 /ZI /TP /wd4244
+".\TableFrameSink.cpp"
+]
+Creating command line "cl.exe @"d:\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏服务器\Debug\RSP000002.rsp" /nologo"
+Creating temporary file "d:\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏服务器\Debug\RSP000003.rsp" with contents
+[
+/Od /D "WIN32" /D "_WINDOWS" /D "_DEBUG" /D "_AFXEXT" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /Gm /EHsc /RTC1 /MDd /Zc:wchar_t /Yc"stdafx.h" /Fp"Debug/FishServer.pch" /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /Wp64 /ZI /TP
+".\Stdafx.cpp"
+]
+Creating command line "cl.exe @"d:\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏服务器\Debug\RSP000003.rsp" /nologo"
+Creating command line "rc.exe /d "_DEBUG" /d "_AFXDLL" /l 0x804 /I "Debug" /fo"Debug/GameServer.res" ".\GameServer.rc""
+Creating temporary file "d:\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏服务器\Debug\RSP000004.rsp" with contents
+[
+/OUT:"../../../运行/Debug/FishServer.dll" /INCREMENTAL /NOLOGO /DLL /DEBUG /PDB:"Debug/深海捕鱼.pdb" /SUBSYSTEM:WINDOWS /IMPLIB:"Debug/GameServer.lib" /MACHINE:X86
+".\debug\GameLogic.obj"
+".\debug\GameServer.obj"
+".\debug\GameServerManager.obj"
+".\debug\Stdafx.obj"
+".\debug\TableFrameSink.obj"
+".\debug\GameServer.res"
+]
+Creating command line "link.exe @"d:\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏服务器\Debug\RSP000004.rsp""
+Creating temporary file "d:\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏服务器\Debug\BAT000005.bat" with contents
+[
+@echo off
+mkdir ..\..\..\发布组件\服务器组件\Debug
+copy /y ..\..\..\运行\Debug\FishServer.dll ..\..\..\发布组件\服务器组件\Debug\FishServer.dll
+
+if errorlevel 1 goto VCReportError
+goto VCEnd
+:VCReportError
+echo Project : error PRJ0019: A tool returned an error code from "Performing Post-Build Event..."
+exit 1
+:VCEnd
+]
+Creating command line ""d:\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏服务器\Debug\BAT000005.bat""
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+Stdafx.cpp
+Compiling...
+GameServerManager.cpp
+GameServer.cpp
+GameLogic.cpp
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏服务器\gamelogic.cpp(20) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏服务器\gamelogic.cpp(21) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏服务器\gamelogic.cpp(22) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+Compiling...
+TableFrameSink.cpp
+Compiling resources...
+Linking...
+LINK : warning LNK4076: invalid incremental status file '../../../运行/Debug/FishServer.ilk'; linking nonincrementally
+   Creating library Debug/GameServer.lib and object Debug/GameServer.exp
+Performing Post-Build Event...
+子目录或文件 ..\..\..\发布组件\服务器组件\Debug 已经存在。
+已复制         1 个文件。
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://d:\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏服务器\Debug\BuildLog.htm"
+深海捕鱼 - 0 error(s), 4 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>
