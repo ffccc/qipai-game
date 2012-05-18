@@ -1,0 +1,1411 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=gb2312">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: 深海捕鱼, Configuration: Release|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "d:\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏客户端\Release\RSP000013.rsp" with contents
+[
+/O2 /I "..\xlbe\CEGUI\include" /I "..\xlbe\tinyxml" /I "..\xlbe\ois\includes" /I "..\xlbe\engine" /I "..\xlbe\CEGUI\RendererModules" /D "WIN32" /D "_WINDOWS" /D "NOMINMAX" /D "_MBCS" /FD /EHsc /MT /GS /Zc:wchar_t /YX"stdafx.h" /Fp"Release/fish.pch" /Fo"Release/" /Fd"Release/vc70.pdb" /W3 /c /Wp64 /Zi /TP
+".\path.cpp"
+".\main.cpp"
+".\LoadScene.cpp"
+".\GameLogic.cpp"
+".\FishScene.cpp"
+".\FishApplication.cpp"
+".\ClientKernel.cpp"
+]
+Creating command line "cl.exe @"d:\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏客户端\Release\RSP000013.rsp" /nologo"
+Creating command line "rc.exe /d "NDEBUG" /l 0x804 /I "Release" /fo"Release/深海捕鱼.res" ".\深海捕鱼.rc""
+Creating temporary file "d:\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏客户端\Release\RSP000014.rsp" with contents
+[
+/OUT:"../../../运行/release/fish.exe" /INCREMENTAL /NOLOGO /LIBPATH:"..\xlbe\CEGUI\lib" /LIBPATH:"..\xlbe\ois\dll" /LIBPATH:"..\xlbe\tinyxml\Release" /LIBPATH:"..\xlbe\engine\lib" /NODEFAULTLIB:"LIBCD.lib" /DEBUG /PDB:"Release/深海捕鱼.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /MACHINE:X86 xlbe.lib CEGUIBase.lib DirectX9GUIRenderer.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\lib\xlbe.lib" "\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\CEGUI\lib\CEGUIBase.lib" "\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\CEGUI\lib\DirectX9GUIRenderer.lib"
+".\release\ClientKernel.obj"
+".\release\FishApplication.obj"
+".\release\FishScene.obj"
+".\release\GameLogic.obj"
+".\release\LoadScene.obj"
+".\release\main.obj"
+".\release\path.obj"
+".\release\深海捕鱼.res"
+]
+Creating command line "link.exe @"d:\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏客户端\Release\RSP000014.rsp""
+Creating temporary file "d:\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏客户端\Release\BAT000015.bat" with contents
+[
+@echo off
+
+
+if errorlevel 1 goto VCReportError
+goto VCEnd
+:VCReportError
+echo Project : error PRJ0019: A tool returned an error code from "Performing Post-Build Event..."
+exit 1
+:VCEnd
+]
+Creating command line ""d:\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏客户端\Release\BAT000015.bat""
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+path.cpp
+path.cpp(42) : warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+path.cpp(42) : warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+path.cpp(66) : warning C4018: '>' : signed/unsigned mismatch
+main.cpp
+..\xlbe\engine\utility\rect.h(26) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+..\xlbe\engine\utility\rect.h(26) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\scene_node.h(120) : warning C4251: 'Scene_Node::position_' : class 'Point' needs to have dll-interface to be used by clients of class 'Scene_Node'
+        d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\scene_node.h(121) : warning C4251: 'Scene_Node::content_size_' : class 'Size' needs to have dll-interface to be used by clients of class 'Scene_Node'
+        d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\utility\size.h(9) : see declaration of 'Size'
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\scene_node.h(125) : warning C4251: 'Scene_Node::childs_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Scene_Node'
+        with
+        [
+            _Ty=Scene_Node *
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\scene_node.h(68) : warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+..\xlbe\engine\frame\input_manager.h(27) : warning C4275: non dll-interface class 'OIS::KeyListener' used as base for dll-interface class 'Input_Manager'
+        ..\xlbe\ois\includes\OISKeyboard.h(200) : see declaration of 'OIS::KeyListener'
+        ..\xlbe\engine\frame\input_manager.h(27) : see declaration of 'Input_Manager'
+..\xlbe\engine\frame\input_manager.h(29) : warning C4275: non dll-interface class 'OIS::MouseListener' used as base for dll-interface class 'Input_Manager'
+        ..\xlbe\ois\includes\OISMouse.h(95) : see declaration of 'OIS::MouseListener'
+        ..\xlbe\engine\frame\input_manager.h(27) : see declaration of 'Input_Manager'
+..\xlbe\engine\frame\input_manager.h(59) : warning C4251: 'Input_Manager::input_listeners_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Input_Manager'
+        with
+        [
+            _Ty=Input_Listener *
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture.h(36) : warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture.h(36) : warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture_cache.h(16) : warning C4251: 'std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,_Mfl>::comp' : struct 'std::less<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,_Mfl>'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Render_Texture *,
+            _Pr=std::less<std::string>,
+            _Alloc=std::allocator<std::pair<const std::string,Render_Texture *>>,
+            _Mfl=false
+        ]
+        and
+        [
+            _Ty=std::string
+        ]
+        and
+        [
+            _Kty=std::string,
+            _Ty=Render_Texture *,
+            _Pr=std::less<std::string>,
+            _Alloc=std::allocator<std::pair<const std::string,Render_Texture *>>,
+            _Mfl=false
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture_cache.h(16) : warning C4251: 'std::_Tree_nod<_Traits>::_Alnod' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_nod<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+        and
+        [
+            _Ty=std::_Tree_nod<std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>>::_Node
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture_cache.h(16) : warning C4251: 'std::_Tree_ptr<_Traits>::_Alptr' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_ptr<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+        and
+        [
+            _Ty=std::_Tree_ptr<std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>>::_Nodeptr 
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture_cache.h(16) : warning C4251: 'std::_Tree_val<_Traits>::_Alval' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_val<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+        and
+        [
+            _Ty=std::pair<const std::string,Render_Texture *>
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+..\xlbe\engine\render\render_system.h(82) : warning C4251: 'Render_System::matview_' : struct 'D3DXMATRIX' needs to have dll-interface to be used by clients of class 'Render_System'
+        d:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include\d3dx9math.h(312) : see declaration of 'D3DXMATRIX'
+..\xlbe\engine\render\render_system.h(83) : warning C4251: 'Render_System::matproj_' : struct 'D3DXMATRIX' needs to have dll-interface to be used by clients of class 'Render_System'
+        d:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include\d3dx9math.h(312) : see declaration of 'D3DXMATRIX'
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\sprite_frame.h(28) : warning C4251: 'Sprite_Frame::rect_' : class 'Rect' needs to have dll-interface to be used by clients of class 'Sprite_Frame'
+        ..\xlbe\engine\utility\rect.h(12) : see declaration of 'Rect'
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation.h(15) : warning C4251: 'std::_Vector_val<_Ty,_Alloc>::_Alval' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Vector_val<_Ty,_Alloc>'
+        with
+        [
+            _Ty=Sprite_Frame *,
+            _Alloc=std::allocator<Sprite_Frame *>
+        ]
+        and
+        [
+            _Ty=Sprite_Frame *
+        ]
+        and
+        [
+            _Ty=Sprite_Frame *,
+            _Alloc=std::allocator<Sprite_Frame *>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation.h(43) : warning C4251: 'Animation::name_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Animation'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation_cache.h(16) : warning C4251: 'std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,_Mfl>::comp' : struct 'std::less<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,_Mfl>'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Animation *,
+            _Pr=std::less<std::string>,
+            _Alloc=std::allocator<std::pair<const std::string,Animation *>>,
+            _Mfl=false
+        ]
+        and
+        [
+            _Ty=std::string
+        ]
+        and
+        [
+            _Kty=std::string,
+            _Ty=Animation *,
+            _Pr=std::less<std::string>,
+            _Alloc=std::allocator<std::pair<const std::string,Animation *>>,
+            _Mfl=false
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation_cache.h(16) : warning C4251: 'std::_Tree_nod<_Traits>::_Alnod' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_nod<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+        and
+        [
+            _Ty=std::_Tree_nod<std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>>::_Node
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation_cache.h(16) : warning C4251: 'std::_Tree_ptr<_Traits>::_Alptr' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_ptr<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+        and
+        [
+            _Ty=std::_Tree_ptr<std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>>::_Nodeptr 
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation_cache.h(16) : warning C4251: 'std::_Tree_val<_Traits>::_Alval' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_val<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+        and
+        [
+            _Ty=std::pair<const std::string,Animation *>
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+..\xlbe\engine\scene\sprite.h(59) : warning C4251: 'Sprite::rect_' : class 'Rect' needs to have dll-interface to be used by clients of class 'Sprite'
+        ..\xlbe\engine\utility\rect.h(12) : see declaration of 'Rect'
+..\xlbe\engine\action\action_interval.h(14) : warning C4275: non dll-interface class 'Action_Finit_Time' used as base for dll-interface class 'Action_Interval'
+        d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\action\action.h(44) : see declaration of 'Action_Finit_Time'
+        ..\xlbe\engine\action\action_interval.h(13) : see declaration of 'Action_Interval'
+..\xlbe\engine\action\action_interval.h(43) : warning C4251: 'Action_Move_To::start_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Move_To'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(44) : warning C4251: 'Action_Move_To::end_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Move_To'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(45) : warning C4251: 'Action_Move_To::delta_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Move_To'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(71) : warning C4251: 'Action_Bezier_By::start_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Bezier_By'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(72) : warning C4251: 'Action_Bezier_By::end_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Bezier_By'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(73) : warning C4251: 'Action_Bezier_By::control1_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Bezier_By'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(74) : warning C4251: 'Action_Bezier_By::control2_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Bezier_By'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_combine.h(30) : warning C4251: 'Action_Sequence::actions_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Action_Sequence'
+        with
+        [
+            _Ty=Action_Finit_Time *
+        ]
+..\xlbe\engine\action\action_combine.h(66) : warning C4251: 'Action_Spawn::actions_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Action_Spawn'
+        with
+        [
+            _Ty=Action_Finit_Time *
+        ]
+..\xlbe\engine\action\action_instant.h(14) : warning C4275: non dll-interface class 'Action_Finit_Time' used as base for dll-interface class 'Action_Instant'
+        d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\action\action.h(44) : see declaration of 'Action_Finit_Time'
+        ..\xlbe\engine\action\action_instant.h(13) : see declaration of 'Action_Instant'
+..\xlbe\engine\action\action_instant.h(53) : warning C4251: 'Action_Place::position_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Place'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\scene\scene_director.h(44) : warning C4251: 'Scene_Director::scenes_' : class 'std::stack<_Ty>' needs to have dll-interface to be used by clients of class 'Scene_Director'
+        with
+        [
+            _Ty=Scene *
+        ]
+..\xlbe\engine\action\action_manager.h(56) : warning C4251: 'Action_Manager::elements_' : class 'std::map<_Kty,_Ty>' needs to have dll-interface to be used by clients of class 'Action_Manager'
+        with
+        [
+            _Kty=Scene_Node *,
+            _Ty=Action_Manager::Action_Element *
+        ]
+..\xlbe\engine\resource\resource_manager.h(134) : warning C4251: 'Resource_Manager::texture_map_' : class 'std::map<_Kty,_Ty>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Resource_Manager::Base_Res *
+        ]
+..\xlbe\engine\resource\resource_manager.h(135) : warning C4251: 'Resource_Manager::sprite_frame_map_' : class 'std::map<_Kty,_Ty>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Resource_Manager::Base_Res *
+        ]
+..\xlbe\engine\resource\resource_manager.h(136) : warning C4251: 'Resource_Manager::animation_map_' : class 'std::map<_Kty,_Ty>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Resource_Manager::Base_Res *
+        ]
+..\xlbe\engine\resource\resource_manager.h(138) : warning C4251: 'Resource_Manager::cur_res_group_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+..\xlbe\engine\resource\resource_manager.h(139) : warning C4251: 'Resource_Manager::default_path_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+..\xlbe\engine\resource\resource_manager.h(141) : warning C4251: 'Resource_Manager::res_group_map_' : class 'std::map<_Kty,_Ty,_Pr>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Resource_Manager::Res_List,
+            _Pr=String_Less_No_Case
+        ]
+..\xlbe\engine\resource\resource_manager.h(143) : warning C4251: 'Resource_Manager::cur_res_group_listor_' : class 'std::list<_Ty>::iterator' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Ty=Resource_Manager::Base_Res *
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio .NET 2003\Vc7\include\list(220) : see declaration of 'std::list<_Ty>::iterator'
+        with
+        [
+            _Ty=Resource_Manager::Base_Res *
+        ]
+..\xlbe\engine\resource\resource_manager.h(145) : warning C4251: 'Resource_Manager::loaded_groups_' : class 'std::set<_Kty,_Pr>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Pr=String_Less_No_Case
+        ]
+..\xlbe\engine\frame\root.h(113) : warning C4251: 'Root::frame_listeners_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Root'
+        with
+        [
+            _Ty=Frame_Listener *
+        ]
+..\xlbe\engine\frame\root.h(114) : warning C4251: 'Root::resource_listeners_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Root'
+        with
+        [
+            _Ty=Resource_Listener *
+        ]
+..\xlbe\engine\frame\root.h(116) : warning C4251: 'Root::event_times' : class 'std::deque<_Ty>' needs to have dll-interface to be used by clients of class 'Root'
+        with
+        [
+            _Ty=unsigned long
+        ]
+..\xlbe\engine\frame\root.h(126) : warning C4251: 'Root::config_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Root'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+..\xlbe\engine\frame\root.h(69) : warning C4244: 'return' : conversion from 'double' to 'unsigned long', possible loss of data
+..\xlbe\engine\frame\root.h(70) : warning C4244: '=' : conversion from 'double' to 'unsigned long', possible loss of data
+..\xlbe\engine\frame\window_event_utilities.h(40) : warning C4251: 'Window_Event_Utilities::event_listeners_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Window_Event_Utilities'
+        with
+        [
+            _Ty=Window_Event_Listener *
+        ]
+..\xlbe\engine\frame\window_event_utilities.h(41) : warning C4251: 'Window_Event_Utilities::render_windows_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Window_Event_Utilities'
+        with
+        [
+            _Ty=Render_Window *
+        ]
+..\xlbe\engine\frame\application.h(39) : warning C4251: 'Application::title_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Application'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+..\xlbe\engine\frame\application.h(40) : warning C4251: 'Application::cmdline_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Application'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+LoadScene.cpp
+..\xlbe\engine\utility\rect.h(26) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+..\xlbe\engine\utility\rect.h(26) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\scene_node.h(120) : warning C4251: 'Scene_Node::position_' : class 'Point' needs to have dll-interface to be used by clients of class 'Scene_Node'
+        d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\scene_node.h(121) : warning C4251: 'Scene_Node::content_size_' : class 'Size' needs to have dll-interface to be used by clients of class 'Scene_Node'
+        d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\utility\size.h(9) : see declaration of 'Size'
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\scene_node.h(125) : warning C4251: 'Scene_Node::childs_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Scene_Node'
+        with
+        [
+            _Ty=Scene_Node *
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\scene_node.h(68) : warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+..\xlbe\engine\frame\input_manager.h(27) : warning C4275: non dll-interface class 'OIS::KeyListener' used as base for dll-interface class 'Input_Manager'
+        ..\xlbe\ois\includes\OISKeyboard.h(200) : see declaration of 'OIS::KeyListener'
+        ..\xlbe\engine\frame\input_manager.h(27) : see declaration of 'Input_Manager'
+..\xlbe\engine\frame\input_manager.h(29) : warning C4275: non dll-interface class 'OIS::MouseListener' used as base for dll-interface class 'Input_Manager'
+        ..\xlbe\ois\includes\OISMouse.h(95) : see declaration of 'OIS::MouseListener'
+        ..\xlbe\engine\frame\input_manager.h(27) : see declaration of 'Input_Manager'
+..\xlbe\engine\frame\input_manager.h(59) : warning C4251: 'Input_Manager::input_listeners_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Input_Manager'
+        with
+        [
+            _Ty=Input_Listener *
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture.h(36) : warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture.h(36) : warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture_cache.h(16) : warning C4251: 'std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,_Mfl>::comp' : struct 'std::less<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,_Mfl>'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Render_Texture *,
+            _Pr=std::less<std::string>,
+            _Alloc=std::allocator<std::pair<const std::string,Render_Texture *>>,
+            _Mfl=false
+        ]
+        and
+        [
+            _Ty=std::string
+        ]
+        and
+        [
+            _Kty=std::string,
+            _Ty=Render_Texture *,
+            _Pr=std::less<std::string>,
+            _Alloc=std::allocator<std::pair<const std::string,Render_Texture *>>,
+            _Mfl=false
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture_cache.h(16) : warning C4251: 'std::_Tree_nod<_Traits>::_Alnod' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_nod<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+        and
+        [
+            _Ty=std::_Tree_nod<std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>>::_Node
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture_cache.h(16) : warning C4251: 'std::_Tree_ptr<_Traits>::_Alptr' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_ptr<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+        and
+        [
+            _Ty=std::_Tree_ptr<std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>>::_Nodeptr 
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture_cache.h(16) : warning C4251: 'std::_Tree_val<_Traits>::_Alval' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_val<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+        and
+        [
+            _Ty=std::pair<const std::string,Render_Texture *>
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+..\xlbe\engine\render\render_system.h(82) : warning C4251: 'Render_System::matview_' : struct 'D3DXMATRIX' needs to have dll-interface to be used by clients of class 'Render_System'
+        d:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include\d3dx9math.h(312) : see declaration of 'D3DXMATRIX'
+..\xlbe\engine\render\render_system.h(83) : warning C4251: 'Render_System::matproj_' : struct 'D3DXMATRIX' needs to have dll-interface to be used by clients of class 'Render_System'
+        d:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include\d3dx9math.h(312) : see declaration of 'D3DXMATRIX'
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\sprite_frame.h(28) : warning C4251: 'Sprite_Frame::rect_' : class 'Rect' needs to have dll-interface to be used by clients of class 'Sprite_Frame'
+        ..\xlbe\engine\utility\rect.h(12) : see declaration of 'Rect'
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation.h(15) : warning C4251: 'std::_Vector_val<_Ty,_Alloc>::_Alval' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Vector_val<_Ty,_Alloc>'
+        with
+        [
+            _Ty=Sprite_Frame *,
+            _Alloc=std::allocator<Sprite_Frame *>
+        ]
+        and
+        [
+            _Ty=Sprite_Frame *
+        ]
+        and
+        [
+            _Ty=Sprite_Frame *,
+            _Alloc=std::allocator<Sprite_Frame *>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation.h(43) : warning C4251: 'Animation::name_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Animation'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation_cache.h(16) : warning C4251: 'std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,_Mfl>::comp' : struct 'std::less<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,_Mfl>'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Animation *,
+            _Pr=std::less<std::string>,
+            _Alloc=std::allocator<std::pair<const std::string,Animation *>>,
+            _Mfl=false
+        ]
+        and
+        [
+            _Ty=std::string
+        ]
+        and
+        [
+            _Kty=std::string,
+            _Ty=Animation *,
+            _Pr=std::less<std::string>,
+            _Alloc=std::allocator<std::pair<const std::string,Animation *>>,
+            _Mfl=false
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation_cache.h(16) : warning C4251: 'std::_Tree_nod<_Traits>::_Alnod' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_nod<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+        and
+        [
+            _Ty=std::_Tree_nod<std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>>::_Node
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation_cache.h(16) : warning C4251: 'std::_Tree_ptr<_Traits>::_Alptr' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_ptr<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+        and
+        [
+            _Ty=std::_Tree_ptr<std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>>::_Nodeptr 
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation_cache.h(16) : warning C4251: 'std::_Tree_val<_Traits>::_Alval' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_val<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+        and
+        [
+            _Ty=std::pair<const std::string,Animation *>
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+..\xlbe\engine\scene\sprite.h(59) : warning C4251: 'Sprite::rect_' : class 'Rect' needs to have dll-interface to be used by clients of class 'Sprite'
+        ..\xlbe\engine\utility\rect.h(12) : see declaration of 'Rect'
+..\xlbe\engine\action\action_interval.h(14) : warning C4275: non dll-interface class 'Action_Finit_Time' used as base for dll-interface class 'Action_Interval'
+        d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\action\action.h(44) : see declaration of 'Action_Finit_Time'
+        ..\xlbe\engine\action\action_interval.h(13) : see declaration of 'Action_Interval'
+..\xlbe\engine\action\action_interval.h(43) : warning C4251: 'Action_Move_To::start_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Move_To'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(44) : warning C4251: 'Action_Move_To::end_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Move_To'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(45) : warning C4251: 'Action_Move_To::delta_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Move_To'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(71) : warning C4251: 'Action_Bezier_By::start_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Bezier_By'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(72) : warning C4251: 'Action_Bezier_By::end_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Bezier_By'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(73) : warning C4251: 'Action_Bezier_By::control1_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Bezier_By'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(74) : warning C4251: 'Action_Bezier_By::control2_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Bezier_By'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_combine.h(30) : warning C4251: 'Action_Sequence::actions_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Action_Sequence'
+        with
+        [
+            _Ty=Action_Finit_Time *
+        ]
+..\xlbe\engine\action\action_combine.h(66) : warning C4251: 'Action_Spawn::actions_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Action_Spawn'
+        with
+        [
+            _Ty=Action_Finit_Time *
+        ]
+..\xlbe\engine\action\action_instant.h(14) : warning C4275: non dll-interface class 'Action_Finit_Time' used as base for dll-interface class 'Action_Instant'
+        d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\action\action.h(44) : see declaration of 'Action_Finit_Time'
+        ..\xlbe\engine\action\action_instant.h(13) : see declaration of 'Action_Instant'
+..\xlbe\engine\action\action_instant.h(53) : warning C4251: 'Action_Place::position_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Place'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\scene\scene_director.h(44) : warning C4251: 'Scene_Director::scenes_' : class 'std::stack<_Ty>' needs to have dll-interface to be used by clients of class 'Scene_Director'
+        with
+        [
+            _Ty=Scene *
+        ]
+..\xlbe\engine\action\action_manager.h(56) : warning C4251: 'Action_Manager::elements_' : class 'std::map<_Kty,_Ty>' needs to have dll-interface to be used by clients of class 'Action_Manager'
+        with
+        [
+            _Kty=Scene_Node *,
+            _Ty=Action_Manager::Action_Element *
+        ]
+..\xlbe\engine\resource\resource_manager.h(134) : warning C4251: 'Resource_Manager::texture_map_' : class 'std::map<_Kty,_Ty>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Resource_Manager::Base_Res *
+        ]
+..\xlbe\engine\resource\resource_manager.h(135) : warning C4251: 'Resource_Manager::sprite_frame_map_' : class 'std::map<_Kty,_Ty>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Resource_Manager::Base_Res *
+        ]
+..\xlbe\engine\resource\resource_manager.h(136) : warning C4251: 'Resource_Manager::animation_map_' : class 'std::map<_Kty,_Ty>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Resource_Manager::Base_Res *
+        ]
+..\xlbe\engine\resource\resource_manager.h(138) : warning C4251: 'Resource_Manager::cur_res_group_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+..\xlbe\engine\resource\resource_manager.h(139) : warning C4251: 'Resource_Manager::default_path_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+..\xlbe\engine\resource\resource_manager.h(141) : warning C4251: 'Resource_Manager::res_group_map_' : class 'std::map<_Kty,_Ty,_Pr>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Resource_Manager::Res_List,
+            _Pr=String_Less_No_Case
+        ]
+..\xlbe\engine\resource\resource_manager.h(143) : warning C4251: 'Resource_Manager::cur_res_group_listor_' : class 'std::list<_Ty>::iterator' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Ty=Resource_Manager::Base_Res *
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio .NET 2003\Vc7\include\list(220) : see declaration of 'std::list<_Ty>::iterator'
+        with
+        [
+            _Ty=Resource_Manager::Base_Res *
+        ]
+..\xlbe\engine\resource\resource_manager.h(145) : warning C4251: 'Resource_Manager::loaded_groups_' : class 'std::set<_Kty,_Pr>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Pr=String_Less_No_Case
+        ]
+..\xlbe\engine\frame\root.h(113) : warning C4251: 'Root::frame_listeners_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Root'
+        with
+        [
+            _Ty=Frame_Listener *
+        ]
+..\xlbe\engine\frame\root.h(114) : warning C4251: 'Root::resource_listeners_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Root'
+        with
+        [
+            _Ty=Resource_Listener *
+        ]
+..\xlbe\engine\frame\root.h(116) : warning C4251: 'Root::event_times' : class 'std::deque<_Ty>' needs to have dll-interface to be used by clients of class 'Root'
+        with
+        [
+            _Ty=unsigned long
+        ]
+..\xlbe\engine\frame\root.h(126) : warning C4251: 'Root::config_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Root'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+..\xlbe\engine\frame\root.h(69) : warning C4244: 'return' : conversion from 'double' to 'unsigned long', possible loss of data
+..\xlbe\engine\frame\root.h(70) : warning C4244: '=' : conversion from 'double' to 'unsigned long', possible loss of data
+..\xlbe\engine\frame\window_event_utilities.h(40) : warning C4251: 'Window_Event_Utilities::event_listeners_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Window_Event_Utilities'
+        with
+        [
+            _Ty=Window_Event_Listener *
+        ]
+..\xlbe\engine\frame\window_event_utilities.h(41) : warning C4251: 'Window_Event_Utilities::render_windows_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Window_Event_Utilities'
+        with
+        [
+            _Ty=Render_Window *
+        ]
+..\xlbe\engine\frame\application.h(39) : warning C4251: 'Application::title_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Application'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+..\xlbe\engine\frame\application.h(40) : warning C4251: 'Application::cmdline_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Application'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+LoadScene.cpp(28) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+GameLogic.cpp
+GameLogic.cpp(69) : warning C4244: 'return' : conversion from 'unsigned long' to 'float', possible loss of data
+FishScene.cpp
+..\xlbe\engine\utility\rect.h(26) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+..\xlbe\engine\utility\rect.h(26) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\scene_node.h(120) : warning C4251: 'Scene_Node::position_' : class 'Point' needs to have dll-interface to be used by clients of class 'Scene_Node'
+        d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\scene_node.h(121) : warning C4251: 'Scene_Node::content_size_' : class 'Size' needs to have dll-interface to be used by clients of class 'Scene_Node'
+        d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\utility\size.h(9) : see declaration of 'Size'
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\scene_node.h(125) : warning C4251: 'Scene_Node::childs_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Scene_Node'
+        with
+        [
+            _Ty=Scene_Node *
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\scene_node.h(68) : warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+..\xlbe\engine\frame\input_manager.h(27) : warning C4275: non dll-interface class 'OIS::KeyListener' used as base for dll-interface class 'Input_Manager'
+        ..\xlbe\ois\includes\OISKeyboard.h(200) : see declaration of 'OIS::KeyListener'
+        ..\xlbe\engine\frame\input_manager.h(27) : see declaration of 'Input_Manager'
+..\xlbe\engine\frame\input_manager.h(29) : warning C4275: non dll-interface class 'OIS::MouseListener' used as base for dll-interface class 'Input_Manager'
+        ..\xlbe\ois\includes\OISMouse.h(95) : see declaration of 'OIS::MouseListener'
+        ..\xlbe\engine\frame\input_manager.h(27) : see declaration of 'Input_Manager'
+..\xlbe\engine\frame\input_manager.h(59) : warning C4251: 'Input_Manager::input_listeners_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Input_Manager'
+        with
+        [
+            _Ty=Input_Listener *
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture.h(36) : warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture.h(36) : warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture_cache.h(16) : warning C4251: 'std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,_Mfl>::comp' : struct 'std::less<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,_Mfl>'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Render_Texture *,
+            _Pr=std::less<std::string>,
+            _Alloc=std::allocator<std::pair<const std::string,Render_Texture *>>,
+            _Mfl=false
+        ]
+        and
+        [
+            _Ty=std::string
+        ]
+        and
+        [
+            _Kty=std::string,
+            _Ty=Render_Texture *,
+            _Pr=std::less<std::string>,
+            _Alloc=std::allocator<std::pair<const std::string,Render_Texture *>>,
+            _Mfl=false
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture_cache.h(16) : warning C4251: 'std::_Tree_nod<_Traits>::_Alnod' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_nod<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+        and
+        [
+            _Ty=std::_Tree_nod<std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>>::_Node
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture_cache.h(16) : warning C4251: 'std::_Tree_ptr<_Traits>::_Alptr' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_ptr<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+        and
+        [
+            _Ty=std::_Tree_ptr<std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>>::_Nodeptr 
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture_cache.h(16) : warning C4251: 'std::_Tree_val<_Traits>::_Alval' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_val<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+        and
+        [
+            _Ty=std::pair<const std::string,Render_Texture *>
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+..\xlbe\engine\render\render_system.h(82) : warning C4251: 'Render_System::matview_' : struct 'D3DXMATRIX' needs to have dll-interface to be used by clients of class 'Render_System'
+        d:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include\d3dx9math.h(312) : see declaration of 'D3DXMATRIX'
+..\xlbe\engine\render\render_system.h(83) : warning C4251: 'Render_System::matproj_' : struct 'D3DXMATRIX' needs to have dll-interface to be used by clients of class 'Render_System'
+        d:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include\d3dx9math.h(312) : see declaration of 'D3DXMATRIX'
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\sprite_frame.h(28) : warning C4251: 'Sprite_Frame::rect_' : class 'Rect' needs to have dll-interface to be used by clients of class 'Sprite_Frame'
+        ..\xlbe\engine\utility\rect.h(12) : see declaration of 'Rect'
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation.h(15) : warning C4251: 'std::_Vector_val<_Ty,_Alloc>::_Alval' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Vector_val<_Ty,_Alloc>'
+        with
+        [
+            _Ty=Sprite_Frame *,
+            _Alloc=std::allocator<Sprite_Frame *>
+        ]
+        and
+        [
+            _Ty=Sprite_Frame *
+        ]
+        and
+        [
+            _Ty=Sprite_Frame *,
+            _Alloc=std::allocator<Sprite_Frame *>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation.h(43) : warning C4251: 'Animation::name_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Animation'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation_cache.h(16) : warning C4251: 'std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,_Mfl>::comp' : struct 'std::less<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,_Mfl>'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Animation *,
+            _Pr=std::less<std::string>,
+            _Alloc=std::allocator<std::pair<const std::string,Animation *>>,
+            _Mfl=false
+        ]
+        and
+        [
+            _Ty=std::string
+        ]
+        and
+        [
+            _Kty=std::string,
+            _Ty=Animation *,
+            _Pr=std::less<std::string>,
+            _Alloc=std::allocator<std::pair<const std::string,Animation *>>,
+            _Mfl=false
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation_cache.h(16) : warning C4251: 'std::_Tree_nod<_Traits>::_Alnod' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_nod<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+        and
+        [
+            _Ty=std::_Tree_nod<std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>>::_Node
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation_cache.h(16) : warning C4251: 'std::_Tree_ptr<_Traits>::_Alptr' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_ptr<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+        and
+        [
+            _Ty=std::_Tree_ptr<std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>>::_Nodeptr 
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation_cache.h(16) : warning C4251: 'std::_Tree_val<_Traits>::_Alval' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_val<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+        and
+        [
+            _Ty=std::pair<const std::string,Animation *>
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+..\xlbe\engine\scene\sprite.h(59) : warning C4251: 'Sprite::rect_' : class 'Rect' needs to have dll-interface to be used by clients of class 'Sprite'
+        ..\xlbe\engine\utility\rect.h(12) : see declaration of 'Rect'
+..\xlbe\engine\action\action_interval.h(14) : warning C4275: non dll-interface class 'Action_Finit_Time' used as base for dll-interface class 'Action_Interval'
+        d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\action\action.h(44) : see declaration of 'Action_Finit_Time'
+        ..\xlbe\engine\action\action_interval.h(13) : see declaration of 'Action_Interval'
+..\xlbe\engine\action\action_interval.h(43) : warning C4251: 'Action_Move_To::start_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Move_To'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(44) : warning C4251: 'Action_Move_To::end_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Move_To'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(45) : warning C4251: 'Action_Move_To::delta_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Move_To'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(71) : warning C4251: 'Action_Bezier_By::start_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Bezier_By'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(72) : warning C4251: 'Action_Bezier_By::end_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Bezier_By'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(73) : warning C4251: 'Action_Bezier_By::control1_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Bezier_By'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(74) : warning C4251: 'Action_Bezier_By::control2_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Bezier_By'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_combine.h(30) : warning C4251: 'Action_Sequence::actions_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Action_Sequence'
+        with
+        [
+            _Ty=Action_Finit_Time *
+        ]
+..\xlbe\engine\action\action_combine.h(66) : warning C4251: 'Action_Spawn::actions_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Action_Spawn'
+        with
+        [
+            _Ty=Action_Finit_Time *
+        ]
+..\xlbe\engine\action\action_instant.h(14) : warning C4275: non dll-interface class 'Action_Finit_Time' used as base for dll-interface class 'Action_Instant'
+        d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\action\action.h(44) : see declaration of 'Action_Finit_Time'
+        ..\xlbe\engine\action\action_instant.h(13) : see declaration of 'Action_Instant'
+..\xlbe\engine\action\action_instant.h(53) : warning C4251: 'Action_Place::position_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Place'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\scene\scene_director.h(44) : warning C4251: 'Scene_Director::scenes_' : class 'std::stack<_Ty>' needs to have dll-interface to be used by clients of class 'Scene_Director'
+        with
+        [
+            _Ty=Scene *
+        ]
+..\xlbe\engine\action\action_manager.h(56) : warning C4251: 'Action_Manager::elements_' : class 'std::map<_Kty,_Ty>' needs to have dll-interface to be used by clients of class 'Action_Manager'
+        with
+        [
+            _Kty=Scene_Node *,
+            _Ty=Action_Manager::Action_Element *
+        ]
+..\xlbe\engine\resource\resource_manager.h(134) : warning C4251: 'Resource_Manager::texture_map_' : class 'std::map<_Kty,_Ty>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Resource_Manager::Base_Res *
+        ]
+..\xlbe\engine\resource\resource_manager.h(135) : warning C4251: 'Resource_Manager::sprite_frame_map_' : class 'std::map<_Kty,_Ty>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Resource_Manager::Base_Res *
+        ]
+..\xlbe\engine\resource\resource_manager.h(136) : warning C4251: 'Resource_Manager::animation_map_' : class 'std::map<_Kty,_Ty>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Resource_Manager::Base_Res *
+        ]
+..\xlbe\engine\resource\resource_manager.h(138) : warning C4251: 'Resource_Manager::cur_res_group_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+..\xlbe\engine\resource\resource_manager.h(139) : warning C4251: 'Resource_Manager::default_path_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+..\xlbe\engine\resource\resource_manager.h(141) : warning C4251: 'Resource_Manager::res_group_map_' : class 'std::map<_Kty,_Ty,_Pr>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Resource_Manager::Res_List,
+            _Pr=String_Less_No_Case
+        ]
+..\xlbe\engine\resource\resource_manager.h(143) : warning C4251: 'Resource_Manager::cur_res_group_listor_' : class 'std::list<_Ty>::iterator' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Ty=Resource_Manager::Base_Res *
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio .NET 2003\Vc7\include\list(220) : see declaration of 'std::list<_Ty>::iterator'
+        with
+        [
+            _Ty=Resource_Manager::Base_Res *
+        ]
+..\xlbe\engine\resource\resource_manager.h(145) : warning C4251: 'Resource_Manager::loaded_groups_' : class 'std::set<_Kty,_Pr>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Pr=String_Less_No_Case
+        ]
+..\xlbe\engine\frame\root.h(113) : warning C4251: 'Root::frame_listeners_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Root'
+        with
+        [
+            _Ty=Frame_Listener *
+        ]
+..\xlbe\engine\frame\root.h(114) : warning C4251: 'Root::resource_listeners_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Root'
+        with
+        [
+            _Ty=Resource_Listener *
+        ]
+..\xlbe\engine\frame\root.h(116) : warning C4251: 'Root::event_times' : class 'std::deque<_Ty>' needs to have dll-interface to be used by clients of class 'Root'
+        with
+        [
+            _Ty=unsigned long
+        ]
+..\xlbe\engine\frame\root.h(126) : warning C4251: 'Root::config_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Root'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+..\xlbe\engine\frame\root.h(69) : warning C4244: 'return' : conversion from 'double' to 'unsigned long', possible loss of data
+..\xlbe\engine\frame\root.h(70) : warning C4244: '=' : conversion from 'double' to 'unsigned long', possible loss of data
+..\xlbe\engine\frame\window_event_utilities.h(40) : warning C4251: 'Window_Event_Utilities::event_listeners_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Window_Event_Utilities'
+        with
+        [
+            _Ty=Window_Event_Listener *
+        ]
+..\xlbe\engine\frame\window_event_utilities.h(41) : warning C4251: 'Window_Event_Utilities::render_windows_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Window_Event_Utilities'
+        with
+        [
+            _Ty=Render_Window *
+        ]
+..\xlbe\engine\frame\application.h(39) : warning C4251: 'Application::title_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Application'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+..\xlbe\engine\frame\application.h(40) : warning C4251: 'Application::cmdline_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Application'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+FishScene.cpp(194) : warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+FishScene.cpp(194) : warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+FishScene.cpp(196) : warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+FishScene.cpp(196) : warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+FishScene.cpp(577) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(728) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(729) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(735) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(793) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(800) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(807) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(814) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(821) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(828) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(835) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(849) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(857) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(860) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(865) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(868) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(869) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(870) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(875) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(878) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(879) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(880) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(885) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(888) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(889) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(890) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(895) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(900) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(905) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(908) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(909) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(910) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(915) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(920) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(925) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(935) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(940) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(945) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(948) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(949) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(950) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(977) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(1195) : warning C4244: 'argument' : conversion from 'float' to 'unsigned long', possible loss of data
+FishScene.cpp(1198) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(1217) : warning C4305: 'argument' : truncation from 'double' to 'float'
+FishScene.cpp(1233) : warning C4018: '<' : signed/unsigned mismatch
+FishApplication.cpp
+..\xlbe\engine\utility\rect.h(26) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+..\xlbe\engine\utility\rect.h(26) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\scene_node.h(120) : warning C4251: 'Scene_Node::position_' : class 'Point' needs to have dll-interface to be used by clients of class 'Scene_Node'
+        d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\scene_node.h(121) : warning C4251: 'Scene_Node::content_size_' : class 'Size' needs to have dll-interface to be used by clients of class 'Scene_Node'
+        d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\utility\size.h(9) : see declaration of 'Size'
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\scene_node.h(125) : warning C4251: 'Scene_Node::childs_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Scene_Node'
+        with
+        [
+            _Ty=Scene_Node *
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\scene_node.h(68) : warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+..\xlbe\engine\frame\input_manager.h(27) : warning C4275: non dll-interface class 'OIS::KeyListener' used as base for dll-interface class 'Input_Manager'
+        ..\xlbe\ois\includes\OISKeyboard.h(200) : see declaration of 'OIS::KeyListener'
+        ..\xlbe\engine\frame\input_manager.h(27) : see declaration of 'Input_Manager'
+..\xlbe\engine\frame\input_manager.h(29) : warning C4275: non dll-interface class 'OIS::MouseListener' used as base for dll-interface class 'Input_Manager'
+        ..\xlbe\ois\includes\OISMouse.h(95) : see declaration of 'OIS::MouseListener'
+        ..\xlbe\engine\frame\input_manager.h(27) : see declaration of 'Input_Manager'
+..\xlbe\engine\frame\input_manager.h(59) : warning C4251: 'Input_Manager::input_listeners_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Input_Manager'
+        with
+        [
+            _Ty=Input_Listener *
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture.h(36) : warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture.h(36) : warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture_cache.h(16) : warning C4251: 'std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,_Mfl>::comp' : struct 'std::less<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,_Mfl>'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Render_Texture *,
+            _Pr=std::less<std::string>,
+            _Alloc=std::allocator<std::pair<const std::string,Render_Texture *>>,
+            _Mfl=false
+        ]
+        and
+        [
+            _Ty=std::string
+        ]
+        and
+        [
+            _Kty=std::string,
+            _Ty=Render_Texture *,
+            _Pr=std::less<std::string>,
+            _Alloc=std::allocator<std::pair<const std::string,Render_Texture *>>,
+            _Mfl=false
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture_cache.h(16) : warning C4251: 'std::_Tree_nod<_Traits>::_Alnod' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_nod<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+        and
+        [
+            _Ty=std::_Tree_nod<std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>>::_Node
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture_cache.h(16) : warning C4251: 'std::_Tree_ptr<_Traits>::_Alptr' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_ptr<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+        and
+        [
+            _Ty=std::_Tree_ptr<std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>>::_Nodeptr 
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\render\render_texture_cache.h(16) : warning C4251: 'std::_Tree_val<_Traits>::_Alval' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_val<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+        and
+        [
+            _Ty=std::pair<const std::string,Render_Texture *>
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Render_Texture *,std::less<std::string>,std::allocator<std::pair<const std::string,Render_Texture *>>,false>
+        ]
+..\xlbe\engine\render\render_system.h(82) : warning C4251: 'Render_System::matview_' : struct 'D3DXMATRIX' needs to have dll-interface to be used by clients of class 'Render_System'
+        d:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include\d3dx9math.h(312) : see declaration of 'D3DXMATRIX'
+..\xlbe\engine\render\render_system.h(83) : warning C4251: 'Render_System::matproj_' : struct 'D3DXMATRIX' needs to have dll-interface to be used by clients of class 'Render_System'
+        d:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include\d3dx9math.h(312) : see declaration of 'D3DXMATRIX'
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\sprite_frame.h(28) : warning C4251: 'Sprite_Frame::rect_' : class 'Rect' needs to have dll-interface to be used by clients of class 'Sprite_Frame'
+        ..\xlbe\engine\utility\rect.h(12) : see declaration of 'Rect'
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation.h(15) : warning C4251: 'std::_Vector_val<_Ty,_Alloc>::_Alval' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Vector_val<_Ty,_Alloc>'
+        with
+        [
+            _Ty=Sprite_Frame *,
+            _Alloc=std::allocator<Sprite_Frame *>
+        ]
+        and
+        [
+            _Ty=Sprite_Frame *
+        ]
+        and
+        [
+            _Ty=Sprite_Frame *,
+            _Alloc=std::allocator<Sprite_Frame *>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation.h(43) : warning C4251: 'Animation::name_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Animation'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation_cache.h(16) : warning C4251: 'std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,_Mfl>::comp' : struct 'std::less<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,_Mfl>'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Animation *,
+            _Pr=std::less<std::string>,
+            _Alloc=std::allocator<std::pair<const std::string,Animation *>>,
+            _Mfl=false
+        ]
+        and
+        [
+            _Ty=std::string
+        ]
+        and
+        [
+            _Kty=std::string,
+            _Ty=Animation *,
+            _Pr=std::less<std::string>,
+            _Alloc=std::allocator<std::pair<const std::string,Animation *>>,
+            _Mfl=false
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation_cache.h(16) : warning C4251: 'std::_Tree_nod<_Traits>::_Alnod' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_nod<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+        and
+        [
+            _Ty=std::_Tree_nod<std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>>::_Node
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation_cache.h(16) : warning C4251: 'std::_Tree_ptr<_Traits>::_Alptr' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_ptr<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+        and
+        [
+            _Ty=std::_Tree_ptr<std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>>::_Nodeptr 
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\scene\animation_cache.h(16) : warning C4251: 'std::_Tree_val<_Traits>::_Alval' : class 'std::allocator<_Ty>' needs to have dll-interface to be used by clients of class 'std::_Tree_val<_Traits>'
+        with
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+        and
+        [
+            _Ty=std::pair<const std::string,Animation *>
+        ]
+        and
+        [
+            _Traits=std::_Tmap_traits<std::string,Animation *,std::less<std::string>,std::allocator<std::pair<const std::string,Animation *>>,false>
+        ]
+..\xlbe\engine\scene\sprite.h(59) : warning C4251: 'Sprite::rect_' : class 'Rect' needs to have dll-interface to be used by clients of class 'Sprite'
+        ..\xlbe\engine\utility\rect.h(12) : see declaration of 'Rect'
+..\xlbe\engine\action\action_interval.h(14) : warning C4275: non dll-interface class 'Action_Finit_Time' used as base for dll-interface class 'Action_Interval'
+        d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\action\action.h(44) : see declaration of 'Action_Finit_Time'
+        ..\xlbe\engine\action\action_interval.h(13) : see declaration of 'Action_Interval'
+..\xlbe\engine\action\action_interval.h(43) : warning C4251: 'Action_Move_To::start_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Move_To'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(44) : warning C4251: 'Action_Move_To::end_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Move_To'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(45) : warning C4251: 'Action_Move_To::delta_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Move_To'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(71) : warning C4251: 'Action_Bezier_By::start_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Bezier_By'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(72) : warning C4251: 'Action_Bezier_By::end_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Bezier_By'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(73) : warning C4251: 'Action_Bezier_By::control1_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Bezier_By'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_interval.h(74) : warning C4251: 'Action_Bezier_By::control2_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Bezier_By'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\action\action_combine.h(30) : warning C4251: 'Action_Sequence::actions_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Action_Sequence'
+        with
+        [
+            _Ty=Action_Finit_Time *
+        ]
+..\xlbe\engine\action\action_combine.h(66) : warning C4251: 'Action_Spawn::actions_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Action_Spawn'
+        with
+        [
+            _Ty=Action_Finit_Time *
+        ]
+..\xlbe\engine\action\action_instant.h(14) : warning C4275: non dll-interface class 'Action_Finit_Time' used as base for dll-interface class 'Action_Instant'
+        d:\dev\棋牌游戏\c++项目工程\qipai-game\游戏组件\105 深海捕鱼\xlbe\engine\action\action.h(44) : see declaration of 'Action_Finit_Time'
+        ..\xlbe\engine\action\action_instant.h(13) : see declaration of 'Action_Instant'
+..\xlbe\engine\action\action_instant.h(53) : warning C4251: 'Action_Place::position_' : class 'Point' needs to have dll-interface to be used by clients of class 'Action_Place'
+        ..\xlbe\engine\utility\point.h(9) : see declaration of 'Point'
+..\xlbe\engine\scene\scene_director.h(44) : warning C4251: 'Scene_Director::scenes_' : class 'std::stack<_Ty>' needs to have dll-interface to be used by clients of class 'Scene_Director'
+        with
+        [
+            _Ty=Scene *
+        ]
+..\xlbe\engine\action\action_manager.h(56) : warning C4251: 'Action_Manager::elements_' : class 'std::map<_Kty,_Ty>' needs to have dll-interface to be used by clients of class 'Action_Manager'
+        with
+        [
+            _Kty=Scene_Node *,
+            _Ty=Action_Manager::Action_Element *
+        ]
+..\xlbe\engine\resource\resource_manager.h(134) : warning C4251: 'Resource_Manager::texture_map_' : class 'std::map<_Kty,_Ty>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Resource_Manager::Base_Res *
+        ]
+..\xlbe\engine\resource\resource_manager.h(135) : warning C4251: 'Resource_Manager::sprite_frame_map_' : class 'std::map<_Kty,_Ty>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Resource_Manager::Base_Res *
+        ]
+..\xlbe\engine\resource\resource_manager.h(136) : warning C4251: 'Resource_Manager::animation_map_' : class 'std::map<_Kty,_Ty>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Resource_Manager::Base_Res *
+        ]
+..\xlbe\engine\resource\resource_manager.h(138) : warning C4251: 'Resource_Manager::cur_res_group_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+..\xlbe\engine\resource\resource_manager.h(139) : warning C4251: 'Resource_Manager::default_path_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+..\xlbe\engine\resource\resource_manager.h(141) : warning C4251: 'Resource_Manager::res_group_map_' : class 'std::map<_Kty,_Ty,_Pr>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Ty=Resource_Manager::Res_List,
+            _Pr=String_Less_No_Case
+        ]
+..\xlbe\engine\resource\resource_manager.h(143) : warning C4251: 'Resource_Manager::cur_res_group_listor_' : class 'std::list<_Ty>::iterator' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Ty=Resource_Manager::Base_Res *
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio .NET 2003\Vc7\include\list(220) : see declaration of 'std::list<_Ty>::iterator'
+        with
+        [
+            _Ty=Resource_Manager::Base_Res *
+        ]
+..\xlbe\engine\resource\resource_manager.h(145) : warning C4251: 'Resource_Manager::loaded_groups_' : class 'std::set<_Kty,_Pr>' needs to have dll-interface to be used by clients of class 'Resource_Manager'
+        with
+        [
+            _Kty=std::string,
+            _Pr=String_Less_No_Case
+        ]
+..\xlbe\engine\frame\root.h(113) : warning C4251: 'Root::frame_listeners_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Root'
+        with
+        [
+            _Ty=Frame_Listener *
+        ]
+..\xlbe\engine\frame\root.h(114) : warning C4251: 'Root::resource_listeners_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Root'
+        with
+        [
+            _Ty=Resource_Listener *
+        ]
+..\xlbe\engine\frame\root.h(116) : warning C4251: 'Root::event_times' : class 'std::deque<_Ty>' needs to have dll-interface to be used by clients of class 'Root'
+        with
+        [
+            _Ty=unsigned long
+        ]
+..\xlbe\engine\frame\root.h(126) : warning C4251: 'Root::config_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Root'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+..\xlbe\engine\frame\root.h(69) : warning C4244: 'return' : conversion from 'double' to 'unsigned long', possible loss of data
+..\xlbe\engine\frame\root.h(70) : warning C4244: '=' : conversion from 'double' to 'unsigned long', possible loss of data
+..\xlbe\engine\frame\window_event_utilities.h(40) : warning C4251: 'Window_Event_Utilities::event_listeners_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Window_Event_Utilities'
+        with
+        [
+            _Ty=Window_Event_Listener *
+        ]
+..\xlbe\engine\frame\window_event_utilities.h(41) : warning C4251: 'Window_Event_Utilities::render_windows_' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'Window_Event_Utilities'
+        with
+        [
+            _Ty=Render_Window *
+        ]
+..\xlbe\engine\frame\application.h(39) : warning C4251: 'Application::title_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Application'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+..\xlbe\engine\frame\application.h(40) : warning C4251: 'Application::cmdline_' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Application'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+ClientKernel.cpp
+Compiling resources...
+Linking...
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:ICF' specification
+Performing Post-Build Event...
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://d:\Dev\棋牌游戏\C++项目工程\qipai-game\游戏组件\105 深海捕鱼\游戏客户端\Release\BuildLog.htm"
+深海捕鱼 - 0 error(s), 284 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>
