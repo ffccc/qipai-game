@@ -1,1 +1,0 @@
-Root::restore_config - TiXmlDocument load failed
