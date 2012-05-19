@@ -22,8 +22,8 @@ CGameServiceManager::CGameServiceManager(void)
 	lstrcpyn(m_GameServiceAttrib.szKindName,GAME_NAME,CountArray(m_GameServiceAttrib.szKindName));
 	lstrcpyn(m_GameServiceAttrib.szDataBaseName,szTreasureDB,CountArray(m_GameServiceAttrib.szDataBaseName));
 	lstrcpyn(m_GameServiceAttrib.szDescription,TEXT("中国象棋游戏服务组件"),CountArray(m_GameServiceAttrib.szDescription));
-	lstrcpyn(m_GameServiceAttrib.szClientModuleName,TEXT("CHNChess.EXE"),CountArray(m_GameServiceAttrib.szClientModuleName));
-	lstrcpyn(m_GameServiceAttrib.szServerModuleName,TEXT("CHNChessServer.DLL"),CountArray(m_GameServiceAttrib.szServerModuleName));
+	lstrcpyn(m_GameServiceAttrib.szClientModuleName,TEXT("ChinaChess.exe"),CountArray(m_GameServiceAttrib.szClientModuleName));
+	lstrcpyn(m_GameServiceAttrib.szServerModuleName,TEXT("ChinaChessServer.dll"),CountArray(m_GameServiceAttrib.szServerModuleName));
 
 	return;
 }
