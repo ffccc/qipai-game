@@ -1,0 +1,334 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\GameClient.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GameClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,6,1,0
+ PRODUCTVERSION 6,6,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "FileDescription", "庄闲平游戏客户端"
+            VALUE "FileVersion", "6, 6, 1, 0"
+            VALUE "InternalName", "Baccarat.exe"
+            VALUE "OriginalFilename", "Baccarat.exe"
+            VALUE "ProductName", "庄闲平游戏客户端"
+            VALUE "ProductVersion", "6, 6, 1, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+GAME_LOGO               BITMAP                  "res\\GAME_LOGO.bmp"
+IDB_VIEW_BACK           BITMAP                  "res\\VIEW_BACK.bmp"
+IDB_VIEW_FILL           BITMAP                  "res\\VIEW_FILL.bmp"
+IDB_GAME_CARD           BITMAP                  "res\\GAME_CARD.bmp"
+IDB_JETTOM_VIEW         BITMAP                  "res\\JETTOM_VIEW.bmp"
+IDB_SCORE_NUMBER        BITMAP                  "res\\SCORE_NUMBER.bmp"
+IDB_BT_JETTON_100       BITMAP                  "res\\BT_JETTON_100.bmp"
+IDB_BT_JETTON_1000      BITMAP                  "res\\BT_JETTON_1000.bmp"
+IDB_BT_JETTON_10000     BITMAP                  "res\\BT_JETTON_10000.bmp"
+IDB_BT_JETTON_100000    BITMAP                  "res\\BT_JETTON_100000.bmp"
+IDB_WIN_FLAGS           BITMAP                  "res\\WIN_FLAGS.bmp"
+IDB_BT_APPLY_BANKER     BITMAP                  "res\\BT_APPLY_BANKER.bmp"
+IDB_BT_CANCEL_BANKER    BITMAP                  "res\\BT_CANCEL_BANKER.bmp"
+IDB_BT_SCORE_MOVE_L     BITMAP                  "res\\BT_SCORE_MOVE_L.bmp"
+IDB_BT_SCORE_MOVE_R     BITMAP                  "res\\BT_SCORE_MOVE_R.bmp"
+IDB_APPLY_USER_BACK     BITMAP                  "res\\APPLY_USER_BACK.bmp"
+IDB_FRAME_TONG_DIAN_PING BITMAP                  "res\\FRAME_TONG_DIAN_PING.bmp"
+IDB_FRAME_XIAN_JIA      BITMAP                  "res\\FRAME_XIAN_JIA.bmp"
+IDB_FRAME_XIAN_TIAN_WANG BITMAP                  "res\\FRAME_XIAN_TIAN_WANG.bmp"
+IDB_FRAME_ZHUANG_JIA    BITMAP                  "res\\FRAME_ZHUANG_JIA.bmp"
+IDB_FRAME_ZHUANG_TIAN_WANG BITMAP                  "res\\FRAME_ZHUANG_TIAN_WANG.bmp"
+IDB_FRAME_PING_JIA      BITMAP                  "res\\FRAME_PING_JIA.bmp"
+IDB_GAME_END            BITMAP                  "res\\GAME_END.BMP"
+IDB_GAME_END_FRAME      BITMAP                  "res\\GAME_END_FRAME.BMP"
+IDB_GAME_POINT          BITMAP                  "res\\GAME_POINT.bmp"
+IDB_CHANGE_BANKER       BITMAP                  "res\\CHANGE_BANKER.bmp"
+IDB_ME_BANKER           BITMAP                  "res\\ME_BANKER.bmp"
+IDB_NO_BANKER           BITMAP                  "res\\NO_BANKER.bmp"
+IDB_BT_CANCEL_APPLY     BITMAP                  "res\\BT_CANCEL_APPLY.BMP"
+IDB_TIME_FLAG           BITMAP                  "res\\TIME_FLAG.bmp"
+IDB_ME_SCORE_NUMBER     BITMAP                  "res\\ME_SCORE_NUMBER.bmp"
+IDB_BANKER_TWO_PAIR     BITMAP                  "res\\FRAME_ZHUANG_JIA_TOP.bmp"
+IDB_PLAYER_TWO_PAIR     BITMAP                  "res\\FRAME_XIAN_JIA_TOP.bmp"
+IDB_BT_CHART            BITMAP                  "res\\BT_CHART.bmp"
+IDB_CHART_BACK          BITMAP                  "res\\CHART_BACK.bmp"
+IDB_BT_CHART_CLOSE      BITMAP                  "res\\BT_CHART_CLOSE.bmp"
+IDB_BT_JETTON_1000000   BITMAP                  "res\\BT_JETTON_1000000.BMP"
+IDB_BT_JETTON_5000000   BITMAP                  "res\\BT_JETTON_5000000.BMP"
+IDB_BT_STORAGE          BITMAP                  "res\\BT_STORAGE.bmp"
+IDB_BT_DRAW             BITMAP                  "res\\BT_DRAW.bmp"
+IDB_BT_BT_S             BITMAP                  "res\\BT_S.bmp"
+IDB_BT_BT_X             BITMAP                  "res\\BT_X.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_SCORE_100000        CURSOR                  "res\\SCORE_100000.cur"
+IDC_SCORE_5000000       CURSOR                  "res\\SCORE_5000000.cur"
+IDC_SCORE_10000         CURSOR                  "res\\SCORE_10000.cur"
+IDC_SCORE_1000          CURSOR                  "res\\SCORE_1000.cur"
+IDC_SCORE_100           CURSOR                  "res\\SCORE_100.cur"
+IDC_SCORE_1000000       CURSOR                  "res\\SCORE_1000000.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+ADD_GOLD                WAVE                    "res\\sound\\ADD_GOLD.wav"
+ADD_GOLD_EX             WAVE                    "res\\sound\\ADD_GOLD_EX.wav"
+BACK_GROUND             WAVE                    "res\\sound\\BACK_GROUND.wav"
+END_WIN                 WAVE                    "res\\sound\\END_WIN.wav"
+END_LOST                WAVE                    "res\\sound\\END_LOST.wav"
+END_DRAW                WAVE                    "res\\sound\\END_DRAW.wav"
+TIME_WARIMG             WAVE                    "res\\sound\\TIME_WARIMG.wav"
+DISPATCH_CARD           WAVE                    "res\\sound\\DISPATCH_CARD.wav"
+GAME_START              WAVE                    "res\\sound\\GAME_START.wav"
+CHEER1                  WAVE                    "res\\sound\\CHEER1.wav"
+CHEER2                  WAVE                    "res\\sound\\CHEER2.wav"
+CHEER3                  WAVE                    "res\\sound\\CHEER3.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_BANK_STORAGE DIALOGEX 0, 0, 262, 138
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "关闭",IDCANCEL,156,112,45,12
+    LTEXT           "当前游戏币数目：",-1,17,29,65,8
+    LTEXT           "...",IDC_GAME_GOLD,91,29,127,9
+    LTEXT           "银行游戏币数目：",-1,17,46,65,8
+    LTEXT           "...",IDC_STORAGE_GOLD,91,45,127,9
+    LTEXT           "请输入游戏币数目：",-1,17,65,73,8
+    PUSHBUTTON      "确定",IDOK,67,112,45,12
+    EDITTEXT        IDC_IN_COUNT,89,63,98,12,ES_AUTOHSCROLL
+    LTEXT           "请输入密码：",STATIC_PASS,17,84,51,8
+    EDITTEXT        IDC_USER_PASSWORD,89,81,97,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    CONTROL         "全部金币",IDC_CHECK_ALL_GOLD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,195,64,48,10
+END
+
+IDD_DLG_GAME_RECORD DIALOGEX 0, 0, 328, 105
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_RECORD_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHAREIMAGELISTS | LVS_ALIGNLEFT | LVS_NOSCROLL | 
+                    LVS_NOCOLUMNHEADER | WS_TABSTOP,0,0,327,105
+END
+
+IDD_VIEW_CHART DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "",IDOK,129,7,50,14
+END
+
+IDD_DIALOG_ADMIN DIALOGEX 0, 0, 193, 143
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "背景一  ",IDC_RADIO_LT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,21,43,44,10
+    CONTROL         "背景二   ",IDC_RADIO_LC,"Button",BS_AUTORADIOBUTTON,20,
+                    60,46,10
+    CONTROL         "背景三    ",IDC_RADIO_LB,"Button",BS_AUTORADIOBUTTON,20,
+                    78,48,10
+    CONTROL         "背景四 ",IDC_RADIO_CC,"Button",BS_AUTORADIOBUTTON,74,60,
+                    42,10
+    CONTROL         "背景五    ",IDC_RADIO_CB,"Button",BS_AUTORADIOBUTTON,74,
+                    78,48,10
+    CONTROL         "背景六  ",IDC_RADIO_RT,"Button",BS_AUTORADIOBUTTON,130,
+                    43,44,10
+    CONTROL         "背景七   ",IDC_RADIO_RC,"Button",BS_AUTORADIOBUTTON,130,
+                    61,46,10
+    CONTROL         "背景八   ",IDC_RADIO_RB,"Button",BS_AUTORADIOBUTTON,130,
+                    78,46,10
+    LTEXT           "发声类型",IDC_STATIC_TIMES,20,14,42,8
+    COMBOBOX        IDC_COMBO_TIMES,67,12,48,71,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,15,36,159,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,18,104,156,1
+    LTEXT           "       ",IDC_STATIC_AREA,18,28,55,8
+    LTEXT           "           ",IDC_STATIC_NOTIC,19,94,52,8
+    PUSHBUTTON      "确定",IDC_BUTTON_OK,103,125,36,12
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,150,125,36,12
+    LTEXT           "静态",IDC_STATIC_TEXT,18,107,156,8
+    PUSHBUTTON      "确定",IDC_BUTTON_RESET,7,125,36,12
+    PUSHBUTTON      "确定",IDC_BUTTON_SYN,55,125,36,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_GAME_RECORD, DIALOG
+    BEGIN
+        RIGHTMARGIN, 186
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_VIEW_CHART, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG_ADMIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 137
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+CHART_PING              PNG                     "res\\CHART_PING.png"
+CHART_PING_EX           PNG                     "res\\CHART_PING_EX.png"
+CHART_XIAN              PNG                     "res\\CHART_XIAN.png"
+CHART_XIAN_EX           PNG                     "res\\CHART_XIAN_EX.png"
+CHART_ZHUANG            PNG                     "res\\CHART_ZHUANG.png"
+CHART_ZHUANG_EX         PNG                     "res\\CHART_ZHUANG_EX.png"
+FIRE_EFFECT             PNG                     "res\\FIRE_EFFECT.png"
+TWO_PAIR_FLAG           PNG                     "res\\TWO_PAIR_FLAG.png"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\GameClient.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
