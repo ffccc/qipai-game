@@ -1,0 +1,331 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\GameClient.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GameClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,6,9,0
+ PRODUCTVERSION 6,6,9,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "生肖转转乐"
+            VALUE "FileDescription", "生肖转转乐"
+            VALUE "FileVersion", "6, 6, 9, 0"
+            VALUE "OriginalFilename", "生肖转转乐"
+            VALUE "ProductName", "生肖转转乐"
+            VALUE "ProductVersion", "6, 6, 9, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+GAME_LOGO               BITMAP                  "res\\GAME_LOGO.bmp"
+IDB_NEXT_PAGE           BITMAP                  "Res\\BT_RIGHT.bmp"
+IDB_PREV_PAGE           BITMAP                  "Res\\BT_LEFT.bmp"
+//IDB_BT_HISTORY_CLOSE    BITMAP                  "Res\\BT_HISTORY_CLOSE.bmp"
+//IDB_HISTORY_ITEM        BITMAP                  "Res\\history_item.bmp"
+//IDB_HISTORY_ITEM_MIN    BITMAP                  "Res\\HISTORY_ITEM_MIN.bmp"
+IDB_HISTORY_ITEM_PAIR   BITMAP                  "Res\\HISTORY_ITEM_PAIR.bmp"
+//IDR_BT_HISTORY          BITMAP                  "Res\\bt_History.bmp"
+//IDR_BT_SCORE_MOVE_R     BITMAP                  "Res\\BT_SCORE_MOVE_R.bmp"
+//IDR_BT_SCORE_MOVE_L     BITMAP                  "Res\\BT_SCORE_MOVE_L.bmp"
+//IDR_BT_FETCH_SCORE      BITMAP                  "Res\\BT_FETCH_SCORE.bmp"
+//IDR_BT_SAVE_SCORE       BITMAP                  "Res\\BT_SAVE_SCORE.bmp"
+IDR_BT_CANCEL_BANKER    BITMAP                  "Res\\BT_CANCEL_BANKER.bmp"
+IDR_BT_APPLY_BANKER     BITMAP                  "Res\\BT_APPLY_BANKER.bmp"
+IDR_BT_CANCEL_APPLY     BITMAP                  "Res\\BT_CANCEL_APPLY.bmp"
+IDR_BT_JETTON_100       BITMAP                  "Res\\BT_JETTON_100.bmp"
+IDR_BT_JETTON_1000      BITMAP                  "Res\\BT_JETTON_1000.bmp"
+IDR_BT_JETTON_10000     BITMAP                  "Res\\BT_JETTON_10000.bmp"
+IDR_BT_JETTON_100000    BITMAP                  "Res\\BT_JETTON_100000.bmp"
+IDR_BT_JETTON_1000000   BITMAP                  "Res\\BT_JETTON_1000000.bmp"
+IDR_BT_JETTON_10000000  BITMAP                  "Res\\BT_JETTON_10000000.bmp"
+IDB_LIST_DOWN           BITMAP                  "res\\BT_LIST_DOWN.bmp"
+IDB_LIST_UP             BITMAP                  "res\\BT_LIST_UP.bmp"
+IDB_BT_BANK_IN          BITMAP                  "res\\BT_BANK_IN.bmp"
+IDB_BT_BANK_OUT         BITMAP                  "res\\BT_BANK_OUT.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_GAME_RECORD DIALOGEX 0, 0, 328, 105
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_RECORD_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHAREIMAGELISTS | LVS_ALIGNLEFT | LVS_NOSCROLL | 
+                    LVS_NOCOLUMNHEADER | WS_TABSTOP,0,0,327,105
+END
+
+IDD_FRAME_CONTROL DIALOGEX 0, 0, 186, 318
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_USER_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHAREIMAGELISTS | LVS_ALIGNLEFT | WS_TABSTOP,3,49,
+                    178,90
+    CONTROL         "",IDC_CHAT_MESSAGE,"RichEdit20A",ES_MULTILINE | 
+                    ES_NOHIDESEL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL | 
+                    WS_TABSTOP,3,143,178,147
+    COMBOBOX        IDC_CHAT_OBJECT,3,295,58,107,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP,
+                    WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_CHAT_INPUT,64,295,96,133,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "",IDC_SEND_CHAT,161,295,21,14
+    PUSHBUTTON      "",IDC_CONTROL_CHARGUE,5,8,41,34
+    PUSHBUTTON      "",IDC_CONTROL_OPTION,49,8,41,34
+    PUSHBUTTON      "",IDC_CONTROL_HELP,93,8,41,34
+    PUSHBUTTON      "",IDC_CONTROL_EXIT,137,8,41,34
+END
+
+IDD_HELPDLG DIALOGEX 0, 0, 261, 168
+STYLE DS_SETFONT | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "",IDOK,215,145,39,16
+    PUSHBUTTON      "",IDC_NEXT_PAGE,172,145,39,16
+    PUSHBUTTON      "",IDC_PREV_PAGE,128,145,39,16
+END
+
+IDD_OPTIONDLG DIALOGEX 0, 0, 205, 126
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "游戏选项"
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,41,100,50,16
+    PUSHBUTTON      "取消",IDCANCEL,115,100,50,16
+    CONTROL         "允许游戏音效",IDC_ALLOW_SOUND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,24,29,64,10
+END
+
+IDD_HISTORYDLG DIALOGEX 0, 0, 268, 193
+STYLE DS_SETFONT | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "",IDC_CLOSE,244,7,17,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_GAME_RECORD, DIALOG
+    BEGIN
+        RIGHTMARGIN, 186
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_FRAME_CONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+    END
+
+    IDD_HELPDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_OPTIONDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_HISTORYDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDR_GAME_END            PNG                     "Res\\GAME_END.png"
+IDR_TIMER_NUMBER        PNG                     "Res\\IDB_TIME_NUM.png"
+IDR_TIME_FLAG           PNG                     "Res\\TIME_FLAG.png"
+//IDR_TIMER_BACK          PNG                     "Res\\TIMER_BACK.png"
+IDR_JETTOM_VIEW         PNG                     "Res\\JETTOM_VIEW.png"
+2001                    PNG                     "Res\\res\\TRAN_1.png"
+2002                    PNG                     "Res\\res\\TRAN_2.png"
+2003                    PNG                     "Res\\res\\TRAN_3.png"
+2004                    PNG                     "Res\\res\\TRAN_4.png"
+2005                    PNG                     "Res\\res\\TRAN_5.png"
+2006                    PNG                     "Res\\res\\TRAN_6.png"
+2007                    PNG                     "Res\\res\\TRAN_7.png"
+2008                    PNG                     "Res\\res\\TRAN_8.png"
+2009                    PNG                     "Res\\res\\TRAN_9.png"
+2010                    PNG                     "Res\\res\\TRAN_10.png"
+2011                    PNG                     "Res\\res\\TRAN_11.png"
+2012                    PNG                     "Res\\res\\TRAN_12.png"
+IDB_CHIP_NUM            PNG                     "res\\ChipNum.png"
+IDB_CHIP_NUM_1          PNG                     "res\\ChipNum1.png"
+IDB_CHIP_NUM_2          PNG                     "res\\ChipNum2.png"
+IDB_HUHAO               PNG                     "res\\_.png"
+IDB_TEXT                PNG                     "res\\text.png"
+IDB_TIMER_TEXT          PNG                     "res\\TimerText.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// JPG
+//
+
+IDR_VIEW_BACK           JPG                     "Res\\VIEW_BACK.JPG"
+IDB_BG                  JPG                     "res\\BG.jpg"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDC_SND_BK              WAVE                    "res\\IDC_SND_BK.wav"
+IDC_SND_ADDCHIP         WAVE                    "res\\ADD_GOLD.wav"
+IDC_SELGRID             WAVE                    "res\\IDC_SND_SELGRID.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_SCORE_500W         CURSOR                  "Res\\CurAddChip5.cur"
+IDC_SCORE_100W          CURSOR                  "Res\\CurAddChip4.cur"
+IDC_SCORE_100           CURSOR                  "Res\\CurAddChip0.cur"
+IDC_SCORE_10W           CURSOR                  "Res\\CurAddChip3.cur"
+IDC_SCORE_1W            CURSOR                  "Res\\CurAddChip2.cur"
+IDC_SCORE_1K            CURSOR                  "Res\\CurAddChip1.cur"
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\GameClient.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
