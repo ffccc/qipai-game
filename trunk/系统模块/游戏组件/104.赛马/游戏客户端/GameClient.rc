@@ -1,0 +1,223 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GameClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+GAME_LOGO               BITMAP                  "res\\GAME_LOGO.bmp"
+IDB_APPLY_USER_BACK     BITMAP                  "res\\APPLY_USER_BACK.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+CHEER1                  WAVE                    "res\\sound\\CHEER1.wav"
+CHEER2                  WAVE                    "res\\sound\\CHEER2.wav"
+CHEER3                  WAVE                    "res\\sound\\CHEER3.wav"
+BACK_GROUND             WAVE                    "res\\sound\\BACK_GROUND.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,6,1,0
+ PRODUCTVERSION 6,6,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "香格里拉棋牌"
+            VALUE "FileDescription", "赛马客户端"
+            VALUE "FileVersion", "6, 6, 1, 0"
+            VALUE "InternalName", "RaceHorse.exe"
+            VALUE "LegalCopyright", "香格里拉棋牌保留所有权利。"
+            VALUE "OriginalFilename", "RaceHorse.exe"
+            VALUE "ProductName", "赛马客户端"
+            VALUE "ProductVersion", "6, 6, 1, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_GAME_RECORD DIALOGEX 0, 0, 328, 105
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_RECORD_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHAREIMAGELISTS | LVS_ALIGNLEFT | LVS_NOSCROLL | 
+                    LVS_NOCOLUMNHEADER | WS_TABSTOP,0,0,327,105
+END
+
+IDD_VIEW_CHART DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "",IDOK,129,7,50,14
+END
+
+IDD_BACK DIALOGEX 0, 0, 265, 130
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "当前游戏金币数目：",IDC_STATIC,15,27,73,8
+    LTEXT           "...            ",IDC_GAME_GOLD,88,27,33,8
+    LTEXT           "银行游戏金币数目：",IDC_STATIC,129,27,73,8
+    LTEXT           "...            ",IDC_STORAGE_GOLD,211,27,33,8
+    LTEXT           "请输入游戏金币数：",IDC_STATIC,16,57,73,8
+    LTEXT           "操作：",IDC_STATIC,17,81,25,8
+    EDITTEXT        IDC_IN_COUNT,91,54,65,14,ES_AUTOHSCROLL
+    CONTROL         "存入游戏币",IDC_STORAGE,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,47,81,56,10
+    CONTROL         "取出游戏币",IDC_DRAWOUT,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,120,81,56,10
+    LTEXT           "请输入密码：",IDC_STATIC,17,105,49,8
+    EDITTEXT        IDC_USER_PASSWORD,64,103,65,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDOK,152,103,42,12
+    PUSHBUTTON      "关闭",IDCANCEL,205,103,43,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_GAME_RECORD, DIALOG
+    BEGIN
+        RIGHTMARGIN, 186
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_VIEW_CHART, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_BACK, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 127
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

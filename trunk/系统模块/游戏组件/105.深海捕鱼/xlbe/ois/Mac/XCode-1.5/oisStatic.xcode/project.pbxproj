@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 39;
+	objects = {
+		034768DDFF38A45A11DB9C8B = {
+			children = (
+				D2AAC06F0554671400DB518D,
+			);
+			isa = PBXGroup;
+			name = Products;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//030
+//031
+//032
+//033
+//034
+//080
+//081
+//082
+//083
+//084
+		0867D690FE84028FC02AAC07 = {
+			buildSettings = {
+			};
+			buildStyles = (
+				4F0BB7EC011F40E904CA0E50,
+				4F0BB7ED011F40E904CA0E50,
+			);
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			mainGroup = 0867D691FE84028FC02AAC07;
+			productRefGroup = 034768DDFF38A45A11DB9C8B;
+			projectDirPath = "";
+			targets = (
+				D2AAC06E0554671400DB518D,
+			);
+		};
+		0867D691FE84028FC02AAC07 = {
+			children = (
+				DFC6D5A909A05F7D00FA2ACC,
+				08FB77ACFE841707C02AAC07,
+				DF279D9809A303DB00D6B6E6,
+				0867D69AFE84028FC02AAC07,
+				034768DDFF38A45A11DB9C8B,
+			);
+			isa = PBXGroup;
+			name = oisStatic;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 = {
+			children = (
+				08FB77AAFE841565C02AAC07,
+			);
+			isa = PBXGroup;
+			name = "External Frameworks and Libraries";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		08FB77AAFE841565C02AAC07 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = Carbon.framework;
+			path = /System/Library/Frameworks/Carbon.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		08FB77ACFE841707C02AAC07 = {
+			children = (
+				DFC6D5A609A05F7600FA2ACC,
+				DFC6D5A309A05F6C00FA2ACC,
+			);
+			isa = PBXGroup;
+			name = Source;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//080
+//081
+//082
+//083
+//084
+//4F0
+//4F1
+//4F2
+//4F3
+//4F4
+		4F0BB7EC011F40E904CA0E50 = {
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ZERO_LINK = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		4F0BB7ED011F40E904CA0E50 = {
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				ZERO_LINK = NO;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+//4F0
+//4F1
+//4F2
+//4F3
+//4F4
+//D20
+//D21
+//D22
+//D23
+//D24
+		D2AAC06B0554671400DB518D = {
+			buildActionMask = 2147483647;
+			files = (
+				DFC6D65009A060CF00FA2ACC,
+				DFC6D65109A060CF00FA2ACC,
+				DFC6D65209A060CF00FA2ACC,
+				DFC6D65309A060CF00FA2ACC,
+				DFC6D65409A060CF00FA2ACC,
+				DFC6D65509A060CF00FA2ACC,
+				DFC6D65609A060CF00FA2ACC,
+				DFC6D65709A060CF00FA2ACC,
+				DFC6D65809A060CF00FA2ACC,
+				DFC6D65909A060CF00FA2ACC,
+				DFC6D65A09A060CF00FA2ACC,
+				DFC6D65B09A060CF00FA2ACC,
+				DFC6D66209A060E900FA2ACC,
+				DFC6D66309A060E900FA2ACC,
+				DFC6D66409A060E900FA2ACC,
+				DFC6D66509A060E900FA2ACC,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC06C0554671400DB518D = {
+			buildActionMask = 2147483647;
+			files = (
+				DFC6D66D09A0615A00FA2ACC,
+				DFC6D66E09A0615A00FA2ACC,
+				DFC6D66F09A0615A00FA2ACC,
+				DFC6D67009A0615A00FA2ACC,
+				DFC6D67109A0615A00FA2ACC,
+				DFC6D67709A0617F00FA2ACC,
+				DFC6D67809A0617F00FA2ACC,
+				DFC6D67909A0617F00FA2ACC,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC06D0554671400DB518D = {
+			buildActionMask = 2147483647;
+			files = (
+				D2AAC0700554677100DB518D,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC06E0554671400DB518D = {
+			buildPhases = (
+				D2AAC06B0554671400DB518D,
+				D2AAC06C0554671400DB518D,
+				D2AAC06D0554671400DB518D,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				HEADER_SEARCH_PATHS = ../../includes;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_STYLE = STATIC;
+				PRODUCT_NAME = ois;
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = oisStatic;
+			productName = oisStatic;
+			productReference = D2AAC06F0554671400DB518D;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2AAC06F0554671400DB518D = {
+			explicitFileType = archive.ar;
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = libois.a;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D2AAC0700554677100DB518D = {
+			fileRef = 08FB77AAFE841565C02AAC07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+//D20
+//D21
+//D22
+//D23
+//D24
+//DF0
+//DF1
+//DF2
+//DF3
+//DF4
+		DF279D9809A303DB00D6B6E6 = {
+			children = (
+			);
+			isa = PBXGroup;
+			name = Resources;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		DFC6D5A309A05F6C00FA2ACC = {
+			children = (
+				DFC6D67409A0617F00FA2ACC,
+				DFC6D67509A0617F00FA2ACC,
+				DFC6D67609A0617F00FA2ACC,
+			);
+			isa = PBXGroup;
+			name = Mac;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		DFC6D5A609A05F7600FA2ACC = {
+			children = (
+				DFC6D66809A0615A00FA2ACC,
+				DFC6D66909A0615A00FA2ACC,
+				DFC6D66A09A0615A00FA2ACC,
+				DFC6D66B09A0615A00FA2ACC,
+				DFC6D66C09A0615A00FA2ACC,
+			);
+			isa = PBXGroup;
+			name = Base;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		DFC6D5A909A05F7D00FA2ACC = {
+			children = (
+				DFC6D5AC09A05F8700FA2ACC,
+				DFC6D5AF09A05F8D00FA2ACC,
+			);
+			isa = PBXGroup;
+			name = Include;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		DFC6D5AC09A05F8700FA2ACC = {
+			children = (
+				DFC6D64409A060CF00FA2ACC,
+				DFC6D64509A060CF00FA2ACC,
+				DFC6D64609A060CF00FA2ACC,
+				DFC6D64709A060CF00FA2ACC,
+				DFC6D64809A060CF00FA2ACC,
+				DFC6D64909A060CF00FA2ACC,
+				DFC6D64A09A060CF00FA2ACC,
+				DFC6D64B09A060CF00FA2ACC,
+				DFC6D64C09A060CF00FA2ACC,
+				DFC6D64D09A060CF00FA2ACC,
+				DFC6D64E09A060CF00FA2ACC,
+				DFC6D64F09A060CF00FA2ACC,
+			);
+			isa = PBXGroup;
+			name = Base;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		DFC6D5AF09A05F8D00FA2ACC = {
+			children = (
+				DFC6D65E09A060E900FA2ACC,
+				DFC6D65F09A060E900FA2ACC,
+				DFC6D66009A060E900FA2ACC,
+				DFC6D66109A060E900FA2ACC,
+			);
+			isa = PBXGroup;
+			name = Mac;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		DFC6D64409A060CF00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = OISConfig.h;
+			path = ../../includes/OISConfig.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D64509A060CF00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = OISEffect.h;
+			path = ../../includes/OISEffect.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D64609A060CF00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = OISEvents.h;
+			path = ../../includes/OISEvents.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D64709A060CF00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = OISException.h;
+			path = ../../includes/OISException.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D64809A060CF00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = OISForceFeedback.h;
+			path = ../../includes/OISForceFeedback.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D64909A060CF00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = OISInputManager.h;
+			path = ../../includes/OISInputManager.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D64A09A060CF00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = OISInterface.h;
+			path = ../../includes/OISInterface.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D64B09A060CF00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = OISJoyStick.h;
+			path = ../../includes/OISJoyStick.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D64C09A060CF00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = OISKeyboard.h;
+			path = ../../includes/OISKeyboard.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D64D09A060CF00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = OISMouse.h;
+			path = ../../includes/OISMouse.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D64E09A060CF00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = OISObject.h;
+			path = ../../includes/OISObject.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D64F09A060CF00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = OISPrereqs.h;
+			path = ../../includes/OISPrereqs.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D65009A060CF00FA2ACC = {
+			fileRef = DFC6D64409A060CF00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D65109A060CF00FA2ACC = {
+			fileRef = DFC6D64509A060CF00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D65209A060CF00FA2ACC = {
+			fileRef = DFC6D64609A060CF00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D65309A060CF00FA2ACC = {
+			fileRef = DFC6D64709A060CF00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D65409A060CF00FA2ACC = {
+			fileRef = DFC6D64809A060CF00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D65509A060CF00FA2ACC = {
+			fileRef = DFC6D64909A060CF00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D65609A060CF00FA2ACC = {
+			fileRef = DFC6D64A09A060CF00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D65709A060CF00FA2ACC = {
+			fileRef = DFC6D64B09A060CF00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D65809A060CF00FA2ACC = {
+			fileRef = DFC6D64C09A060CF00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D65909A060CF00FA2ACC = {
+			fileRef = DFC6D64D09A060CF00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D65A09A060CF00FA2ACC = {
+			fileRef = DFC6D64E09A060CF00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D65B09A060CF00FA2ACC = {
+			fileRef = DFC6D64F09A060CF00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D65E09A060E900FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = MacHelpers.h;
+			path = ../../includes/Mac/MacHelpers.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D65F09A060E900FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = MacInputManager.h;
+			path = ../../includes/Mac/MacInputManager.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D66009A060E900FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = MacKeyboard.h;
+			path = ../../includes/Mac/MacKeyboard.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D66109A060E900FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = MacPrereqs.h;
+			path = ../../includes/Mac/MacPrereqs.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D66209A060E900FA2ACC = {
+			fileRef = DFC6D65E09A060E900FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D66309A060E900FA2ACC = {
+			fileRef = DFC6D65F09A060E900FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D66409A060E900FA2ACC = {
+			fileRef = DFC6D66009A060E900FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D66509A060E900FA2ACC = {
+			fileRef = DFC6D66109A060E900FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D66809A0615A00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = OISEffect.cpp;
+			path = ../../src/OISEffect.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D66909A0615A00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = OISForceFeedback.cpp;
+			path = ../../src/OISForceFeedback.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D66A09A0615A00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = OISInputManager.cpp;
+			path = ../../src/OISInputManager.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D66B09A0615A00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = OISKeyboard.cpp;
+			path = ../../src/OISKeyboard.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D66C09A0615A00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = OISObject.cpp;
+			path = ../../src/OISObject.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D66D09A0615A00FA2ACC = {
+			fileRef = DFC6D66809A0615A00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D66E09A0615A00FA2ACC = {
+			fileRef = DFC6D66909A0615A00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D66F09A0615A00FA2ACC = {
+			fileRef = DFC6D66A09A0615A00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D67009A0615A00FA2ACC = {
+			fileRef = DFC6D66B09A0615A00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D67109A0615A00FA2ACC = {
+			fileRef = DFC6D66C09A0615A00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D67409A0617F00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = MacHelpers.cpp;
+			path = ../../src/Mac/MacHelpers.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D67509A0617F00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = MacInputManager.cpp;
+			path = ../../src/Mac/MacInputManager.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D67609A0617F00FA2ACC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = MacKeyboard.cpp;
+			path = ../../src/Mac/MacKeyboard.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		DFC6D67709A0617F00FA2ACC = {
+			fileRef = DFC6D67409A0617F00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D67809A0617F00FA2ACC = {
+			fileRef = DFC6D67509A0617F00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DFC6D67909A0617F00FA2ACC = {
+			fileRef = DFC6D67609A0617F00FA2ACC;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+	};
+	rootObject = 0867D690FE84028FC02AAC07;
+}
