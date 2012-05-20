@@ -1,0 +1,250 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\GameClient.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GameClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "天涯网络科技"
+            VALUE "CompanyName", "天涯网络科技"
+            VALUE "FileDescription", "拱猪游戏客户端"
+            VALUE "FileVersion", "2, 0, 0, 0"
+            VALUE "InternalName", "UncoverPig.exe"
+            VALUE "LegalCopyright", "天涯网络科技"
+            VALUE "OriginalFilename", "UncoverPig.exe"
+            VALUE "ProductName", "拱猪游戏客户端"
+            VALUE "ProductVersion", "2, 0, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+GAME_LOGO               BITMAP                  "res\\GAME_LOGO.bmp"
+IDB_BT_OUT_CARD         BITMAP                  "res\\OUT_CARD.bmp"
+IDB_BT_START            BITMAP                  "res\\START.bmp"
+IDB_VIEW_BACK           BITMAP                  "res\\VIEW_BACK.bmp"
+IDB_CARD                BITMAP                  "res\\CARD.bmp"
+IDB_CARD_800            BITMAP                  "res\\CARD_800.bmp"
+IDB_BT_SHOW_CARD        BITMAP                  "res\\SHOW_CARD.bmp"
+IDB_BT_NOT_SHOW_CARD    BITMAP                  "res\\NOT_SHOW_CARD.bmp"
+IDB_GAME_END            BITMAP                  "res\\GAME_END.bmp"
+IDB_HEARTS_2            BITMAP                  "res\\HEARTS_2.bmp"
+IDB_HEARTS_3            BITMAP                  "res\\HEARTS_3.bmp"
+IDB_HEARTS_4            BITMAP                  "res\\HEARTS_4.bmp"
+IDB_HEARTS_5            BITMAP                  "res\\HEARTS_5.bmp"
+IDB_HEARTS_6            BITMAP                  "res\\HEARTS_6.bmp"
+IDB_HEARTS_7            BITMAP                  "res\\HEARTS_7.bmp"
+IDB_HEARTS_8            BITMAP                  "res\\HEARTS_8.bmp"
+IDB_HEARTS_9            BITMAP                  "res\\HEARTS_9.bmp"
+IDB_HEARTS_10           BITMAP                  "res\\HEARTS_10.bmp"
+IDB_HEARTS_A            BITMAP                  "res\\HEARTS_A.bmp"
+IDB_HEARTS_J            BITMAP                  "res\\HEARTS_J.bmp"
+IDB_HEARTS_K            BITMAP                  "res\\HEARTS_K.bmp"
+IDB_HEARTS_Q            BITMAP                  "res\\HEARTS_Q.bmp"
+IDB_SPADE_Q             BITMAP                  "res\\SPADE_Q.bmp"
+IDB_CLUBS_10            BITMAP                  "res\\CLUBS_10.bmp"
+IDB_DIAMONDS_J          BITMAP                  "res\\DIAMONDS_J.bmp"
+IDB_BT_AUTOMATISM_OUTCARD BITMAP                  "res\\AUTOMATISM_OUTCARD.bmp"
+IDB_SHOW_SCORE_LEFT     BITMAP                  "res\\SHOW_SCORE_LEFT.bmp"
+IDB_SHOW_SCORE_SEPARATOR BITMAP                  "res\\SHOW_SCORE_SEPARATOR.bmp"
+IDB_SHOW_SCORE_MID      BITMAP                  "res\\SHOW_SCORE_MID.bmp"
+IDB_SHOW_SCORE_RIGHT    BITMAP                  "res\\SHOW_SCORE_RIGHT.bmp"
+IDB_CANCEL_AUTOMATISM_OUTCARD BITMAP                  "res\\CANCEL_AUTOMATISM_OUTCARD.bmp"
+IDB_CARD_600            BITMAP                  "res\\CARD_600.bmp"
+IDB_BACK_GROUND         BITMAP                  "res\\BACK_GROUND.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CARD_CUR            CURSOR                  "res\\CARD_CUR.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GAME_SCORE DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | WS_POPUP | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+END
+
+IDD_OPTION DIALOGEX 0, 0, 159, 111
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 9, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,26,94,41,12
+    PUSHBUTTON      "取消",IDCANCEL,89,94,41,12
+    ICON            IDR_MAINFRAME,IDC_STATIC,104,33,18,18
+    CONTROL         "允许声音效果",IDC_ENABLE_SOUND,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,20,33,55,9
+    COMBOBOX        IDC_CARD_SPACE,57,73,27,181,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE
+    LTEXT           "扑克间距为",IDC_STATIC,18,75,35,8
+    LTEXT           "象素",IDC_STATIC,89,75,15,8
+    CONTROL         "顺时针顺序出牌",IDC_DEASIL_ORDER,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,20,46,62,9
+    GROUPBOX        "常规配置：",IDC_STATIC,10,21,137,39
+    GROUPBOX        "扑克配置：",IDC_STATIC,10,62,137,29
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_GAME_SCORE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+GAME_END                WAVE                    "res\\GAME_END.WAV"
+GAME_LOST               WAVE                    "res\\GAME_LOST.wav"
+GAME_START              WAVE                    "res\\GAME_START.WAV"
+GAME_WARN               WAVE                    "res\\GAME_WARN.WAV"
+GAME_WIN                WAVE                    "res\\GAME_WIN.wav"
+MOST_CARD               WAVE                    "res\\MOST_CARD.wav"
+OUT_CARD                WAVE                    "res\\OUT_CARD.wav"
+PIG_CARD                WAVE                    "res\\PIG_CARD.wav"
+SHEEP_CARD              WAVE                    "res\\SHEEP_CARD.wav"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\GameClient.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
