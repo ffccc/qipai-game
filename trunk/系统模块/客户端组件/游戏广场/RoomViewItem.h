@@ -69,7 +69,7 @@ protected:
 	BYTE							m_cbHideUserInfo;					//隐藏信息
 
 	//辅助变量
-protected:
+//protected:
 	bool							m_bRectifyHor;						//调整标志
 	bool							m_bRectifyVor;						//调整标志
 	bool							m_bInitDialog;						//初始标志
