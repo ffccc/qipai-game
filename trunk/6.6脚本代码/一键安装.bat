@@ -14,6 +14,10 @@ pause
 Rem 建主数据库三个
 set rootPath=数据库脚本\
 osql -E -i "%rootPath%数据库删除.sql"
+
+echo "删除数据库结束....."
+
+pause
 osql -E -i "%rootPath%1_1_用户库脚本.sql"
 osql -E -i "%rootPath%1_2_平台库脚本.sql"
 osql -E -i "%rootPath%1_3_财富库脚本.sql"
