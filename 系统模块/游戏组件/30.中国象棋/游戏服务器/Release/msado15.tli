@@ -1,9 +1,9 @@
-﻿// Created by Microsoft (R) C/C++ Compiler Version 15.00.30729.01 (ff4b0507).
+﻿// Created by Microsoft (R) C/C++ Compiler Version 15.00.30729.01 (b1995f1c).
 //
-// e:\mywork\棋牌游戏\qipai-game\游戏组件\30.中国象棋\游戏服务器\release\msado15.tli
+// d:\dev\棋牌游戏\c++项目工程\qipai-game\系统模块\游戏组件\30.中国象棋\游戏服务器\release\msado15.tli
 //
 // Wrapper implementations for Win32 type library MSADO15.DLL
-// compiler-generated file created 05/17/12 at 22:28:51 - DO NOT EDIT!
+// compiler-generated file created 05/21/12 at 10:14:42 - DO NOT EDIT!
 
 #pragma once
 
