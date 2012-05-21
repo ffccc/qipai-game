@@ -2,6 +2,7 @@
 #define GLOBAL_FIELD_HEAD_FILE
 
 #include "GlobalDef.h"
+#include <assert.h>
 
 //////////////////////////////////////////////////////////////////////////
 
@@ -104,11 +105,11 @@ public:
 	bool AddPacket(void * pData, WORD wDataSize, WORD wDataType)
 	{
 		//效验大小
-		ASSERT((wDataSize+sizeof(tagDataDescribe)+m_wDataSize)<=m_wBufferSize);
+		assert((wDataSize+sizeof(tagDataDescribe)+m_wDataSize)<=m_wBufferSize);
 		if ((wDataSize+sizeof(tagDataDescribe)+m_wDataSize)>m_wBufferSize) return false;
 
 		//插入数据
-		ASSERT(m_pcbBuffer!=NULL);
+		assert(m_pcbBuffer!=NULL);
 		tagDataDescribe * pDataDescribe=(tagDataDescribe *)(m_pcbBuffer+m_wDataSize);
 		pDataDescribe->wDataSize=wDataSize;
 		pDataDescribe->wDataDescribe=wDataType;
@@ -116,7 +117,7 @@ public:
 		//插入数据
 		if (wDataSize>0)
 		{
-			ASSERT(pData!=NULL);
+			assert(pData!=NULL);
 			CopyMemory(pDataDescribe+1,pData,wDataSize);
 		}
 
@@ -158,16 +159,16 @@ public:
 		//效验数据
 		if (m_wDataPos>=m_wDataSize) 
 		{
-			ASSERT(m_wDataPos==m_wDataSize);
+			assert(m_wDataPos==m_wDataSize);
 			DataDescribe.wDataSize=0;
 			DataDescribe.wDataDescribe=DTP_NULL;
 			return NULL;
 		}
 
 		//获取数据
-		ASSERT((m_wDataPos+sizeof(tagDataDescribe))<=m_wDataSize);
+		assert((m_wDataPos+sizeof(tagDataDescribe))<=m_wDataSize);
 		CopyMemory(&DataDescribe,m_pcbBuffer+m_wDataPos,sizeof(tagDataDescribe));
-		ASSERT((m_wDataPos+sizeof(tagDataDescribe)+DataDescribe.wDataSize)<=m_wDataSize);
+		assert((m_wDataPos+sizeof(tagDataDescribe)+DataDescribe.wDataSize)<=m_wDataSize);
 
 		//效验数据
 		if ((m_wDataPos+sizeof(tagDataDescribe)+DataDescribe.wDataSize)>m_wDataSize)
