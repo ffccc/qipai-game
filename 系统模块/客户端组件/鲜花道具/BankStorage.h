@@ -114,6 +114,7 @@ public:
 public:
 	//更新界面
 	void UpdateView();
+	void Process();
 
 	//重载函数
 public:

@@ -91,36 +91,39 @@ void CBankStorage::OnBnClickedOk()
 	}
 
 	//密码验证
-	//TCHAR szPassword[PASS_LEN]=TEXT("");
+	// modify by 一剑封寒
+	TCHAR szPassword[PASS_LEN]=TEXT("");
 	//GetDlgItemText(IDC_USER_PASSWORD,szPassword,CountArray(szPassword));
-	//if (szPassword[0]==0)
-	//{
-	//	ShowInformationEx(TEXT("密码不能为空，请重新输入密码！"),0 ,MB_ICONINFORMATION,TEXT("系统消息")) ;
-	//	GetDlgItem(IDC_USER_PASSWORD)->SetWindowText("");
-	//	GetDlgItem(IDC_USER_PASSWORD)->SetFocus();
-	//	return;
-	//}
-	//TCHAR szTempPassword[PASS_LEN]=TEXT("");
-	//CopyMemory(szTempPassword,szPassword,sizeof(szTempPassword));
-	//CMD5Encrypt::EncryptData(szTempPassword,szPassword);
+	GetDlgItemText(IDC_USER_PASSWORD, szPassword, PASS_LEN);
+	//strcpy(szPassword, "111111");
+	if (szPassword[0]==0)
+	{
+		ShowInformationEx(TEXT("密码不能为空，请重新输入密码！"),0 ,MB_ICONINFORMATION,TEXT("系统消息")) ;
+		GetDlgItem(IDC_USER_PASSWORD)->SetWindowText("");
+		GetDlgItem(IDC_USER_PASSWORD)->SetFocus();
+		return;
+	}
+	TCHAR szTempPassword[PASS_LEN]=TEXT("");
+	CopyMemory(szTempPassword,szPassword,sizeof(szTempPassword));
+	CMD5Encrypt::EncryptData(szTempPassword,szPassword);
 
-	//if (IsButtonSelected(IDC_DRAWOUT))
-	//{
-	//	//发送信息
-	//	CMD_GF_BankGet BankGetGold;
-	//	ZeroMemory(&BankGetGold, sizeof(BankGetGold));
-	//	BankGetGold.lGetValue = m_lInCount;
-	//	CopyMemory(BankGetGold.szPassword,szPassword,sizeof(BankGetGold.szPassword));
+	if (IsButtonSelected(IDC_DRAWOUT))
+	{
+		//发送信息
+		CMD_GF_BankGet BankGetGold;
+		ZeroMemory(&BankGetGold, sizeof(BankGetGold));
+		BankGetGold.lGetValue = m_lInCount;
+		CopyMemory(BankGetGold.szPassword,szPassword,sizeof(BankGetGold.szPassword));
 
-	//	SendData(MDM_GF_BANK, SUB_GF_BANK_GET, &BankGetGold, sizeof(BankGetGold));
-	//}
-	//else
+		SendData(MDM_GF_BANK, SUB_GF_BANK_GET, &BankGetGold, sizeof(BankGetGold));
+	}
+	else
 	{
 		//发送信息
 		CMD_GF_BankStorage BankStorage;
 		ZeroMemory(&BankStorage, sizeof(BankStorage));
 		BankStorage.lStorageValue = m_lInCount;
-		//CopyMemory(BankStorage.szPassword,szPassword,sizeof(BankStorage.szPassword));
+		CopyMemory(BankStorage.szPassword,szPassword,sizeof(BankStorage.szPassword));
 
 		SendData(MDM_GF_BANK, SUB_GF_BANK_STORAGE, &BankStorage, sizeof(BankStorage));
 	}
@@ -575,6 +578,278 @@ HBRUSH CBankDrawing::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
 	HBRUSH hbr = CDialog::OnCtlColor(pDC, pWnd, nCtlColor);
 	
 	return hbr;
+}
+
+void CBankDrawing::Process()
+{
+	//CPageDlg *pSelPage=m_pPageDlg[m_nSelPage];
+	//ASSERT(pSelPage!=NULL);
+
+	//INT64 lGoldCount=0;
+
+	//switch( m_nSelPage )
+	//{
+	//case 0: //存入金币
+	//	{
+	//		lGoldCount=pSelPage->GetDlgItemInt64(IDC_IN_COUNT);
+
+	//		if (lGoldCount <= 0 || lGoldCount > m_lGameGold)
+	//		{
+	//			CString strMessage;
+	//			if(m_lGameGold>0)
+	//				strMessage.Format(TEXT("你输入的金币值必须在1和%I64d之间"), m_lGameGold);
+	//			else 
+	//				strMessage.Format(TEXT("你的当前金币数目为0,不能进行存储操作!"));
+
+	//			ShowInformationEx(strMessage,0 ,MB_ICONINFORMATION,TEXT("系统消息"));
+	//			//GetDlgItem函数获得对话框或其它窗口中指定控件或子窗口的指针
+	//			//SetFocus函数要求得到输入焦点。输入焦点将随后的所有键盘输入定向到这个窗口。
+	//			//原来拥有输入焦点的任何窗口都将失去它。SetFocus成员函数项失去输入焦点的窗口发送一条WM_KILLFOCUS消息，
+	//			//并向接收输入焦点的窗口发送一条WM_SETFOCUS消息。它还激活该窗口或它的父窗口。
+	//			//如果当前窗口是激活的，但是不具有输入焦点（这意味着，没有窗口具有输入焦点），则任何按下的键都将产生WM_SYSCHAR，WM_SYSKEYDOWN或WM_SYSKEYUP消息。
+	//			pSelPage->GetDlgItem(IDC_IN_COUNT)->SetFocus();
+	//			((CEdit*)pSelPage->GetDlgItem(IDC_IN_COUNT))->SetSel(0,-1);
+	//			return;
+	//		}
+	//		break;
+	//	}
+	//case 1: //取出金币
+	//	{
+	//		lGoldCount=pSelPage->GetDlgItemInt64(IDC_OUT_COUNT);
+	//		if (lGoldCount <= 0 || lGoldCount > m_lStorageGold)
+	//		{
+	//			CString strMessage;
+	//			if(m_lStorageGold>0)
+	//				strMessage.Format(TEXT("你输入的金币值必须在1和%I64d之间"),m_lStorageGold);
+	//			else 
+	//				strMessage.Format(TEXT("你的存储金币数目为0,不能进行提取操作!"));
+
+	//			ShowInformationEx(strMessage,0 ,MB_ICONINFORMATION,TEXT("系统消息"));
+	//			pSelPage->GetDlgItem(IDC_OUT_COUNT)->SetFocus();
+	//			((CEdit*)pSelPage->GetDlgItem(IDC_OUT_COUNT))->SetSel(0,-1);
+	//			return;
+	//		}
+	//		break;
+	//	}
+	//case 2: //转出金币
+	//	{
+	//		lGoldCount=pSelPage->GetDlgItemInt64(IDC_OUT_COUNT);
+	//		DWORD dwTagGameID=pSelPage->GetDlgItemInt(IDC_USER_ID);
+
+	//		if (dwTagGameID==0)
+	//		{
+	//			ShowInformationEx(TEXT("接收用户ID不正确"),0 ,MB_ICONINFORMATION,TEXT("系统消息"));
+	//			pSelPage->GetDlgItem(IDC_USER_ID)->SetFocus();
+	//			return;
+	//		}
+
+	//		if (dwTagGameID==m_pMeUserData->dwGameID)
+	//		{
+	//			ShowInformationEx(TEXT("接收用户ID不能是自已，请重新输入"),0 ,MB_ICONINFORMATION,TEXT("系统消息"));
+	//			pSelPage->GetDlgItem(IDC_USER_ID)->SetFocus();
+	//			return;
+	//		}
+
+	//		if (lGoldCount <= 0 || lGoldCount > m_lStorageGold)
+	//		{
+	//			CString strMessage;
+	//			if (m_lStorageGold>0)
+	//				strMessage.Format(TEXT("你输入的金币值必须在1和%I64d之间"),m_lStorageGold);
+	//			else 
+	//				strMessage.Format(TEXT("你的存储金币数目为0,不能进行转帐操作!"));
+	//			ShowInformationEx(strMessage,0 ,MB_ICONINFORMATION,TEXT("系统消息"));
+	//			pSelPage->GetDlgItem(IDC_OUT_COUNT)->SetFocus();
+	//			((CEdit*)pSelPage->GetDlgItem(IDC_OUT_COUNT))->SetSel(0,-1);
+	//			return;
+	//		}
+
+	//		if ((m_lStorageGold-lGoldCount) < 2000)
+	//		{
+	//			ShowInformationEx(TEXT("您的银行必须最少保留 2000 金币，不能全部转出！"),0,MB_ICONINFORMATION,TEXT("系统消息"));
+	//			((CEdit*)pSelPage->GetDlgItem(IDC_OUT_COUNT))->SetSel(0,-1);
+	//			return;
+	//		}
+	//		break;
+	//	}
+	//case 3: //银行密码
+	//	{
+	//		TCHAR szOldPassword[PASS_LEN]=TEXT("");
+	//		TCHAR szPassword1[PASS_LEN]=TEXT("");
+	//		TCHAR szPassword2[PASS_LEN]=TEXT("");
+
+	//		pSelPage->GetDlgItemText(IDC_BANK_PASSWORD,szOldPassword,CountArray(szOldPassword));
+	//		pSelPage->GetDlgItemText(IDC_NEW_PASSWORD,szPassword1,CountArray(szPassword1));
+	//		pSelPage->GetDlgItemText(IDC_CONFIRM_PASSWORD,szPassword2,CountArray(szPassword2));
+
+	//		if (szPassword1[0]==0)
+	//		{
+	//			ShowInformationEx(TEXT("新密码不能为空，请重新填写"),0 ,MB_ICONINFORMATION,TEXT("系统消息"));
+	//			pSelPage->GetDlgItem(IDC_NEW_PASSWORD)->SetFocus();
+	//			return;
+	//		}
+
+	//		if (lstrlen(szPassword1) < 6)
+	//		{
+	//			ShowInformationEx(TEXT("为了您的密码安全，密码长度必须在5位以上"),0 ,MB_ICONINFORMATION,TEXT("系统消息"));
+	//			pSelPage->GetDlgItem(IDC_NEW_PASSWORD)->SetFocus();
+	//			return;
+	//		}
+
+	//		if (szPassword2[0]==0)
+	//		{
+	//			ShowInformationEx(TEXT("确认密码不能为空，请重新填写"),0 ,MB_ICONINFORMATION,TEXT("系统消息"));
+	//			pSelPage->GetDlgItem(IDC_CONFIRM_PASSWORD)->SetFocus();
+	//			return;
+	//		}
+
+	//		if (lstrlen(szPassword2) < 6)
+	//		{
+	//			ShowInformationEx(TEXT("为了您的密码安全，密码长度必须在5位以上"),0 ,MB_ICONINFORMATION,TEXT("系统消息"));
+	//			pSelPage->GetDlgItem(IDC_CONFIRM_PASSWORD)->SetFocus();
+	//			return;
+	//		}
+
+	//		if (strcmp(szPassword1,szPassword2)!=0)
+	//		{
+	//			ShowInformationEx(TEXT("你输入的两次密码不一致，请重新填写"),0 ,MB_ICONINFORMATION,TEXT("系统消息"));
+	//			pSelPage->GetDlgItem(IDC_CONFIRM_PASSWORD)->SetFocus();
+	//			return;
+	//		}
+
+	//		if (strcmp(szOldPassword,szPassword1)==0)
+	//		{
+	//			ShowInformationEx(TEXT("您输入的新密码和旧密相同，请重新填写"),0 ,MB_ICONINFORMATION,TEXT("系统消息"));
+	//			pSelPage->GetDlgItem(IDC_NEW_PASSWORD)->SetFocus();
+	//			return;
+	//		}
+	//		break;
+	//	}
+	//}
+
+	////密码效验
+	//TCHAR szPassword[PASS_LEN]=TEXT("");
+
+	//if (m_nSelPage > 0)
+	//{
+	//	pSelPage->GetDlgItemText(IDC_BANK_PASSWORD, szPassword, CountArray(szPassword));
+
+	//	if (szPassword[0]==0)
+	//	{
+	//		ShowInformationEx(TEXT("银行密码不能为空，请重新输入密码！"),0,MB_ICONINFORMATION,TEXT("系统消息")) ;
+	//		pSelPage->GetDlgItem(IDC_BANK_PASSWORD)->SetWindowText("");
+	//		pSelPage->GetDlgItem(IDC_BANK_PASSWORD)->SetFocus();
+	//		return;
+	//	}
+
+	//	TCHAR szTempPassword[PASS_LEN]=TEXT("");
+	//	CopyMemory(szTempPassword,szPassword,sizeof(szTempPassword));
+	//	CMD5Encrypt::EncryptData(szTempPassword,szPassword);
+	//}
+
+
+	//switch( m_nSelPage )
+	//{
+	//case 0: //存入金币
+	//	{
+	//		//发送信息
+	//		CMD_GF_BankStorage BankStorage;
+	//		ZeroMemory(&BankStorage, sizeof(BankStorage));
+	//		BankStorage.lStorageValue = lGoldCount;
+	//		BankStorage.cbGameAction=m_bGameAction;
+	//		CopyMemory(BankStorage.szPassword,szPassword,sizeof(BankStorage.szPassword));
+	//		SendData(MDM_GF_BANK, SUB_GF_BANK_STORAGE, &BankStorage, sizeof(BankStorage));
+	//		break;
+	//	}
+	//case 1: //取出金币
+	//	{
+	//		//发送信息
+	//		CMD_GF_BankGet BankGetGold;
+	//		ZeroMemory(&BankGetGold, sizeof(BankGetGold));
+	//		BankGetGold.lGetValue = lGoldCount;
+	//		BankGetGold.cbGameAction=m_bGameAction;
+	//		CopyMemory(BankGetGold.szPassword,szPassword,sizeof(BankGetGold.szPassword));
+	//		SendData(MDM_GF_BANK, SUB_GF_BANK_GET, &BankGetGold, sizeof(BankGetGold));
+	//		break;
+	//	}
+	//case 2: //转入金币
+	//	{
+	//		CString static strNumber=TEXT(""), strTmpNumber1,strTmpNumber2;
+	//		strTmpNumber1.Empty();
+	//		strTmpNumber2.Empty();
+	//		strNumber.Empty();
+	//		if(lGoldCount==0) strNumber=TEXT("0");
+	//		int nNumberCount=0;
+	//		int count=0;
+	//		INT64 lTmpNumber=lGoldCount;
+	//		while(lGoldCount>0)
+	//		{
+	//			strTmpNumber1.Format(TEXT("%I64d"),lGoldCount%10);
+	//			nNumberCount++;
+	//			strTmpNumber2 = strTmpNumber1+strTmpNumber2;
+
+	//			if(nNumberCount==3)
+	//			{
+	//				count++;
+	//				if(count==1)
+	//				{
+	//					strTmpNumber2 +=strNumber;
+	//				}
+	//				else
+	//				{
+	//					strTmpNumber2 += (TEXT(",") +strNumber);
+	//				}
+	//				strNumber=strTmpNumber2;
+	//				nNumberCount=0;
+	//				strTmpNumber2=TEXT("");
+	//			}
+	//			lGoldCount/=10;
+	//		}
+
+	//		if (strTmpNumber2.IsEmpty()==FALSE)
+	//		{
+	//			strTmpNumber2 += (TEXT(",") +strNumber);
+	//			strNumber=strTmpNumber2;
+	//		}
+
+	//		DWORD dwTagGameID=pSelPage->GetDlgItemInt(IDC_USER_ID);
+
+	//		INT64 lRevenue=lTmpNumber * 0.01;
+	//		TCHAR szMessage[512]=TEXT("");
+	//		sprintf(szMessage, TEXT("您是否确定要转 %s 金币（扣税 %I64d 金币）给用户ID为［%d］的用户？"),
+	//			strNumber,lRevenue,dwTagGameID);
+
+	//		if (ShowInformationEx(szMessage,0,MB_YESNO,TEXT("转帐确认"))!=IDYES) return;
+
+	//		CMD_GF_BankTransfer BankTransfer;
+	//		ZeroMemory(&BankTransfer,sizeof(BankTransfer));
+	//		BankTransfer.dwTagGameID=dwTagGameID;
+	//		BankTransfer.lTransferValue=lTmpNumber;
+	//		BankTransfer.cbGameAction=m_bGameAction;
+	//		CopyMemory(BankTransfer.szPassword,szPassword,sizeof(BankTransfer.szPassword));
+	//		SendData(MDM_GF_BANK, SUB_GF_BANK_TRANSFER, &BankTransfer, sizeof(BankTransfer));
+
+	//		break;
+	//	}
+	//case 3: //修改密码
+	//	{
+	//		TCHAR szNewPassword[PASS_LEN]=TEXT("");
+	//		TCHAR szEncrypt[PASS_LEN]=TEXT("");
+	//		pSelPage->GetDlgItemText(IDC_NEW_PASSWORD, szNewPassword, CountArray(szNewPassword));
+
+	//		CMD_GF_BankSecurity BankSecurity;
+	//		ZeroMemory(&BankSecurity,sizeof(BankSecurity));
+
+	//		BankSecurity.cbGameAction=m_bGameAction;
+	//		CMD5Encrypt::EncryptData(szNewPassword,szEncrypt);
+	//		CopyMemory(BankSecurity.szPassword,szPassword,sizeof(BankSecurity.szPassword));
+	//		CopyMemory(BankSecurity.szNewPassword,szEncrypt,sizeof(BankSecurity.szNewPassword));
+
+	//		SendData(MDM_GF_BANK, SUB_GF_BANK_SECURITY, &BankSecurity, sizeof(BankSecurity));
+	//		break;
+	//	}
+	//}
+
+	//SetWaiting(TRUE);
 }
 
 void MakeString(CString &strNum,LONG lNumber)

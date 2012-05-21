@@ -375,8 +375,8 @@ BOOL CBankServiceDlg::OnInitDialog()
 	GetClientRect(&rcClient);
 	rcItem.top=GetYExcursionPos()+28;
 	rcItem.left=GetXExcursionPos()+13;
-	rcItem.bottom=rcClient.Height()-60;
-	rcItem.right=rcClient.Width()-GetXExcursionPos()-13;
+	rcItem.bottom=rcClient.Height()-60 - 30;
+	rcItem.right=rcClient.Width()-GetXExcursionPos()-13 - 50;
 
 	//ÒÆ¶¯Î»ÖÃ
 	m_BankSavingDlg.MoveWindow(&rcItem);
