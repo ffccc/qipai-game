@@ -1,9 +1,9 @@
-﻿// Created by Microsoft (R) C/C++ Compiler Version 15.00.30729.01 (8bda8669).
+﻿// Created by Microsoft (R) C/C++ Compiler Version 15.00.30729.01 (88532a89).
 //
-// e:\mywork\棋牌游戏\qipai-game\游戏组件\30.中国象棋\游戏服务器\debug\imageole.tli
+// d:\dev\棋牌游戏\c++项目工程\qipai-game\系统模块\游戏组件\30.中国象棋\游戏服务器\debug\imageole.tli
 //
 // Wrapper implementations for Win32 type library ImageOle.dll
-// compiler-generated file created 05/17/12 at 22:29:00 - DO NOT EDIT!
+// compiler-generated file created 05/21/12 at 10:14:46 - DO NOT EDIT!
 
 #pragma once
 

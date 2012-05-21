@@ -2,7 +2,7 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="中国象棋"
+	Name="ChinaChessClient"
 	ProjectGUID="{F2D70F30-23FC-4973-A798-AED329359B33}"
 	Keyword="MFCProj"
 	TargetFrameworkVersion="131072"
@@ -68,8 +68,8 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="../../../开发库/Lib/GameFrameD.lib ../../../开发库/Lib/SkinControlsD.lib"
-				OutputFile="../../运行/Debug/ChinaChess.exe"
+				AdditionalDependencies="../../../链接库/GameFrameD.lib ../../../链接库/SkinControlsD.lib"
+				OutputFile="../../../运行/Debug/ChinaChess.exe"
 				LinkIncremental="2"
 				GenerateDebugInformation="true"
 				SubSystem="2"
@@ -97,7 +97,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="mkdir ..\..\发布组件\客户端组件\Debug&#x0D;&#x0A;copy /y ..\..\运行\Debug\$(TargetFileName) ..\..\发布组件\客户端组件\Debug\$(TargetFileName)&#x0D;&#x0A;copy /y ..\..\运行\Debug\$(TargetFileName) ..\..\..\系统模块\发布组件\客户端组件\Debug\$(TargetFileName)&#x0D;&#x0A;"
+				CommandLine="mkdir ..\..\发布组件\客户端组件\Debug&#x0D;&#x0A;copy /y ..\..\运行\Debug\$(TargetFileName) ..\..\发布组件\客户端组件\Debug\$(TargetFileName)&#x0D;&#x0A;"
 			/>
 		</Configuration>
 		<Configuration
@@ -151,8 +151,8 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="../../../开发库/Lib/GameFrame.lib ../../../开发库/Lib/SkinControls.lib"
-				OutputFile="../../运行/Release/CHNChess.exe"
+				AdditionalDependencies="../../../链接库/GameFrame.lib ../../../链接库/SkinControls.lib"
+				OutputFile="../../../运行/Release/CHNChess.exe"
 				LinkIncremental="1"
 				GenerateDebugInformation="true"
 				SubSystem="2"
@@ -182,7 +182,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="mkdir ..\..\发布组件\客户端组件\Release&#x0D;&#x0A;copy /y ..\..\运行\Release\$(TargetFileName) ..\..\发布组件\客户端组件\Release\$(TargetFileName)&#x0D;&#x0A;copy /y ..\..\运行\Release\$(TargetFileName) ..\..\..\系统模块\发布组件\客户端组件\Release\$(TargetFileName)"
+				CommandLine="mkdir ..\..\发布组件\客户端组件\Release&#x0D;&#x0A;copy /y ..\..\运行\Release\$(TargetFileName) ..\..\发布组件\客户端组件\Release\$(TargetFileName)&#x0D;&#x0A;"
 			/>
 		</Configuration>
 	</Configurations>
