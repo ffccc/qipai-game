@@ -1,0 +1,289 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\GameClient.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GameClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION 6,6,1,0
+PRODUCTVERSION 6,6,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "FileDescription", "三公游戏客户端"
+VALUE "FileVersion", "6, 6, 1, 0"
+            VALUE "InternalName", "ThreeKing.exe"
+            VALUE "LegalCopyright", "保留所有权利。"
+            VALUE "OriginalFilename", "ThreeKing.exe"
+            VALUE "ProductName", "三公游戏客户端"
+VALUE "ProductVersion", "6, 6, 1, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+GAME_LOGO               BITMAP                  "res\\GAME_LOGO.bmp"
+IDB_VIEW_BACK_BANKER    BITMAP                  "res\\VIEW_BACK_BANKER.bmp"
+IDB_VIEW_BACK_PLAYER    BITMAP                  "res\\VIEW_BACK_PLAYER.bmp"
+IDB_VIEW_FILL           BITMAP                  "res\\VIEW_FILL.bmp"
+IDB_GAME_CARD           BITMAP                  "res\\GAME_CARD.bmp"
+IDB_GAME_SCORE          BITMAP                  "res\\GAME_SCORE.bmp"
+IDB_BT_SCORE_1          BITMAP                  "res\\BT_SCORE_1.bmp"
+IDB_BT_SCORE_2          BITMAP                  "res\\BT_SCORE_2.bmp"
+IDB_BT_SCORE_3          BITMAP                  "res\\BT_SCORE_3.bmp"
+IDB_BT_SCORE_4          BITMAP                  "res\\BT_SCORE_4.bmp"
+IDB_BT_SCORE_5          BITMAP                  "res\\BT_SCORE_5.bmp"
+IDB_SCORE               BITMAP                  "res\\SCORE.bmp"
+IDB_BT_START            BITMAP                  "res\\BT_START.bmp"
+IDB_BT_CHIP_IN          BITMAP                  "res\\BT_CHIP_IN.bmp"
+IDB_BANKER_FLAG         BITMAP                  "res\\BANKER_FLAG.bmp"
+IDB_BT_CLEAN            BITMAP                  "res\\BT_CLEAN.bmp"
+IDB_WAIT_BANKER         BITMAP                  "res\\WAIT_BANKER.bmp"
+IDB_BT_GAME_SCORE       BITMAP                  "res\\BT_GAME_SCORE.bmp"
+IDB_WAIT_PLAYER         BITMAP                  "res\\WAIT_PLAYER.bmp"
+IDB_BT_NO_BANKER        BITMAP                  "res\\BT_NO_BANKER.bmp"
+IDB_BT_BANKER           BITMAP                  "res\\BT_BANKER.bmp"
+IDB_CARD_BACK           BITMAP                  "res\\CARD_BACK.bmp"
+IDB_DRAW_INFO           BITMAP                  "res\\DRAW_INFO.bmp"
+IDB_WAIT_ENTER          BITMAP                  "res\\WAIT_ENTER.bmp"
+IDB_WAIT_CONTINUE       BITMAP                  "res\\WAIT_CONTINUE.bmp"
+IDB_LONG_BANKER         BITMAP                  "res\\LONG_BANKER.bmp"
+IDB_USER_FLAG           BITMAP                  "res\\USER_FLAG.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GAME_SCORE_BANKER DIALOGEX 0, 0, 156, 124
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "继 续",IDC_CONTINUE,27,103,47,13
+    PUSHBUTTON      "离开",IDC_QUIT_GAME,81,103,47,13
+END
+
+IDD_GAME_SCORE_PLAYER DIALOGEX 0, 0, 156, 178
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "继 续",IDC_CONTINUE,27,103,47,13
+    PUSHBUTTON      "离开",IDC_QUIT_GAME,81,103,47,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+SEND_CARD               WAVE                    "res\\SEND_CARD.wav"
+CHOOSE_SCORE            WAVE                    "res\\CHOOSE_SCORE.wav"
+LOSE_KING               WAVE                    "res\\LOSE_KING.WAV"
+LOSE_POINT_0            WAVE                    "res\\LOSE_POINT_0.wav"
+LOSE_POINT_1            WAVE                    "res\\LOSE_POINT_1.wav"
+LOSE_POINT_2            WAVE                    "res\\LOSE_POINT_2.wav"
+LOSE_POINT_3            WAVE                    "res\\LOSE_POINT_3.wav"
+LOSE_POINT_4            WAVE                    "res\\LOSE_POINT_4.wav"
+LOSE_POINT_5            WAVE                    "res\\LOSE_POINT_5.wav"
+LOSE_POINT_6            WAVE                    "res\\LOSE_POINT_6.wav"
+LOSE_POINT_7            WAVE                    "res\\LOSE_POINT_7.wav"
+LOSE_POINT_8            WAVE                    "res\\LOSE_POINT_8.wav"
+LOSE_POINT_9            WAVE                    "res\\LOSE_POINT_9.wav"
+WIN_KING                WAVE                    "res\\WIN_KING.wav"
+WIN_POINT_0             WAVE                    "res\\WIN_POINT_0.wav"
+WIN_POINT_1             WAVE                    "res\\WIN_POINT_1.wav"
+WIN_POINT_2             WAVE                    "res\\WIN_POINT_2.wav"
+WIN_POINT_3             WAVE                    "res\\WIN_POINT_3.wav"
+WIN_POINT_4             WAVE                    "res\\WIN_POINT_4.wav"
+WIN_POINT_5             WAVE                    "res\\WIN_POINT_5.wav"
+WIN_POINT_6             WAVE                    "res\\WIN_POINT_6.wav"
+WIN_POINT_7             WAVE                    "res\\WIN_POINT_7.wav"
+WIN_POINT_8             WAVE                    "res\\WIN_POINT_8.wav"
+WIN_POINT_9             WAVE                    "res\\WIN_POINT_9.wav"
+KING                    WAVE                    "res\\KING.wav"
+POINT_0                 WAVE                    "res\\POINT_0.wav"
+POINT_1                 WAVE                    "res\\POINT_1.wav"
+POINT_2                 WAVE                    "res\\POINT_2.wav"
+POINT_3                 WAVE                    "res\\POINT_3.wav"
+POINT_4                 WAVE                    "res\\POINT_4.wav"
+POINT_5                 WAVE                    "res\\POINT_5.wav"
+POINT_6                 WAVE                    "res\\POINT_6.wav"
+POINT_7                 WAVE                    "res\\POINT_7.wav"
+POINT_8                 WAVE                    "res\\POINT_8.wav"
+POINT_9                 WAVE                    "res\\POINT_9.wav"
+LOSE_THREE_POINT_1      WAVE                    "res\\LOSE_THREE_POINT_1.wav"
+LOSE_THREE_POINT_2      WAVE                    "res\\LOSE_THREE_POINT_2.wav"
+LOSE_THREE_POINT_3      WAVE                    "res\\LOSE_THREE_POINT_3.wav"
+LOSE_THREE_POINT_4      WAVE                    "res\\LOSE_THREE_POINT_4.wav"
+LOSE_THREE_POINT_5      WAVE                    "res\\LOSE_THREE_POINT_5.wav"
+LOSE_THREE_POINT_6      WAVE                    "res\\LOSE_THREE_POINT_6.wav"
+LOSE_THREE_POINT_7      WAVE                    "res\\LOSE_THREE_POINT_7.wav"
+LOSE_THREE_POINT_8      WAVE                    "res\\LOSE_THREE_POINT_8.wav"
+LOSE_THREE_POINT_9      WAVE                    "res\\LOSE_THREE_POINT_9.wav"
+LOSE_THREE_POINT_10     WAVE                    "res\\LOSE_THREE_POINT_10.wav"
+LOSE_THREE_POINT_11     WAVE                    "res\\LOSE_THREE_POINT_11.wav"
+LOSE_THREE_POINT_12     WAVE                    "res\\LOSE_THREE_POINT_12.wav"
+LOSE_THREE_POINT_13     WAVE                    "res\\LOSE_THREE_POINT_13.wav"
+WIN_THREE_POINT_1       WAVE                    "res\\WIN_THREE_POINT_1.wav"
+WIN_THREE_POINT_2       WAVE                    "res\\WIN_THREE_POINT_2.wav"
+WIN_THREE_POINT_3       WAVE                    "res\\WIN_THREE_POINT_3.wav"
+WIN_THREE_POINT_4       WAVE                    "res\\WIN_THREE_POINT_4.wav"
+WIN_THREE_POINT_5       WAVE                    "res\\WIN_THREE_POINT_5.wav"
+WIN_THREE_POINT_6       WAVE                    "res\\WIN_THREE_POINT_6.wav"
+WIN_THREE_POINT_7       WAVE                    "res\\WIN_THREE_POINT_7.wav"
+WIN_THREE_POINT_8       WAVE                    "res\\WIN_THREE_POINT_8.wav"
+WIN_THREE_POINT_9       WAVE                    "res\\WIN_THREE_POINT_9.wav"
+WIN_THREE_POINT_10      WAVE                    "res\\WIN_THREE_POINT_10.wav"
+WIN_THREE_POINT_11      WAVE                    "res\\WIN_THREE_POINT_11.wav"
+WIN_THREE_POINT_12      WAVE                    "res\\WIN_THREE_POINT_12.wav"
+WIN_THREE_POINT_13      WAVE                    "res\\WIN_THREE_POINT_13.wav"
+THREE_POINT_1           WAVE                    "res\\THREE_POINT_1.wav"
+THREE_POINT_2           WAVE                    "res\\THREE_POINT_2.wav"
+THREE_POINT_3           WAVE                    "res\\THREE_POINT_3.wav"
+THREE_POINT_4           WAVE                    "res\\THREE_POINT_4.wav"
+THREE_POINT_5           WAVE                    "res\\THREE_POINT_5.wav"
+THREE_POINT_6           WAVE                    "res\\THREE_POINT_6.wav"
+THREE_POINT_7           WAVE                    "res\\THREE_POINT_7.wav"
+THREE_POINT_8           WAVE                    "res\\THREE_POINT_8.wav"
+THREE_POINT_9           WAVE                    "res\\THREE_POINT_9.wav"
+THREE_POINT_10          WAVE                    "res\\THREE_POINT_10.wav"
+THREE_POINT_11          WAVE                    "res\\THREE_POINT_11.wav"
+THREE_POINT_12          WAVE                    "res\\THREE_POINT_12.wav"
+THREE_POINT_13          WAVE                    "res\\THREE_POINT_13.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_GAME_SCORE_BANKER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 154
+    END
+
+    IDD_GAME_SCORE_PLAYER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 154
+        BOTTOMMARGIN, 156
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\GameClient.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
