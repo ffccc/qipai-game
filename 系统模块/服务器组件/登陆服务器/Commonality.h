@@ -17,6 +17,7 @@
 #define DBR_GP_DOWNLOAD_FACE		6									//下载头像
 #define DBR_GP_DELETE_FACE			7									//删除头像
 #define DBR_GP_MODIFY_INDIVIDUAL	8									//修改资料
+//#define DBR_GR_TRANSFER				9									//转账
 
 
 //数据库输出标识
@@ -79,6 +80,7 @@ struct DBR_GP_LogonSuccess
 
 	//描述信息
 	TCHAR							szDescribeString[128];				//描述消息
+	TCHAR							szInsurePwd[PASS_LEN];				//银行密码 add by yijian
 };
 
 //登录失败

@@ -201,6 +201,8 @@ bool CDataBaseSink::OnRequestLogon(WORD wRequestID, DWORD dwContextID, VOID * pD
 			m_AccountsDBAide.GetValue_String(TEXT("Accounts"),LogonSuccess.szAccounts,CountArray(LogonSuccess.szAccounts));
 			m_AccountsDBAide.GetValue_String(TEXT("UnderWrite"),LogonSuccess.szUnderWrite,CountArray(LogonSuccess.szUnderWrite));
 			m_AccountsDBAide.GetValue_String(TEXT("ErrorDescribe"),LogonSuccess.szDescribeString,CountArray(LogonSuccess.szDescribeString));
+			// add by yijian
+			m_AccountsDBAide.GetValue_String(TEXT("InsurePass"),LogonSuccess.szInsurePwd,CountArray(LogonSuccess.szInsurePwd));
 
 			//绑定机器
 			//if(wRequestID!=DBR_GP_REGISTER_ACCOUNTS)
@@ -506,7 +508,7 @@ LONG CDataBaseSink::SPLogonByAccounts(LPCTSTR pszAccounts, LPCTSTR pszPassword, 
 	m_AccountsDBAide.AddParameter(TEXT("@strClientIP"),szClientIP);
 	m_AccountsDBAide.AddParameter(TEXT("@strMachineSerial"),pszComputerID);
 
-	return m_AccountsDBAide.ExecuteProcess(TEXT("GSP_GP_EfficacyAccounts"),true);
+	return m_AccountsDBAide.ExecuteProcess(TEXT("GSP_GP_EfficacyAccountsEx"),true);
 }
 
 //更新存储过程
@@ -554,7 +556,8 @@ LONG CDataBaseSink::SPLogonByUserID(DWORD dwGameID, LPCTSTR pszPassword, DWORD d
 	m_AccountsDBAide.AddParameter(TEXT("@strClientIP"),szClientIP);
 	m_AccountsDBAide.AddParameter(TEXT("@strMachineSerial"),pszComputerID);
 
-	return m_AccountsDBAide.ExecuteProcess(TEXT("GSP_GP_EfficacyGameID"),true);
+	//return m_AccountsDBAide.ExecuteProcess(TEXT("GSP_GP_EfficacyGameID"),true);
+	return m_AccountsDBAide.ExecuteProcess(TEXT("GSP_GP_EfficacyGameIDEx"),true);  // modify by yijian  qq:1256214718
 }
 
 //上传存储过程

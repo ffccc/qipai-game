@@ -326,6 +326,8 @@ protected:
 	bool OnEventBankDrawoutGold(const void * pData, WORD wDataSize, DWORD dwSocketID);
 	//存储事件
 	bool OnEventBankStorage(const void * pData, WORD wDataSize, DWORD dwSocketID);
+	//转账功能
+	bool OnEventBankTransfer(const void * pData, WORD wDataSize, DWORD dwSocketID);
 
 	//辅助函数
 protected:

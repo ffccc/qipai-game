@@ -39,6 +39,7 @@ struct tagDataBaseSinkParameter
 
 #define DBR_GR_BANK_GET_GOLD			13								//提取金币
 #define DBR_GR_BANK_STORAGE_GOLD		14								//存储金币
+#define DBR_GR_TRANSFER					15								//转账
 
 //#define DBR_GR_USER_SIGN_UP				12								//玩家报名
 
@@ -199,6 +200,7 @@ struct DBR_GR_LogonSuccess
 	LONG								lDrawCount;						//和局盘数
 	LONG								lFleeCount;						//断线数目
 	LONG								lExperience;					//用户经验
+	TCHAR								szInsurePwd[PASS_LEN];			//银行密码
 };
 
 //登录失败

@@ -1040,6 +1040,9 @@ bool CAttemperEngineSink::OnDBLogonSuccess(DWORD dwContextID, VOID * pData, WORD
 	lstrcpyn(ServerUserData.szGroupName,pLogonSuccess->szGroupName,CountArray(ServerUserData.szGroupName));
 	lstrcpyn(ServerUserData.szUnderWrite,pLogonSuccess->szUnderWrite,CountArray(ServerUserData.szUnderWrite));
 
+	// modify by yijian  qq:1256214718
+	lstrcpyn(ServerUserData.szBankPassword, pLogonSuccess->szInsurePwd, CountArray(ServerUserData.szBankPassword));
+
 	//提取积分
 	ServerUserData.lStorageScore=0L;
 	ServerUserData.UserScoreInfo.lScore=pLogonSuccess->lScore;
@@ -2427,6 +2430,14 @@ bool CAttemperEngineSink::OnSocketBank(WORD wSubCmdID, VOID * pData, WORD wDataS
 		{
 			return OnEventBankStorage(pData,wDataSize,dwSocketID);
 		}
+	case SUB_GF_CHANGE_PASSWORD:
+		{
+			//return OnEventBankChangePswd(pData,wDataSize,dwSocketID);
+		}
+	case SUB_GF_TRANSFER:
+		{
+			return OnEventBankTransfer(pData,wDataSize,dwSocketID);
+		}	
 	}
 
 	return false;
@@ -3613,6 +3624,109 @@ void CAttemperEngineSink::ModifyGameGold(IServerUserItem * pIServerUserItem,LONG
 	}
 
 	return;
+}
+
+//转账功能
+bool CAttemperEngineSink::OnEventBankTransfer(const void * pData, WORD wDataSize, DWORD dwSocketID)
+{
+	
+	//参数验证
+	ASSERT( sizeof(CMD_GF_Transfer) == wDataSize );
+	if ( sizeof(CMD_GF_Transfer) != wDataSize ) return false;
+
+	//获取用户
+	IServerUserItem * pIServerUserItem=GetServerUserItem(LOWORD(dwSocketID));
+	if (pIServerUserItem==NULL) return false;
+
+	//类型转换
+	CMD_GF_Transfer *pTransfer=(CMD_GF_Transfer*)pData;
+
+	tagServerUserData *pServerUserData = pIServerUserItem->GetUserData();
+
+	if (0!=lstrcmp(pTransfer->szPassword,pServerUserData->szBankPassword))
+	{
+		SendRoomMessage(pIServerUserItem,TEXT("银行密码不正确，转账失败！"),SMT_INFO|SMT_EJECT);
+		return true;
+	}
+
+	if (pTransfer->lInputCount<=0)
+	{
+		SendRoomMessage(pIServerUserItem,TEXT("转账数目不能为零，转账失败！"),SMT_INFO|SMT_EJECT);
+		return true;
+	}
+	if (pTransfer->lInputCount>pServerUserData->UserScoreInfo.lInsureScore)
+	{
+		SendRoomMessage(pIServerUserItem,TEXT("转账数目不能大于银行存款，转账失败！"),SMT_INFO|SMT_EJECT);
+		return true;
+	}
+
+	//目标玩家
+	//IServerUserItem *pIServerUserItemTarget=m_ServerUserManager.SearchOnLineUserByGameID(pTransfer->dwUserID);
+	IServerUserItem *pIServerUserItemTarget=m_ServerUserManager.SearchOnLineUser(pTransfer->dwUserID);
+	if (NULL==pIServerUserItemTarget) pIServerUserItemTarget=m_ServerUserManager.SearchOnLineUser(pTransfer->szNickname);
+	//if (NULL==pIServerUserItemTarget) pIServerUserItemTarget=m_ServerUserManager.SearchOffLineUserByGameID(pTransfer->dwUserID);
+	if (NULL==pIServerUserItemTarget) pIServerUserItemTarget=m_ServerUserManager.SearchOffLineUser(pTransfer->dwUserID);
+	if (NULL==pIServerUserItemTarget) pIServerUserItemTarget=m_ServerUserManager.SearchOffLineUser(pTransfer->szNickname);
+
+	//相等判断
+	if (NULL!=pIServerUserItemTarget && NULL!=pIServerUserItem && pIServerUserItem->GetUserID()==pIServerUserItemTarget->GetUserID())
+	{
+		SendRoomMessage(pIServerUserItem,TEXT("不可用给自己转帐，转账失败！"),SMT_INFO|SMT_EJECT);
+		return true;
+	}
+
+	//获取目录
+	static TCHAR szPath[MAX_PATH]=TEXT("");
+	GetCurrentDirectory(sizeof(szPath),szPath);
+
+	//读取配置
+	static TCHAR szFileName[MAX_PATH];
+	_snprintf(szFileName,sizeof(szFileName),TEXT("%s\\GameService.ini"),szPath);
+
+	//获取税收
+	//LONGLONG lTransferLimit=LONGLONG(GetPrivateProfileInt(TEXT("Bank"),TEXT("TransferLimit"),0,szFileName));
+	LONGLONG lTransferLimit=0.5;
+
+	if (lTransferLimit>pTransfer->lInputCount)
+	{
+		TCHAR szErrorMessage[256];
+		_sntprintf(szErrorMessage,CountArray(szErrorMessage),TEXT("转账数目必须大于等于 %I64d"),lTransferLimit);
+		SendRoomMessage(pIServerUserItem,szErrorMessage,SMT_INFO|SMT_EJECT);
+		return true;
+	}
+
+	if (NULL!=pIServerUserItemTarget)
+	{
+		//获取税收
+		LONGLONG lRevenue=LONGLONG(GetPrivateProfileInt(TEXT("Bank"),TEXT("Revenue"),0,szFileName));
+		lRevenue=LONGLONG(pTransfer->lInputCount*(lRevenue/1000.));
+
+		ModifyBankStorageGold(pIServerUserItem,-pTransfer->lInputCount);
+		ModifyBankStorageGold(pIServerUserItemTarget,pTransfer->lInputCount-lRevenue);
+
+		SendRoomMessage(pIServerUserItem,TEXT("恭喜您，转账成功！"),SMT_INFO|SMT_EJECT);
+		TCHAR szMessage[128];
+		_sntprintf(szMessage,CountArray(szMessage),TEXT("[ %s ]给您转账(%I64d)，扣税(%I64d)，请登入银行查收"), pIServerUserItem->GetAccounts(),
+			pTransfer->lInputCount,lRevenue);
+		SendRoomMessage(pIServerUserItemTarget,szMessage,SMT_INFO|SMT_EJECT);
+
+		//数据库记录
+		DBR_GR_Transfer Transfer={0};
+		Transfer.dwClientIP=pIServerUserItem->GetClientIP();
+		Transfer.dwSourceUserID=pIServerUserItem->GetUserID();
+		Transfer.dwTargetUserID=pIServerUserItemTarget->GetUserID();
+		Transfer.lRevenue=lRevenue;
+		Transfer.lTransferCount=pTransfer->lInputCount;
+
+		m_pIDataBaseEngine->PostDataBaseRequest(DBR_GR_TRANSFER,0,&Transfer, sizeof(Transfer));
+
+		return true;
+	}
+
+	SendRoomMessage(pIServerUserItem,TEXT("对方不在此房间，转账失败！"),SMT_INFO|SMT_EJECT);
+
+	return true;
+	
 }
 
 //获取帐款

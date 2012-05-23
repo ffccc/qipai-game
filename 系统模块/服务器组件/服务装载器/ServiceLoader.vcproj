@@ -68,7 +68,6 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="../../链接库/ComServiceD.lib ../../链接库/KernelEngineD.lib"
 				OutputFile="../../运行/Debug/ServiceLoader.exe"
 				LinkIncremental="2"
 				GenerateDebugInformation="true"
