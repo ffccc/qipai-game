@@ -200,6 +200,7 @@ struct tagServerUserData
 
 	//扩展信息
 	tagProperty							PropertyInfo[PROPERTY_COUNT];		//道具信息
+	TCHAR								szBankPassword[PASS_LEN];			//银行密码
 };
 
 //桌子参数结构

@@ -165,6 +165,43 @@ bool __cdecl CDataBaseSink::OnDataBaseEngineRequest(WORD wRequestID, DWORD dwCon
 		{
 			return OnBankStorageGold(dwContextID,pData,wDataSize);
 		}
+	case DBR_GR_TRANSFER:				//转账金币
+		{
+			//效验参数
+			ASSERT(wDataSize==sizeof(DBR_GR_Transfer));
+			if (wDataSize!=sizeof(DBR_GR_Transfer)) return false;
+
+			try
+			{
+				//参数转换
+				DBR_GR_Transfer * pTransfer=(DBR_GR_Transfer *)pData;
+
+				//执行存储过程
+				m_GameScoreDBAide.ResetParameter();
+				m_GameScoreDBAide.AddParameter(TEXT("@dwSourceUserID"),pTransfer->dwSourceUserID);
+				m_GameScoreDBAide.AddParameter(TEXT("@dwTargetUserID"),pTransfer->dwTargetUserID);
+				m_GameScoreDBAide.AddParameter(TEXT("@lSwapScore"),pTransfer->lTransferCount);
+				m_GameScoreDBAide.AddParameter(TEXT("@Revenue"),pTransfer->lRevenue);
+
+				//转化地址
+				TCHAR szClientIP[16]=TEXT("");
+				BYTE * pClientIP=(BYTE *)&pTransfer->dwClientIP;
+				_snprintf(szClientIP,sizeof(szClientIP),TEXT("%d.%d.%d.%d"),pClientIP[0],pClientIP[1],pClientIP[2],pClientIP[3]);
+
+				m_GameScoreDBAide.AddParameter(TEXT("@dwKindID"),m_pGameServiceAttrib->wKindID);
+				m_GameScoreDBAide.AddParameter(TEXT("@dwServerID"),m_pGameServiceOption->wServerID);
+				m_GameScoreDBAide.AddParameter(TEXT("@strClientIP"),szClientIP);
+
+				m_GameScoreDBAide.ExecuteProcess(TEXT("GSP_GR_Transfer"),false);
+			}
+			catch (IDataBaseException * pIException)
+			{
+				//错误信息
+				LPCTSTR pszDescribe=pIException->GetExceptionDescribe();
+				CTraceService::TraceString(pszDescribe,TraceLevel_Exception);
+			}
+			return true;
+		}
 	}
 
 	return false;
@@ -212,6 +249,9 @@ bool CDataBaseSink::OnRequestLogon(DWORD dwContextID, VOID * pData, WORD wDataSi
 		m_GameScoreDBAide.GetValue_String(TEXT("Accounts"),LogonSuccess.szAccounts,CountArray(LogonSuccess.szAccounts));
 		m_GameScoreDBAide.GetValue_String(TEXT("GroupName"),LogonSuccess.szGroupName,CountArray(LogonSuccess.szGroupName));
 		m_GameScoreDBAide.GetValue_String(TEXT("UnderWrite"),LogonSuccess.szUnderWrite,CountArray(LogonSuccess.szUnderWrite));
+
+		// yijian
+		m_GameScoreDBAide.GetValue_String(TEXT("BankPassword"),LogonSuccess.szInsurePwd, CountArray(LogonSuccess.szInsurePwd));
 
 		//用户属性
 		LogonSuccess.cbGender=m_GameScoreDBAide.GetValue_BYTE(TEXT("Gender"));
@@ -762,6 +802,7 @@ LONG CDataBaseSink::SPLogonByUserID(DWORD dwUserID, LPCTSTR pszPassword, DWORD d
 	m_GameScoreDBAide.AddParameter(TEXT("@wKindID"),m_pGameServiceAttrib->wKindID);
 	m_GameScoreDBAide.AddParameter(TEXT("@wServerID"),m_pGameServiceOption->wServerID);
 
+	//return m_GameScoreDBAide.ExecuteProcess(TEXT("GSP_GR_EfficacyUserIDEx"),true);
 	return m_GameScoreDBAide.ExecuteProcess(TEXT("GSP_GR_EfficacyUserID"),true);
 }
 
