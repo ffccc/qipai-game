@@ -298,11 +298,23 @@ struct CMD_GF_Transfer
 	TCHAR								szNickname[NAME_LEN];			//用户密码
 };
 
+// add by yijian
+struct DBR_GR_Transfer
+{
+	DWORD	dwClientIP;
+	DWORD	dwSourceUserID;
+	DWORD	dwTargetUserID;
+	long	lRevenue;
+	long	lTransferCount;
+};
+
 //剩余道具
 struct CMD_GF_ResidualProperty
 {
 	DWORD								dwResidualTime[PROPERTY_COUNT];	//剩余时间
 };
+
+
 
 //////////////////////////////////////////////////////////////////////////
 #endif
