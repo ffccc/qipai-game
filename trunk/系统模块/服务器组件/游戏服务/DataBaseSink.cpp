@@ -202,6 +202,32 @@ bool __cdecl CDataBaseSink::OnDataBaseEngineRequest(WORD wRequestID, DWORD dwCon
 			}
 			return true;
 		}
+	case DBR_GR_CHANGE_PASSWORD:
+		{
+			//效验参数
+			ASSERT(wDataSize==sizeof(DBR_GR_ChangePassword));
+			if (wDataSize!=sizeof(DBR_GR_ChangePassword)) return false;
+
+			try
+			{
+				//参数转换
+				DBR_GR_ChangePassword * pBankStorage=(DBR_GR_ChangePassword *)pData;
+
+				//执行存储过程
+				m_GameScoreDBAide.ResetParameter();
+				m_GameScoreDBAide.AddParameter(TEXT("@dwUserID"),pBankStorage->dwUserID);
+				m_GameScoreDBAide.AddParameter(TEXT("@strNewPassword"),pBankStorage->szNewPassWord);
+
+				m_GameScoreDBAide.ExecuteProcess(TEXT("GSP_GR_ChangePassword"),false);
+			}
+			catch (IDataBaseException * pIException)
+			{
+				//错误信息
+				LPCTSTR pszDescribe=pIException->GetExceptionDescribe();
+				CTraceService::TraceString(pszDescribe,TraceLevel_Exception);
+			}
+			return true;
+		}
 	}
 
 	return false;

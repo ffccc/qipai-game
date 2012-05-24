@@ -4,6 +4,7 @@
 	Version="9.00"
 	Name="游戏服务"
 	ProjectGUID="{FEF1A495-AD07-4584-B4FB-044B4E003C3E}"
+	RootNamespace="游戏服务"
 	Keyword="MFCDLLProj"
 	TargetFrameworkVersion="131072"
 	>
@@ -68,7 +69,6 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="../../链接库/ComServiceD.lib ../../链接库/KernelEngineD.lib"
 				OutputFile="../../运行/Debug/GameServiceD.dll"
 				LinkIncremental="2"
 				ModuleDefinitionFile=".\GameServiceD.def"
@@ -152,7 +152,6 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="../../链接库/ComService.lib ../../链接库/KernelEngine.lib"
 				OutputFile="../../运行/Release/GameService.dll"
 				LinkIncremental="1"
 				ModuleDefinitionFile=".\GameService.def"
