@@ -328,6 +328,8 @@ protected:
 	bool OnEventBankStorage(const void * pData, WORD wDataSize, DWORD dwSocketID);
 	//转账功能
 	bool OnEventBankTransfer(const void * pData, WORD wDataSize, DWORD dwSocketID);
+	//修改密码
+	bool OnEventBankChangePswd(const void * pData, WORD wDataSize, DWORD dwSocketID);
 
 	//辅助函数
 protected:

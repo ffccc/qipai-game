@@ -503,6 +503,8 @@ bool __cdecl CAttemperEngineSink::SendData(IServerUserItem * pIServerUserItem, W
 		if (wIndex>=INDEX_ANDROID)
 		{
 			DWORD dwID=pConnectItemInfo->dwSocketID;
+			if(m_AndroidUserManager.m_wStockCount == 0)
+				int jj = 0;
 			m_AndroidUserManager.SendDataToClient(dwID,wMainCmdID,wSubCmdID,pData,wDataSize);
 		}
 		else
@@ -2432,7 +2434,7 @@ bool CAttemperEngineSink::OnSocketBank(WORD wSubCmdID, VOID * pData, WORD wDataS
 		}
 	case SUB_GF_CHANGE_PASSWORD:
 		{
-			//return OnEventBankChangePswd(pData,wDataSize,dwSocketID);
+			return OnEventBankChangePswd(pData,wDataSize,dwSocketID);
 		}
 	case SUB_GF_TRANSFER:
 		{
@@ -3665,8 +3667,8 @@ bool CAttemperEngineSink::OnEventBankTransfer(const void * pData, WORD wDataSize
 	IServerUserItem *pIServerUserItemTarget=m_ServerUserManager.SearchOnLineUser(pTransfer->dwUserID);
 	if (NULL==pIServerUserItemTarget) pIServerUserItemTarget=m_ServerUserManager.SearchOnLineUser(pTransfer->szNickname);
 	//if (NULL==pIServerUserItemTarget) pIServerUserItemTarget=m_ServerUserManager.SearchOffLineUserByGameID(pTransfer->dwUserID);
-	if (NULL==pIServerUserItemTarget) pIServerUserItemTarget=m_ServerUserManager.SearchOffLineUser(pTransfer->dwUserID);
-	if (NULL==pIServerUserItemTarget) pIServerUserItemTarget=m_ServerUserManager.SearchOffLineUser(pTransfer->szNickname);
+	//if (NULL==pIServerUserItemTarget) pIServerUserItemTarget=m_ServerUserManager.SearchOffLineUser(pTransfer->dwUserID);
+	//if (NULL==pIServerUserItemTarget) pIServerUserItemTarget=m_ServerUserManager.SearchOffLineUser(pTransfer->szNickname);
 
 	//相等判断
 	if (NULL!=pIServerUserItemTarget && NULL!=pIServerUserItem && pIServerUserItem->GetUserID()==pIServerUserItemTarget->GetUserID())
@@ -3750,5 +3752,40 @@ void CAttemperEngineSink::ModifyBankStorageGold(IServerUserItem * pIServerUserIt
 	return ;
 }
 
+
+bool CAttemperEngineSink::OnEventBankChangePswd(const void * pData, WORD wDataSize, DWORD dwSocketID)
+{
+	//参数验证
+	ASSERT( sizeof(CMD_GF_ChangePassword) == wDataSize );
+	if ( sizeof(CMD_GF_ChangePassword) != wDataSize ) return false;
+
+	//获取用户
+	IServerUserItem * pIServerUserItem=GetServerUserItem(LOWORD(dwSocketID));
+	if (pIServerUserItem==NULL) return false;
+
+	//类型转换
+	CMD_GF_ChangePassword *pChangePassword=(CMD_GF_ChangePassword*)pData;
+
+	tagServerUserData *pServerUserData = pIServerUserItem->GetUserData();
+
+	if (0!=lstrcmp(pChangePassword->szOriginPassword,pServerUserData->szBankPassword))
+	{
+		SendRoomMessage(pIServerUserItem,TEXT("旧密码不正确，更改失败！"),SMT_INFO|SMT_EJECT);
+		return true;
+	}
+
+	DBR_GR_ChangePassword ChangePassword={0};
+	ChangePassword.dwUserID=pServerUserData->dwUserID;
+	lstrcpyn(ChangePassword.szNewPassWord,pChangePassword->szNewPassword,CountArray(ChangePassword.szNewPassWord));
+
+	lstrcpyn(pServerUserData->szBankPassword,pChangePassword->szNewPassword,CountArray(pServerUserData->szBankPassword));
+
+	//投递请求
+	m_pIDataBaseEngine->PostDataBaseRequest(DBR_GR_CHANGE_PASSWORD,0,&ChangePassword, sizeof(ChangePassword));
+
+	SendRoomMessage(pIServerUserItem,TEXT("修改成功！"),SMT_INFO|SMT_EJECT);
+
+	return true;
+}
 
 //////////////////////////////////////////////////////////////////////////

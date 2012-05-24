@@ -40,8 +40,9 @@ struct tagDataBaseSinkParameter
 #define DBR_GR_BANK_GET_GOLD			13								//提取金币
 #define DBR_GR_BANK_STORAGE_GOLD		14								//存储金币
 #define DBR_GR_TRANSFER					15								//转账
+#define DBR_GR_CHANGE_PASSWORD			16								//修改密码
 
-//#define DBR_GR_USER_SIGN_UP				12								//玩家报名
+//#define DBR_GR_USER_SIGN_UP				12							//玩家报名
 
 //数据库输出标识
 #define DBR_GR_LOGON_SUCCESS			100								//登录成功
