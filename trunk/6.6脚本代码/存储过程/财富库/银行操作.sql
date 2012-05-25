@@ -21,7 +21,7 @@ GO
 CREATE PROC GSP_GR_ChangePassword
 	@dwUserID INT,								-- 用户ID	
 	@strNewPassword NCHAR(32)
-WITH ENCRYPTION AS
+AS
 
 -- 属性设置
 SET NOCOUNT ON

@@ -20,7 +20,7 @@ GO
 CREATE PROC GSP_GR_LoadAndroidUser
 	@wKindID INT,								-- 游戏 I D
 	@wServerID INT								-- 房间 I D
-WITH ENCRYPTION AS
+AS
 
 -- 属性设置
 SET NOCOUNT ON
