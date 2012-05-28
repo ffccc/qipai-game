@@ -308,6 +308,17 @@ struct DBR_GR_Transfer
 	long	lTransferCount;
 };
 
+//DBR_GR_ChangePassword ChangePassword={0};
+//ChangePassword.dwUserID=pServerUserData->dwUserID;
+//lstrcpyn(ChangePassword.szNewPassWord,pChangePassword->szNewPassword,CountArray(ChangePassword.szNewPassWord));
+//
+//lstrcpyn(pServerUserData->szBankPassword,pChangePassword->szNewPassword,CountArray(pServerUserData->szBankPassword));
+
+struct DBR_GR_ChangePassword
+{
+	DWORD							dwUserID;
+	TCHAR							szNewPassWord[PASS_LEN];
+};
 // £”‡µ¿æﬂ
 struct CMD_GF_ResidualProperty
 {
