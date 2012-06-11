@@ -4,7 +4,7 @@
 #pragma once
 
 #include "Stdafx.h"
-
+#include "TreeCtrlBT.h"
 //////////////////////////////////////////////////////////////////////////
 
 //类说明
@@ -12,6 +12,7 @@ typedef CArrayTemplate<tagCompanionItem *> CCompanionInfoArray;			//用户关系
 
 //关系列表
 class CUserCompanionList : public CTreeCtrl
+//class CUserCompanionList : public CTreeCtrlBT
 {
 	//关系信息
 protected:

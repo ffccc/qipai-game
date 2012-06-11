@@ -236,7 +236,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="../../链接库/ComService.lib ../../链接库/ClientShare.lib ../../链接库/SkinControls.lib ../../链接库/ChannelModule.lib ../../链接库/PropertyModule.lib Zip.lib Winmm.lib"
+				AdditionalDependencies="Zip.lib Winmm.lib"
 				OutputFile="../../运行/Release/AdminPlaza.exe"
 				LinkIncremental="1"
 				GenerateDebugInformation="true"
@@ -372,6 +372,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\TreeCtrlBT.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\UserCompanionList.cpp"
 				>
 			</File>
@@ -466,6 +470,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\TreeCtrlBT.h"
+				>
+			</File>
+			<File
 				RelativePath=".\UserCompanionList.h"
 				>
 			</File>
@@ -491,6 +499,10 @@
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
+			<File
+				RelativePath=".\Res\Add.bmp"
+				>
+			</File>
 			<File
 				RelativePath=".\Res\BAR_BUTTON.bmp"
 				>
@@ -1053,6 +1065,10 @@
 			</File>
 			<File
 				RelativePath=".\Res\SHOW_GAME_LIST.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Res\Sun.bmp"
 				>
 			</File>
 			<File

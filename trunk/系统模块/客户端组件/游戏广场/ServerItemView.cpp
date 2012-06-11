@@ -564,6 +564,7 @@ bool CServerItemView::InitServerItemView(ITreeCtrlSink * pITreeCtrlSink)
 	SetItemHeight(20);
 	SetTextColor(RGB(0,0,0));
 	SetBkColor(RGB(230,249,255));
+	// modify by yijian
 	ModifyStyle(0,TVS_HASBUTTONS|TVS_HASLINES|TVS_SHOWSELALWAYS|TVS_TRACKSELECT);
 	SendMessage(WN_SET_LINE_COLOR,0,(LPARAM)RGB(72,79,63));
 

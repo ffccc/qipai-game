@@ -167,9 +167,9 @@ BOOL CDlgRegister::OnInitDialog()
 	((CComboBox *)(GetDlgItem(IDC_ACCOUNTS)))->LimitText(NAME_LEN-1);
 	((CEdit *)(GetDlgItem(IDC_PASSWORD)))->LimitText(PASS_LEN-1);
 	((CEdit *)(GetDlgItem(IDC_PASSWORD2)))->LimitText(PASS_LEN-1);
-	m_LineRegWeb.SetHyperLinkUrl(TEXT("http://221.234.25.72"));
-	m_LineMainPage.SetHyperLinkUrl(TEXT("http://221.234.25.72"));
-	m_LinePassWord.SetHyperLinkUrl(TEXT("http://221.234.25.72"));
+	m_LineRegWeb.SetHyperLinkUrl(TEXT("http://127.0.0.1:8086"));
+	m_LineMainPage.SetHyperLinkUrl(TEXT("http://127.0.0.1:8086"));
+	m_LinePassWord.SetHyperLinkUrl(TEXT("http://127.0.0.1:8086"));
 
 	//加载头像
 	g_GlobalUnits.m_UserFaceRes->FillImageList(m_ImageList);
@@ -377,7 +377,7 @@ BOOL CDlgLogon::OnInitDialog()
 
 	//广告控件
 	m_BrowerAD.Create(NULL,NULL,WS_VISIBLE|WS_CHILD,CRect(0,0,0,0),this,100,NULL);
-	m_BrowerAD.Navigate(TEXT("http://221.234.25.72/AD/LogonAD.asp"),NULL,NULL,NULL,NULL);
+	m_BrowerAD.Navigate(TEXT("http://127.0.0.1:8086/AD/Logon.asp"),NULL,NULL,NULL,NULL);
 
 	//广告位置
 	int nXExcursion=GetXExcursionPos();
@@ -389,9 +389,9 @@ BOOL CDlgLogon::OnInitDialog()
 	m_TabLogonMode.InsertItem(LOGON_BY_USERID,TEXT("ＩＤ登录"));
 
 	//设置控件
-	m_LineMainPage.SetHyperLinkUrl(TEXT("http://221.234.25.72"));
-	m_LinePassWord.SetHyperLinkUrl(TEXT("http://221.234.25.72/Passwordprotection.asp"));
-	m_LineGetPassWord.SetHyperLinkUrl(TEXT("http://221.234.25.72/FindPassWord.asp"));
+	m_LineMainPage.SetHyperLinkUrl(TEXT("http://127.0.0.1:8086"));
+	m_LinePassWord.SetHyperLinkUrl(TEXT("http://127.0.0.1:8086/Passwordprotection.asp"));
+	m_LineGetPassWord.SetHyperLinkUrl(TEXT("http://127.0.0.1:8086/findpwd.asp"));
 	m_LineMainPage.BringWindowToTop();
 	m_LinePassWord.BringWindowToTop();
 	m_LineGetPassWord.BringWindowToTop();
@@ -743,7 +743,7 @@ void CDlgLogon::LoadLogonServer()
 	if ((pComBoxServer->GetWindowTextLength()==0)&&(pComBoxServer->GetCount()>0)) pComBoxServer->SetCurSel(0);
 	if (pComBoxServer->GetCount()==0)
 	{
-		pComBoxServer->AddString(TEXT("221.234.25.72"));
+		pComBoxServer->AddString(TEXT("127.0.0.1:8086"));
 		pComBoxServer->SetCurSel(0);
 	}
 
@@ -1076,7 +1076,7 @@ void CDlgLogon::OnTcnSelchangeLogonType(NMHDR * pNMHDR, LRESULT * pResult)
 void CDlgLogon::OnRegisterAccounts()
 {
 //#ifndef _DEBUG
-//	ShellExecute(NULL,TEXT("open"),TEXT("http://221.234.25.72/service/viewrule.jsp"),NULL,NULL,SW_SHOWDEFAULT);
+//	ShellExecute(NULL,TEXT("open"),TEXT("http://127.0.0.1:8086/service/viewrule.jsp"),NULL,NULL,SW_SHOWDEFAULT);
 //	return;
 //#endif
 
@@ -1099,7 +1099,7 @@ void CDlgLogon::OnRegisterAccounts()
 
 	//服务器
 	GetDlgItemText(IDC_SERVER,m_strLogonServer);
-	if (m_strLogonServer.IsEmpty()) m_strLogonServer=TEXT("221.234.25.72");
+	if (m_strLogonServer.IsEmpty()) m_strLogonServer=TEXT("127.0.0.1:8086");
 
 	//登录广场
 	ShowWindow(SW_HIDE);

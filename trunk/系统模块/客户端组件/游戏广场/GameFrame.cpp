@@ -142,7 +142,7 @@ void __cdecl CGameFrame::OnTreeLeftClick(CListItem *pListItem, HTREEITEM hTreeIt
 			CListInside * pListInside=(CListInside *)pListItem;
 			tagGameInside * pGameInside=pListInside->GetItemInfo();
 
-			WebBrowse(TEXT("http://221.234.25.72"),false);
+			WebBrowse(TEXT("http://127.0.0.1:8086"),false);
 
 			return;
 		}
@@ -154,7 +154,7 @@ void __cdecl CGameFrame::OnTreeLeftClick(CListItem *pListItem, HTREEITEM hTreeIt
 
 			//连接规则
 			TCHAR szRuleUrl[256]=TEXT("");
-			_snprintf(szRuleUrl,sizeof(szRuleUrl),TEXT("http://221.234.25.72/GameRule.asp?KindID=%ld"),pGameKind->wKindID);
+			_snprintf(szRuleUrl,sizeof(szRuleUrl),TEXT("http://127.0.0.1:8086/GameRule.asp?KindID=%ld"),pGameKind->wKindID);
 			WebBrowse(szRuleUrl,true);
 
 			return;
@@ -271,10 +271,10 @@ BOOL CGameFrame::OnCommand(WPARAM wParam, LPARAM lParam)
 	case IDC_BT_BUTTON_4:				//功能按钮
 	case IDC_BT_BUTTON_5:				//功能按钮
 		{
-			if(IDC_BT_BUTTON_1==nCommandID)WebBrowse(TEXT("http://221.234.25.72/"),true);
-			if(IDC_BT_BUTTON_3==nCommandID)WebBrowse(TEXT("http://221.234.25.72/PayBuy.asp"),true);
-			if(IDC_BT_BUTTON_4==nCommandID)WebBrowse(TEXT("http://221.234.25.72/user/ExChange.asp"),true);
-			if(IDC_BT_BUTTON_5==nCommandID)WebBrowse(TEXT("http://221.234.25.72/"),true);
+			if(IDC_BT_BUTTON_1==nCommandID)WebBrowse(TEXT("http://127.0.0.1:8086/"),true);
+			if(IDC_BT_BUTTON_3==nCommandID)WebBrowse(TEXT("http://127.0.0.1:8086/PayBuy.asp"),true);
+			if(IDC_BT_BUTTON_4==nCommandID)WebBrowse(TEXT("http://127.0.0.1:8086/user/ExChange.asp"),true);
+			if(IDC_BT_BUTTON_5==nCommandID)WebBrowse(TEXT("http://127.0.0.1:8086/"),true);
 
 			return TRUE;
 		}
@@ -1034,7 +1034,8 @@ void CGameFrame::RectifyControl(int nWidth, int nHeight)
 	int nButtonSpace=__min((nWidth-nBeginPos-rcButton.Width()*5-nEndPos)/4,30);
 
 	//广告控件
-	DeferWindowPos(hDwp,m_BrowerAD,NULL,300,8,250,52,uFlags);
+	// modify by 一剑
+	//DeferWindowPos(hDwp,m_BrowerAD,NULL,300,8,250,52,uFlags);
 
 	//导航按钮
 	DeferWindowPos(hDwp,m_btButton1,NULL,nWidth-rcButton.Width()*5-nButtonSpace*4-nEndPos,6,0,0,uFlags|SWP_NOSIZE);
@@ -1147,7 +1148,7 @@ int CGameFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	//广告控件
 	m_BrowerAD.Create(NULL,NULL,WS_VISIBLE|WS_CHILD,CRect(0,0,0,0),this,IDC_BROWER_AD,NULL);
-	m_BrowerAD.Navigate(TEXT("http://221.234.25.72/AD/GamePlazaAD.asp"),NULL,NULL,NULL,NULL);
+	m_BrowerAD.Navigate(TEXT("http://127.0.0.1:8086/AD/GamePlazaAD.asp"),NULL,NULL,NULL,NULL);
 
 	//拆分条控件
 	m_Splitter.Create(NULL,NULL,WS_VISIBLE|WS_CHILD,CRect(0,0,0,0),this,IDC_SPLITTER,NULL);

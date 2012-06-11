@@ -37,7 +37,7 @@ BOOL CDlgIndividualInfo::OnInitDialog()
 
 	//广告控件
 	m_BrowerAD.Create(NULL,NULL,WS_VISIBLE|WS_CHILD,CRect(0,0,0,0),this,100,NULL);
-	m_BrowerAD.Navigate(TEXT("http://221.234.25.72/user/"),NULL,NULL,NULL,NULL);
+	m_BrowerAD.Navigate(TEXT("http://127.0.0.1:8086/user/"),NULL,NULL,NULL,NULL);
 
 	//广告位置
 	int nXExcursion=GetXExcursionPos();
