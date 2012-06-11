@@ -1183,7 +1183,7 @@ afx_msg void CPlazaViewItem::OnBnClickedHOME()
 }
 afx_msg void CPlazaViewItem::OnBnClickedBBS()
 {
-	m_pHtmlBrower->Navigate("http://221.234.25.72");
+	m_pHtmlBrower->Navigate("http://127.0.0.1:8086");
 }
 
 //-----------------------------------------------

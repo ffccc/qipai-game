@@ -29,6 +29,8 @@
 #define IDD_OPTION_TABLE_RULE           273
 #define IDD_CUSTOM_FACE                 276
 #define IDD_MODIFY_INDIVIDUAL           277
+#define IDB_BITMAP1                     318
+#define IDB_BITMAP2                     319
 #define IDC_CHAT_MESSAGE                1004
 #define IDC_TABLE_PASSWORD              1004
 #define IDC_SERVER                      1005
@@ -139,7 +141,7 @@
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NO_MFC                     1
-#define _APS_NEXT_RESOURCE_VALUE        318
+#define _APS_NEXT_RESOURCE_VALUE        320
 #define _APS_NEXT_COMMAND_VALUE         32777
 #define _APS_NEXT_CONTROL_VALUE         1088
 #define _APS_NEXT_SYMED_VALUE           104
